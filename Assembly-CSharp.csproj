@@ -46,11 +46,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Core\Configs\CodeConfig.cs" />
      <Compile Include="Assets\Core\Events\Callback.cs" />
      <Compile Include="Assets\Core\Events\Messenger.cs" />
+     <Compile Include="Assets\Core\Object\Interfaces\Interface.cs" />
+     <Compile Include="Assets\Core\Object\Interfaces\InterfaceFacade.cs" />
+     <Compile Include="Assets\Core\Object\ObjectController.cs" />
+     <Compile Include="Assets\Core\Object\Properties\Property.cs" />
+     <Compile Include="Assets\Core\Object\Properties\PropertyFacade.cs" />
+     <Compile Include="Assets\Core\Object\Properties\PropertyRegistry.cs" />
      <Compile Include="Assets\Core\Utils\Remover.cs" />
      <Compile Include="Assets\Core\states\StatesManager.cs" />
      <Compile Include="Assets\Core\test.cs" />
+     <Compile Include="Assets\Resources\interfaces\Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
