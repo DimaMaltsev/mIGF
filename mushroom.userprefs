@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Core/Object/Interfaces/InterfaceFacade.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/interfaces/Test.cs">
     <Files>
-      <File FileName="Assets/Core/Object/Interfaces/InterfaceFacade.cs" Line="13" Column="12" />
-      <File FileName="Assets/Core/Object/ObjectController.cs" Line="5" Column="5" />
-      <File FileName="Assets/Core/Object/Interfaces/Interface.cs" Line="14" Column="67" />
+      <File FileName="Assets/Core/Object/Interfaces/InterfaceFacade.cs" Line="35" Column="3" />
+      <File FileName="Assets/Core/Object/ObjectController.cs" Line="35" Column="25" />
+      <File FileName="Assets/Core/Object/Interfaces/Interface.cs" Line="23" Column="23" />
       <File FileName="Assets/Core/Object/Properties/PropertyFacade.cs" Line="34" Column="27" />
+      <File FileName="Assets/Resources/interfaces/Test.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
