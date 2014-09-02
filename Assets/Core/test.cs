@@ -6,6 +6,6 @@ public class test : MonoBehaviour {
 	// Use this for initialization
 	void OnGUI(){
 		if( GUILayout.Button( "hihihhiih" ) )
-			Messenger.Broadcast<string>( "LoadState" , "main" );
+			Messenger.Broadcast( "Spawn_SmallGuy" );
 	}
 }

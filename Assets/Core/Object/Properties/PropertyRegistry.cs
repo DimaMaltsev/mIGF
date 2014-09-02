@@ -8,7 +8,13 @@ public static class PropertyRegistry {
 		{ "x" , "number" },
 		{ "y" , "number" },
 
-		{ "alive" , "boolean" }
+		{ "sx" , "number" },
+		{ "sy" , "number" },
+
+		{ "grounded" , "boolean" },
+		{ "onedge"   , "boolean" },
+
+		{ "die" , "boolean" }
 	};
 	
 	public static string GetType( string propName ){

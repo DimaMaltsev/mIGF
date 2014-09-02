@@ -35,8 +35,8 @@ public class PropertyFacade {
 			Debug.Log( "Trying to add already existing property '" + name + "'" );
 			return;
 		}
-
-		properties.Add (name, new Property (type) );
+		if( !properties.ContainsKey( name ) )
+			properties.Add (name, new Property (type) );
 	}
 
 	public float GetPropertyNumber( string name ){

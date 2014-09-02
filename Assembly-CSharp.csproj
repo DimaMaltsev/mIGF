@@ -58,7 +58,13 @@
      <Compile Include="Assets\Core\Utils\Remover.cs" />
      <Compile Include="Assets\Core\states\StatesManager.cs" />
      <Compile Include="Assets\Core\test.cs" />
-     <Compile Include="Assets\Resources\interfaces\Test.cs" />
+     <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Animation_SmallGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\SmallGuy\GroundCheck_SmallGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Input_SmallGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Walk_SmallGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\Test.cs" />
+     <Compile Include="Assets\Resources\code\spawners\SmallGuySpawner.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
