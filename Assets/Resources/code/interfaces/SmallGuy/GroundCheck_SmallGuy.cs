@@ -9,16 +9,24 @@ public class GroundCheck_SmallGuy : Interface {
 
 	public override void Execute ()
 	{
-		float sx = properties.GetPropertyNumber( "sx" );
-		if( sx == 0 ) return;
 		float localScale = transform.localScale.x;
-
-		Vector3 p = transform.position + localScale * Vector3.right * 0.5f - Vector3.up;
+		Vector3 p = transform.position - localScale * Vector3.right * 0.5f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
+		bool grounded = false;
+
+		if( c != null )
+			grounded = true;
+
+		p = transform.position + localScale * Vector3.right * 0.5f - Vector3.up;
+		c = Physics2D.OverlapPoint( p );
 
 		if( c == null )
 			properties.SetProperty( "onedge" , true );
-		else
+		else{
 			properties.SetProperty( "onedge" , false );
+			grounded = true;
+		}
+
+		properties.SetProperty( "grounded" , grounded );
 	}
 }

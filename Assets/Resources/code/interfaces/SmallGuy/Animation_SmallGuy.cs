@@ -6,8 +6,10 @@ public class Animation_SmallGuy : Interface {
 
 	private float lastSx = 0;
 	private bool  lastEdge = false;
+	private bool  lastJump = false;
+	private bool  lastGrounded = true;
 
-	public Animation_SmallGuy() : base( "sx" , "onedge" ) {
+	public Animation_SmallGuy() : base( "sx" , "onedge" , "animationJump" , "grounded" ) {
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -19,9 +21,27 @@ public class Animation_SmallGuy : Interface {
 
 	public override void Execute ()
 	{
+		UpdateGround();
+		UpdateJump();
 		UpdateDying();
 		UpdateRunning();
 		UpdateEdge();
+	}
+
+	private void UpdateGround(){
+		bool grounded = properties.GetPropertyBoolean( "grounded" );
+		if( grounded != lastGrounded ){
+			animator.SetBool( "grounded" , grounded );
+			lastGrounded = grounded;
+		}
+	}
+
+	private void UpdateJump(){
+		bool jump = properties.GetPropertyBoolean( "animationJump" );
+		if( jump != lastJump ){
+			animator.SetBool( "jump" , jump );
+			lastJump = jump;
+		}
 	}
 
 	private void UpdateDying(){

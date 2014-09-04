@@ -51,6 +51,7 @@ public class Walk_SmallGuy : Interface {
 	private void EnableRigidBody(){
 		rb = gameObject.AddComponent<Rigidbody2D>();
 		rb.fixedAngle = true;
+		rb.gravityScale = 3;
 	}
 
 	private void RemoveRigidBody(){

@@ -14,7 +14,9 @@ public static class PropertyRegistry {
 		{ "grounded" , "boolean" },
 		{ "onedge"   , "boolean" },
 
-		{ "die" , "boolean" }
+		{ "die" , "boolean" },
+		{ "jump", "boolean" },
+		{ "animationJump" , "boolean" }
 	};
 	
 	public static string GetType( string propName ){

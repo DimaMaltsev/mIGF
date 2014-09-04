@@ -15,6 +15,8 @@ public class Input_SmallGuy : Interface {
 		float direction = 0;
 		if( Input.GetButton( "Right" ) ) 	direction++;
 		if( Input.GetButton( "Left" ) ) 	direction--;
+		if( Input.GetButtonDown( "Up" ) ) 	properties.SetProperty( "jump" , true );
+		if( Input.GetButtonUp( "Up" ) ) 	properties.SetProperty( "jump" , false );
 		if( Input.GetButton( "Jump" ) )	properties.SetProperty( "die" , true );
 
 		properties.SetProperty( "sx" , sx * direction );
