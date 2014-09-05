@@ -59,6 +59,11 @@
      <Compile Include="Assets\Core\states\StatesManager.cs" />
      <Compile Include="Assets\Core\test.cs" />
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\GroundChecker_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\Input_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\Jump_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\Physics_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Animation_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\GroundCheck_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Input_SmallGuy.cs" />

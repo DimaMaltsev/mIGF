@@ -5,7 +5,7 @@ public class Input_SmallGuy : Interface {
 
 	private float sx = 3;
 
-	public Input_SmallGuy() : base( "sx" , "die" ) {
+	public Input_SmallGuy() : base( "sx" , "die" , "jump" ) {
 		this.executable = true;
 		this.initActive = true;
 	}
