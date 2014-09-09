@@ -16,6 +16,7 @@ public static class PropertyRegistry {
 
 		{ "die" , "boolean" },
 		{ "jump", "boolean" },
+		{ "down", "boolean" },
 		{ "animationJump" , "boolean" }
 	};
 	

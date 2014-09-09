@@ -17,6 +17,8 @@ public class Input_BigGuy : Interface {
 		if( Input.GetButtonDown( "Up" ) ) 	properties.SetProperty( "jump" , true );
 		if( Input.GetButtonUp( "Up" ) ) 	properties.SetProperty( "jump" , false );
 
+		properties.SetProperty( "down" , Input.GetButton( "Down" ) );
+
 		if( Input.GetButton( "Jump" ) )		properties.SetProperty( "die" , true );
 
 		properties.SetProperty( "sx" , direction * sx );

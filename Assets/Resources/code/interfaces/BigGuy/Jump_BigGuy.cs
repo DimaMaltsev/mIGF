@@ -46,7 +46,7 @@ public class Jump_BigGuy : Interface {
 		jumped = true;
 		float vx = rb.velocity.x;
 		rb.velocity = new Vector2( vx , 0 );
-		rb.AddForce( Vector2.up * 500 );
+		rb.AddForce( Vector2.up * 700 );
 		Invoke( "FinishStartPhase" , 0.8f );
 	}
 }

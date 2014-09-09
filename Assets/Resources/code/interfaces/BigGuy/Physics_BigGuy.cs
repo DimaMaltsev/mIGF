@@ -5,8 +5,9 @@ public class Physics_BigGuy : Interface {
 
 	private Rigidbody2D rb;
 	private Transform smallGuy;
+	private bool layersSleep = false;
 
-	public Physics_BigGuy() : base( "sx" , "die"){
+	public Physics_BigGuy() : base( "sx" , "die" , "down" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -20,7 +21,7 @@ public class Physics_BigGuy : Interface {
 	{
 		if( rb == null){
 			if( !IsInvoking( "AddRigidBody" ) && !properties.GetPropertyBoolean( "die" ) )
-				Invoke( "AddRigidBody" , 1.1f );
+				Invoke( "AddRigidBody" , 0.8f );
 			return;
 		}
 
@@ -29,7 +30,14 @@ public class Physics_BigGuy : Interface {
 
 		rb.velocity = new Vector2 ( sx , sy );
 
-		HandlePhysicsLayers();
+		if( properties.GetPropertyBoolean( "down" ) ){
+			SetPassiveLayer();
+			layersSleep = true;
+			Invoke ( "LayersWakeUp" , 0.2f );
+		}
+
+		if( !layersSleep )
+			HandlePhysicsLayers();
 	}
 
 	private void FindSmallGuy(){
@@ -40,7 +48,7 @@ public class Physics_BigGuy : Interface {
 
 	private void AddRigidBody(){
 		rb = gameObject.AddComponent<Rigidbody2D>();
-		rb.gravityScale = 4;
+		rb.gravityScale = 3;
 		rb.fixedAngle = true;
 	}
 
@@ -49,11 +57,25 @@ public class Physics_BigGuy : Interface {
 			FindSmallGuy();
 		}
 
-		if( smallGuy == null || smallGuy.position.y < transform.position.y + 0.5f ){
-			gameObject.layer = 10;
-		}else{
-			gameObject.layer = 8;
-		}
+		bool passiveLayer = smallGuy == null || 
+			( smallGuy.position.y < transform.position.y + 0.5f ||
+			 ( smallGuy.GetComponent<Rigidbody2D>() != null && smallGuy.GetComponent<Rigidbody2D>().velocity.y > 1 ) );
+
+		if( passiveLayer ) SetPassiveLayer();
+		else SetActiveLayer();
+		
+	}
+
+	private void LayersWakeUp(){
+		layersSleep = false;
+	}
+
+	private void SetPassiveLayer(){
+		gameObject.layer = 10;
+	}
+
+	private void SetActiveLayer(){
+		gameObject.layer = 8;
 	}
 }
 

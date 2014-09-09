@@ -5,7 +5,7 @@ public class Walk_SmallGuy : Interface {
 	private Rigidbody2D 	rb;
 	private BoxCollider2D 	bc;
 
-	private float rbEnableTime = 0.9f;
+	private float rbEnableTime = 0.7f;
 	private float deathAnimationTime = 0.8f;
 
 	public Walk_SmallGuy() : base ( "sx" , "x" , "die" ) {
