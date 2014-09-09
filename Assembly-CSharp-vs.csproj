@@ -59,7 +59,9 @@
      <Compile Include="Assets\Core\states\StatesManager.cs" />
      <Compile Include="Assets\Core\test.cs" />
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
+     <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\Die_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\GroundChecker_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Input_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Jump_BigGuy.cs" />

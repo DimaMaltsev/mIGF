@@ -1,13 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/BigGuy/Animation_BigGuy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/SmallGuy/Jump_SmallGuy.cs">
     <Files>
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Physics_BigGuy.cs" Line="29" Column="24" />
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Input_BigGuy.cs" Line="17" Column="3" />
-      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Input_SmallGuy.cs" Line="8" Column="56" />
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Animation_BigGuy.cs" Line="19" Column="15" />
-      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Jump_SmallGuy.cs" Line="50" Column="3" />
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Jump_BigGuy.cs" Line="33" Column="30" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Physics_BigGuy.cs" Line="37" Column="19" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Input_BigGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Input_SmallGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Animation_BigGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Jump_SmallGuy.cs" Line="34" Column="3" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Jump_BigGuy.cs" Line="6" Column="2" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/GroundChecker_BigGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/GroundCheck_SmallGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/camera/Camera_Position.cs" Line="1" Column="1" />
+      <File FileName="Assets/Core/test.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Walk_SmallGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Animation_SmallGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Die_BigGuy.cs" Line="24" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Input_BigGuy : Interface {
 	float sx = 3;
-	public Input_BigGuy() : base( "sx" , "jump" ){
+	public Input_BigGuy() : base( "sx" , "die" , "jump" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -16,6 +16,8 @@ public class Input_BigGuy : Interface {
 		
 		if( Input.GetButtonDown( "Up" ) ) 	properties.SetProperty( "jump" , true );
 		if( Input.GetButtonUp( "Up" ) ) 	properties.SetProperty( "jump" , false );
+
+		if( Input.GetButton( "Jump" ) )		properties.SetProperty( "die" , true );
 
 		properties.SetProperty( "sx" , direction * sx );
 	}

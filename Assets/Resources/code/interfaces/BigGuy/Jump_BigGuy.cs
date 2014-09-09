@@ -7,7 +7,7 @@ public class Jump_BigGuy : Interface {
 	private Rigidbody2D rb;
 	private bool jumpJustStarted = false;
 
-	public Jump_BigGuy() : base( "jump" , "grounded" ){
+	public Jump_BigGuy() : base( "jump" , "grounded" , "animationJump" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -47,6 +47,6 @@ public class Jump_BigGuy : Interface {
 		float vx = rb.velocity.x;
 		rb.velocity = new Vector2( vx , 0 );
 		rb.AddForce( Vector2.up * 500 );
-		Invoke( "FinishStartPhase" , 0.4f );
+		Invoke( "FinishStartPhase" , 0.8f );
 	}
 }

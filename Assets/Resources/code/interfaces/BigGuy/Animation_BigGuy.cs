@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Animation_BigGuy : Interface {
 	private Animator a;
-	public Animation_BigGuy() : base( "sx" , "animationJump" , "grounded" ){
+	public Animation_BigGuy() : base( "sx" , "animationJump" , "grounded" , "onedge" , "die" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -18,6 +18,7 @@ public class Animation_BigGuy : Interface {
 		CheckWalk();
 		CheckJump();
 		CheckGrounded();
+		UpdateDying();
 	}
 
 	private void CheckWalk(){
@@ -33,6 +34,11 @@ public class Animation_BigGuy : Interface {
 			transform.localScale = new Vector3( sx / Mathf.Abs( sx ) , 1 , 1 );
 	}
 
+	private void UpdateDying(){
+		bool die = properties.GetPropertyBoolean( "die" );
+		a.SetBool( "die" , die );
+	}
+
 	private void CheckJump(){
 		bool jump = properties.GetPropertyBoolean( "animationJump" );
 		a.SetBool( "jump" , jump );
@@ -41,5 +47,8 @@ public class Animation_BigGuy : Interface {
 	private void CheckGrounded(){
 		bool grounded = properties.GetPropertyBoolean( "grounded" );
 		a.SetBool( "grounded" , grounded );
+
+		bool onedge = properties.GetPropertyBoolean( "onedge" );
+		a.SetBool( "balancing" , onedge );
 	}
 }
