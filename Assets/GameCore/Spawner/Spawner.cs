@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour {
 
 	protected virtual void ConfigureSpawnedObject( GameObject spawnObject ){}
 
-	private void Spawn(){
+	protected void Spawn(){
 		GameObject obj = (GameObject)Instantiate( Resources.Load( "Objects/" + path + "/" + spawnObjectName ) );
 		obj.transform.parent = LevelContainer;
 		obj.transform.localPosition = Vector3.zero;

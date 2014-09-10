@@ -26,6 +26,8 @@ public class Die_BigGuy : Interface {
 	}
 
 	private void DestroyGameObject(){
+		
+		Messenger.Broadcast( "BigGuyDead" );
 		Destroy( gameObject );
 	}
 }

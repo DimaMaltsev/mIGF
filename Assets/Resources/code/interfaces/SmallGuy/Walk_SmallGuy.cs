@@ -60,6 +60,7 @@ public class Walk_SmallGuy : Interface {
 	}
 
 	private void DestroyGameObject(){
+		Messenger.Broadcast( "SmallGuyDead" );
 		Destroy( gameObject );
 	}
 }
