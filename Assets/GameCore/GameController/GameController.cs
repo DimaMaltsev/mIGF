@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
 
 		if( GameObject.FindGameObjectWithTag( "SmallGuySpawner" ) 	!= null ) waitingForObjectsCount++;
 		if( GameObject.FindGameObjectWithTag( "BigGuySpawner" ) 	!= null ) waitingForObjectsCount++;
+
 	}
 
 	private void OnGuyReachedEndPoint(){ objectsReachedEndCount++; FinishGame(); }
@@ -21,7 +22,6 @@ public class GameController : MonoBehaviour {
 
 	private void FinishGame(){
 		if( objectsReachedEndCount != waitingForObjectsCount ) return;
-
 		Messenger.Broadcast<string>( "LoadState" , "main" );
 	}
 }

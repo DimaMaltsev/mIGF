@@ -2,15 +2,18 @@
 using System.Collections;
 
 public class FinalWaiter : MonoBehaviour {
-	public string GuyTag = "SmallGuy";
+	public string GuyTag;
+	private bool entered = false;
 
 	private void OnTriggerEnter2D( Collider2D other ){
-		if( !IsValidCollider( other ) ) return;
+		if( entered || !IsValidCollider( other ) ) return;
+		entered = true;
 		Messenger.Broadcast( "GuyReachedEndPoint" );
 	}
 
 	private void OnTriggerExit2D( Collider2D other ){
-		if( !IsValidCollider( other ) ) return;
+		if( !entered || !IsValidCollider( other ) ) return;
+		entered = false;
 		Messenger.Broadcast( "GuyLeavedEndPoint" );
 	}
 
