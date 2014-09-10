@@ -7,6 +7,6 @@ public class SmallGuySpawner : Spawner {
 
 	protected override void ConfigureSpawnedObject (GameObject spawnObject)
 	{
-
+		Messenger.Broadcast<Transform>( "SmallGuySpawned" , spawnObject.transform );
 	}
 }

@@ -5,42 +5,32 @@ public class Camera_Position : MonoBehaviour {
 	private Transform bigGuy;
 	private Transform smallGuy;
 
-	private float maxZoom = 4;
-	private float minZoom = 1;
-	private float curZoom;
-
 	private Camera camera;
 
 	void Awake(){
 		camera = GetComponent<Camera>();
-		curZoom = minZoom;
+		Messenger.AddListener<Transform>( "SmallGuySpawned" , OnSmallGuySpawned );
+		Messenger.AddListener<Transform>( "BigGuySpawned" 	, OnBigGuySpawned 	);
 	}
 
 	void Update () {
-		if( bigGuy == null || smallGuy == null ){
-			FindGuys();
-			return;
-		}
-		UpdateZoom();
+		Vector3 pos = Vector3.zero;
+		int coef = 0;
+		if( bigGuy 		!= null ){ pos += bigGuy.position; 		coef ++; }
+		if( smallGuy 	!= null ){ pos += smallGuy.position; 	coef ++; }
+	
+		if( coef == 0 ) return;
 
+		Vector3 finalPos = pos / coef - Vector3.forward * 10;
 
-		Vector3 pos = ( bigGuy.position + smallGuy.position ) / 2 - Vector3.forward * 10;
-
-		transform.position = Vector3.Lerp( transform.position , pos , Time.deltaTime * 10 );
-		//camera.orthographicSize = Mathf.Lerp( camera.orthographicSize , curZoom , Time.deltaTime * 10 );
+		transform.position = Vector3.Lerp( transform.position , finalPos , Time.deltaTime * 10 );
 	}
 
-	private void FindGuys(){
-		GameObject bg = GameObject.FindGameObjectWithTag( "BigGuy" );
-		GameObject sg = GameObject.FindGameObjectWithTag( "SmallGuy" );
-
-		bigGuy 		= bg == null ? null : bg.transform;
-		smallGuy 	= sg == null ? null : sg.transform;
+	private void OnSmallGuySpawned( Transform smallGuy ){
+		this.smallGuy = smallGuy;
 	}
 
-	private void UpdateZoom(){
-		if( !bigGuy.GetComponent<SpriteRenderer>().isVisible || !smallGuy.GetComponent<SpriteRenderer>().isVisible ){
-			curZoom += 0.1f;
-		}
+	private void OnBigGuySpawned( Transform bigGuy ){
+		this.bigGuy = bigGuy;
 	}
 }

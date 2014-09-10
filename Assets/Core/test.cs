@@ -8,7 +8,7 @@ public class test : MonoBehaviour {
 		if( GUILayout.Button( "hihihhiih" ) ){
 			Messenger.Broadcast( "Spawn_SmallGuy" );
 			
-			Messenger.Broadcast( "Spawn_BigGuy" );
+			//Messenger.Broadcast( "Spawn_BigGuy" );
 		}
 	}
 }
