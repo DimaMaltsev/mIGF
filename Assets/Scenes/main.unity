@@ -173,6 +173,10 @@ MonoBehaviour:
   levels:
   - Tutor1Ti
   - Tutor2Ti
+  - Tutor3Ti
+  - Tutor4Ti
+  - Tutor5Ti
+  - Tutor6Ti
 --- !u!1 &707125601
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,3 +13,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutor1Ti.unity
   - enabled: 1
     path: Assets/Scenes/Tutor2Ti.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor3Ti.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor4Ti.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor5Ti.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor6Ti.unity
