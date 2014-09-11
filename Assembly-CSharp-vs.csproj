@@ -61,6 +61,7 @@
      <Compile Include="Assets\GameCore\FinalWaiter\FinalWaiter.cs" />
      <Compile Include="Assets\GameCore\GameController\GameController.cs" />
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
+     <Compile Include="Assets\GameCore\SpriteLibrary\SpriteLibrary.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMenu.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
@@ -77,6 +78,7 @@
      <Compile Include="Assets\Resources\code\interfaces\Test.cs" />
      <Compile Include="Assets\Resources\code\spawners\BigGuySpawner.cs" />
      <Compile Include="Assets\Resources\code\spawners\SmallGuySpawner.cs" />
+     <Compile Include="Assets\Resources\code\specialized\blocks\Block_TypeDetection.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
