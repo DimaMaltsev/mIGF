@@ -9,6 +9,7 @@ TagManager:
   - SmallGuySpawner
   - BigGuySpawner
   - SpriteLibrary
+  - Simple_Block
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

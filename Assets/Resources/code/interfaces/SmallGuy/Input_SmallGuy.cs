@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Input_SmallGuy : Interface {
 
-	private float sx = 3;
+	private float sx = 4;
 
 	public Input_SmallGuy() : base( "sx" , "die" , "jump" ) {
 		this.executable = true;
@@ -18,6 +18,11 @@ public class Input_SmallGuy : Interface {
 		if( Input.GetButtonDown( "Up" ) ) 	properties.SetProperty( "jump" , true );
 		if( Input.GetButtonUp( "Up" ) ) 	properties.SetProperty( "jump" , false );
 		if( Input.GetButton( "Jump" ) )	properties.SetProperty( "die" , true );
+
+		bool walled = properties.GetPropertyBoolean( "walled" ) &&
+			transform.localScale.x == direction;
+
+		if( walled ) direction = 0;
 
 		properties.SetProperty( "sx" , sx * direction );
 	}

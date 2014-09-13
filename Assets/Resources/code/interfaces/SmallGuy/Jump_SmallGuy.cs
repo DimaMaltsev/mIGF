@@ -4,6 +4,7 @@ using System.Collections;
 public class Jump_SmallGuy : Interface {
 
 	private bool jumped = false;
+	private bool jumpButtonReleased = true;
 	private Rigidbody2D rb;
 	private bool jumpJustStarted = false;
 
@@ -21,10 +22,14 @@ public class Jump_SmallGuy : Interface {
 			rb = GetComponent<Rigidbody2D>();
 			return;
 		}
+
+		bool jump = properties.GetPropertyBoolean( "jump" );
+		
+		if( !jump && !jumpButtonReleased )
+			jumpButtonReleased = true;
 		
 		if( jumpJustStarted ) return;
-		
-		bool jump = properties.GetPropertyBoolean( "jump" );
+
 		bool grounded = properties.GetPropertyBoolean( "grounded" );
 		
 		if( grounded ){
@@ -32,12 +37,12 @@ public class Jump_SmallGuy : Interface {
 			jumpsCount = 0;
 		}
 
-		if( !jump || ( jumped && jumpsCount >= jumpsLimit ) )
+		if( !jump || ( jumped && jumpsCount >= jumpsLimit ) || !jumpButtonReleased)
 			return;
 		
 		if( !IsInvoking( "Jump" ) ){
 			properties.SetProperty( "animationJump" , true );
-			Invoke ( "Jump" , 0.2f );
+			Invoke ( "Jump" , 0.05f );
 		}
 	}
 	
@@ -46,13 +51,14 @@ public class Jump_SmallGuy : Interface {
 	}
 	
 	private void Jump(){
+		jumpButtonReleased = false;
 		jumpsCount++;
 		properties.SetProperty( "animationJump" , false );
 		jumpJustStarted = true;
 		jumped = true;
 		float vx = rb.velocity.x;
 		rb.velocity = new Vector2( vx , 0 );
-		rb.AddForce( Vector2.up * 610 );
+		rb.AddForce( Vector2.up * 810 );
 		Invoke( "FinishStartPhase" , 0.2f );
 	}
 }

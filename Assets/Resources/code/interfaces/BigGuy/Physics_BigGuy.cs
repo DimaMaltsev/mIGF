@@ -48,7 +48,7 @@ public class Physics_BigGuy : Interface {
 
 	private void AddRigidBody(){
 		rb = gameObject.AddComponent<Rigidbody2D>();
-		rb.gravityScale = 3;
+		rb.gravityScale = 5;
 		rb.fixedAngle = true;
 	}
 

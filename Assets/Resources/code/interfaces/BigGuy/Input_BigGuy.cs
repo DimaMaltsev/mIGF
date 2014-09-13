@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Input_BigGuy : Interface {
-	float sx = 3;
-	public Input_BigGuy() : base( "sx" , "die" , "jump" ){
+	float sx = 4;
+	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -20,6 +20,11 @@ public class Input_BigGuy : Interface {
 		properties.SetProperty( "down" , Input.GetButton( "Down" ) );
 
 		if( Input.GetButton( "Jump" ) )		properties.SetProperty( "die" , true );
+
+		bool walled = properties.GetPropertyBoolean( "walled" ) &&
+			transform.localScale.x == direction;
+
+		if( walled ) direction = 0;
 
 		properties.SetProperty( "sx" , direction * sx );
 	}

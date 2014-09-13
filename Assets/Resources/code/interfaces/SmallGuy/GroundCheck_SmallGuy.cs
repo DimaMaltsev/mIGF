@@ -2,31 +2,45 @@
 using System.Collections;
 
 public class GroundCheck_SmallGuy : Interface {
-	public GroundCheck_SmallGuy() : base( "grounded" , "sx" , "onedge" ){
+	public GroundCheck_SmallGuy() : base( "grounded" , "sx" , "onedge" , "walled" ){
 		this.executable = true;
 		this.initActive = true;
 	}
 
 	public override void Execute ()
 	{
+
+		bool wall = CheckWall();
+		bool edge = CheckEdge() && !wall;
+		bool ground = CheckGround();
+		
+		properties.SetProperty( "onedge" , edge );
+		properties.SetProperty( "grounded" , ground );
+		properties.SetProperty( "walled" , wall );
+	}
+
+	private bool CheckGround(){
 		float localScale = transform.localScale.x;
-		Vector3 p = transform.position - localScale * Vector3.right * 0.5f - Vector3.up;
+		Vector3 p = transform.position - localScale * Vector3.right * 0.4f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		bool grounded = false;
+		
+		return c != null;
+	}
 
-		if( c != null )
-			grounded = true;
+	private bool CheckEdge(){
+		float localScale = transform.localScale.x;
+		Vector3 p = transform.position + localScale * Vector3.right * 0.4f - Vector3.up;
+		Collider2D c = Physics2D.OverlapPoint( p );
+		
+		return c == null;
+	}
 
-		p = transform.position + localScale * Vector3.right * 0.5f - Vector3.up;
-		c = Physics2D.OverlapPoint( p );
-
-		if( c == null )
-			properties.SetProperty( "onedge" , true );
-		else{
-			properties.SetProperty( "onedge" , false );
-			grounded = true;
-		}
-
-		properties.SetProperty( "grounded" , grounded );
+	private bool CheckWall(){
+		float localScale = transform.localScale.x;
+		Vector3 p = transform.position + localScale * Vector3.right * 0.5f;
+		Collider2D c = Physics2D.OverlapPoint( p );
+		
+		return c != null;
 	}
 }
