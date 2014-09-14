@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 707125602}
   - 114: {fileID: 707125603}
+  - 114: {fileID: 707125604}
   m_Layer: 0
   m_Name: LevelContainer
   m_TagString: LevelContainer
@@ -215,5 +216,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77717ff6752554f139401bb2329f8208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &707125604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 707125601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418fbe58864b44f31af226176f9bb284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

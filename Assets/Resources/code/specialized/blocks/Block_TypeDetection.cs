@@ -59,7 +59,8 @@ public class Block_TypeDetection : MonoBehaviour {
 	private bool ThereIsABlock( Collider2D[] others ){
 		if( others != null ){
 			for( int i = 0 ; i < others.Length; i++ ){
-				if( others[ i ].GetComponent<Block_TypeDetection>() != null )
+				Collider2D block = others[ i ];
+				if( block.GetComponent<Block_TypeDetection>() != null && block.transform.parent == transform.parent )
 					return true;
 			}
 		}

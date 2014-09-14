@@ -12,7 +12,7 @@ public class GroundCheck_SmallGuy : Interface {
 
 		bool wall = CheckWall();
 		bool edge = CheckEdge() && !wall;
-		bool ground = CheckGround();
+		bool ground = CheckGround() || !edge;
 		
 		properties.SetProperty( "onedge" , edge );
 		properties.SetProperty( "grounded" , ground );

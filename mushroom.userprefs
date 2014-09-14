@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/SmallGuy/GroundCheck_SmallGuy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Core/test.cs">
     <Files>
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Input_BigGuy.cs" Line="5" Column="15" />
-      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Jump_SmallGuy.cs" Line="54" Column="30" />
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Jump_BigGuy.cs" Line="51" Column="22" />
-      <File FileName="Assets/Resources/code/interfaces/SmallGuy/GroundCheck_SmallGuy.cs" Line="16" Column="45" />
+      <File FileName="Assets/Core/test.cs" Line="5" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
