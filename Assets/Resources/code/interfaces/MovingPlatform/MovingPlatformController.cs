@@ -9,6 +9,8 @@ public class MovingPlatformController : Interface {
 	public bool reverseOnEnd = false;
 	public float moveSpeed;
 
+	public Vector2 speed;
+
 	private int currentMoveIndex = 0;
 
 	public MovingPlatformController() : base (){
@@ -45,7 +47,8 @@ public class MovingPlatformController : Interface {
 			return;
 		}
 
-		Vector2 np = pos + ( currentMove - pos ).normalized * moveSpeed * Time.deltaTime;
+		speed = ( currentMove - pos ).normalized * moveSpeed;
+		Vector2 np = pos + speed * Time.deltaTime;
 		transform.position = new Vector3( np.x , np.y , 0 );
 	}
 

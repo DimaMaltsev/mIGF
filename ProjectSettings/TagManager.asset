@@ -10,6 +10,7 @@ TagManager:
   - BigGuySpawner
   - SpriteLibrary
   - Simple_Block
+  - Moving_Platform
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
