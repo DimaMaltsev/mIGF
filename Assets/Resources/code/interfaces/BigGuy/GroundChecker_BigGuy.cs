@@ -22,7 +22,7 @@ public class GroundChecker_BigGuy : Interface {
 	
 	private bool CheckGround(){
 		float localScale = transform.localScale.x;
-		Vector3 p = transform.position - localScale * Vector3.right * 0.3f - Vector3.up;
+		Vector3 p = transform.position - localScale * Vector3.right * 0.3f - Vector3.up * 1.5f;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		bool grounded = false;
 		

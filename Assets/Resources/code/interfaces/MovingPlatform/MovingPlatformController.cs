@@ -21,6 +21,10 @@ public class MovingPlatformController : Interface {
 
 	protected override void SetStartingValues ()
 	{
+		Vector2 p = transform.position;
+		for( int i = 0 ; i < moves.Count ; i++ ){
+			moves[ i ] = new Vector2( p.x + moves[ i ].x , p.y + moves[ i ].y );
+		}
 		moves.Reverse();
 		moves.Add( transform.position );
 		moves.Reverse();
