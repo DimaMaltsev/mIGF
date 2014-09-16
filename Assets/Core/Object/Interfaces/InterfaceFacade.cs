@@ -27,13 +27,21 @@ public class InterfaceFacade {
 			activeInterfaces[ i ].Execute();
 	}
 
-	private void ActivateInterface( Interface i ){
+	public void ActivateInterface( Interface i ){
 		if( CodeConfig.DEBUG_MODE && activeInterfaces.Contains( i ) ){
 			Debug.LogWarning( "Trying to activate interface twice '" + i.name + "'" );
 			return;
 		}
 
-		i.Activate();
 		activeInterfaces.Add( i );
+	}
+
+	public void DeactivateInterface( Interface i ){
+		if( CodeConfig.DEBUG_MODE && !activeInterfaces.Contains( i ) ){
+			Debug.LogWarning( "Trying to deactivate not activated interface '" + i.name + "'" );
+			return;
+		}
+
+		activeInterfaces.Remove( i );
 	}
 }

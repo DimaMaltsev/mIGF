@@ -34,4 +34,8 @@ public class ObjectController : MonoBehaviour {
 	public PropertyFacade Props(){
 		return propertyFacade;
 	}
+
+	public InterfaceFacade Inters(){
+		return interfaceFacade;
+	}
 }

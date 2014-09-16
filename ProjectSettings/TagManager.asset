@@ -11,6 +11,7 @@ TagManager:
   - SpriteLibrary
   - Simple_Block
   - Moving_Platform
+  - Hidden_Area
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

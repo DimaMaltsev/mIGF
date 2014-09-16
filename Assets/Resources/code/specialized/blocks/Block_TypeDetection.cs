@@ -60,11 +60,18 @@ public class Block_TypeDetection : MonoBehaviour {
 		if( others != null ){
 			for( int i = 0 ; i < others.Length; i++ ){
 				Collider2D block = others[ i ];
-				if( block.GetComponent<Block_TypeDetection>() != null && block.transform.parent == transform.parent )
+				if( ThisBlockIsValid( block ) )
 					return true;
 			}
 		}
 
 		return false;
+	}
+
+	private bool ThisBlockIsValid( Collider2D block ){
+		return 
+			block.GetComponent<Block_TypeDetection>() != null && 
+				( block.transform.parent == transform.parent || 
+				 block.transform.parent.tag == "Hidden_Area" || transform.parent.tag == "Hidden_Area");
 	}
 }

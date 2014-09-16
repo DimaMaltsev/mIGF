@@ -10,6 +10,7 @@ public class Interface : MonoBehaviour {
 
 	protected ObjectController 	controller;
 	protected PropertyFacade	properties;
+	protected InterfaceFacade	interfaces;
 
 	public Interface( params string[] variables ){
 		this.variables = variables;
@@ -18,6 +19,7 @@ public class Interface : MonoBehaviour {
 	void Awake(){
 		controller = gameObject.GetComponent<ObjectController>();
 		properties = controller.Props();
+		interfaces = controller.Inters();
 
 		controller.AddVariables( variables );
 		SetStartingValues();
@@ -34,7 +36,7 @@ public class Interface : MonoBehaviour {
 	public bool InitActive(){	return initActive;	}
 	public bool Executing(){	return executing;	}
 
-	public void Activate(){ 	executing = true; 	}
-	public void Deactivate(){ 	executing = false; 	}
+	public void Activate(){ 	executing = true; interfaces.ActivateInterface( this );	}
+	public void Deactivate(){ 	executing = false;interfaces.DeactivateInterface( this ); 	}
 
 }
