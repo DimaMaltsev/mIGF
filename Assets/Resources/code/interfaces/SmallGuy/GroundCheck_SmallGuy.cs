@@ -41,6 +41,6 @@ public class GroundCheck_SmallGuy : Interface {
 		Vector3 p = transform.position + localScale * Vector3.right * 0.5f;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
-		return c != null;
+		return c != null && c.GetComponent<Block_TypeDetection>() != null;
 	}
 }

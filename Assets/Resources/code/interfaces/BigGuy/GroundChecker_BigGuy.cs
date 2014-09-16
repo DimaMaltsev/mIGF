@@ -43,7 +43,7 @@ public class GroundChecker_BigGuy : Interface {
 		Vector3 p2 = transform.position + localScale * Vector3.right * 0.7f + Vector3.up;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
-		
-		return ( c1 != null && c1.tag == "Simple_Block" ) || ( c2 != null && c2.tag == "Simple_Block" );
+		return ( c1 != null && c1.GetComponent<Block_TypeDetection>() != null ) || 
+			( c2 != null && c2.GetComponent<Block_TypeDetection>() != null );
 	}
 }

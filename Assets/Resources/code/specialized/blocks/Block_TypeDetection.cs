@@ -48,10 +48,10 @@ public class Block_TypeDetection : MonoBehaviour {
 		bool b_down 	= ThereIsABlock( down 	);
 
 		string type = 
-			( b_up ? "1" : "0" ) + "," + 
+			( b_up ? 	"1" : "0" ) + "," + 
 			( b_right ? "1" : "0" ) + "," + 
-			( b_down ? "1" : "0" ) + "," + 
-			( b_left ? "1" : "0" );
+			( b_down ? 	"1" : "0" ) + "," + 
+			( b_left ? 	"1" : "0" );
 
 		spriteRenderer.sprite = spriteLibrary.blocks[ blockTypeMap[ type ] ];
 	}

@@ -82,6 +82,7 @@
      <Compile Include="Assets\Resources\code\spawners\BigGuySpawner.cs" />
      <Compile Include="Assets\Resources\code\spawners\SmallGuySpawner.cs" />
      <Compile Include="Assets\Resources\code\specialized\blocks\Block_TypeDetection.cs" />
+     <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\hiddenArea\HiddenAreaController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
