@@ -71,6 +71,9 @@
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Input_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Jump_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Physics_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\Box\Box_Animation.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\Box\Box_Moves.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\Common\Platformable.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Guys\PlatformCheck.cs" />
      <Compile Include="Assets\Resources\code\interfaces\MovingPlatform\MovingPlatformController.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Animation_SmallGuy.cs" />

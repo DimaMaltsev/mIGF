@@ -58,9 +58,9 @@ TextureImporter:
         x: 0
         y: 0
         width: 102
-        height: 102
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_1
       rect:
@@ -70,7 +70,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_2
       rect:
@@ -80,7 +80,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_3
       rect:
@@ -90,7 +90,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_4
       rect:
@@ -100,7 +100,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_5
       rect:
@@ -110,7 +110,7 @@ TextureImporter:
         width: 102
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_6
       rect:
@@ -118,9 +118,9 @@ TextureImporter:
         x: 612
         y: 0
         width: 102
-        height: 102
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: box_move_7
       rect:
@@ -128,9 +128,9 @@ TextureImporter:
         x: 714
         y: 0
         width: 102
-        height: 102
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
