@@ -15,7 +15,7 @@ public class MovingPlatformController : Interface {
 	private int currentMoveIndex = 0;
 	private bool edgeWaiting = false;
 
-	public MovingPlatformController() : base (){
+	public MovingPlatformController() : base ( "sx" ){
 		this.executable = true;
 		this.initActive = true;
 
@@ -62,6 +62,8 @@ public class MovingPlatformController : Interface {
 
 		Vector3 np = pos + speed * Time.deltaTime;
 		transform.position = new Vector3( np.x , np.y , 0 );
+
+		properties.SetProperty( "sx" , speed.x );
 	}
 
 	private void NextPoint(){

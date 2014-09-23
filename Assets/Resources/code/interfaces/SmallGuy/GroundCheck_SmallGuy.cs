@@ -24,7 +24,7 @@ public class GroundCheck_SmallGuy : Interface {
 		Vector3 p = transform.position - localScale * Vector3.right * 0.4f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		bool grounded = false;
-		
+
 		return c != null;
 	}
 

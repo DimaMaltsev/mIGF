@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class ObjectController : MonoBehaviour {
-	private PropertyFacade 	propertyFacade 	= new PropertyFacade();
-	private InterfaceFacade	interfaceFacade	= new InterfaceFacade();
+	public PropertyFacade 	propertyFacade 	= new PropertyFacade();
+	public InterfaceFacade	interfaceFacade	= new InterfaceFacade();
 
 	void Awake(){
 		interfaceFacade.Init( gameObject );
