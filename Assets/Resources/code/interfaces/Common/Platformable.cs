@@ -26,32 +26,30 @@ public class Platformable : Interface {
 			return;
 		}
 
+		float platformSpeed = 0;
 		Collider2D c = Physics2D.OverlapPoint( transform.position - Vector3.up );
-		if( c == null ) return;
-		float sx = ItsAPlatform( c );
-		Vector2 vel = Vector2.zero;
 
-		if( MustHaveRigidBody )
-			vel = rb.velocity;
-		else
-			vel = new Vector2( properties.GetPropertyNumber( "sx" ) , 0 );
+		if( c != null ){
+			Transform pl = GetPlatform( c );
+			if( pl != null ){
+				float pPlatformSpeed = pl.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "onplatform" );
+				float pSx = pl.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "sx" );
 
-		properties.SetProperty( "onplatform" , vel.x + sx );
-		vel = new Vector2( vel.x + sx , vel.y );
-
-		if( MustHaveRigidBody )
-			rb.velocity = vel;
+				platformSpeed = pPlatformSpeed + pSx;
+			}
+		}
+		properties.SetProperty( "onplatform" , platformSpeed );
 	}
 
-	private float ItsAPlatform( Collider2D c ){
+	private Transform GetPlatform( Collider2D c ){
 
 		if( c.transform.parent != null && c.transform.parent.tag == "Moving_Platform" ){
-			return c.transform.parent.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "sx" );
+			return c.transform.parent;
 		}
 
-		if ( c.GetComponent<Platformable>() != null && c.GetComponent<ObjectController>() != null && c.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "onplatform" ) != 0 ){
-			return c.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "onplatform" );
+		if ( c.GetComponent<Platformable>() != null ){
+			return c.transform;
 		}
-		return 0;
+		return null;
 	}
 }

@@ -7,7 +7,7 @@ public class Physics_BigGuy : Interface {
 	private Transform smallGuy;
 	private bool layersSleep = false;
 
-	public Physics_BigGuy() : base( "sx" , "die" , "down" ){
+	public Physics_BigGuy() : base( "sx" , "die" , "down" , "onplatform" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -26,9 +26,10 @@ public class Physics_BigGuy : Interface {
 		}
 
 		float sx = properties.GetPropertyNumber( "sx" );
+		float psx= properties.GetPropertyNumber( "onplatform" );
 		float sy = rb.velocity.y;
-
-		rb.velocity = new Vector2 ( sx , sy );
+		
+		rb.velocity = new Vector2( sx + psx , sy );
 
 		if( properties.GetPropertyBoolean( "down" ) ){
 			SetPassiveLayer();

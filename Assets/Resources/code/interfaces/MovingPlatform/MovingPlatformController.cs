@@ -15,7 +15,7 @@ public class MovingPlatformController : Interface {
 	private int currentMoveIndex = 0;
 	private bool edgeWaiting = false;
 
-	public MovingPlatformController() : base ( "sx" ){
+	public MovingPlatformController() : base ( "sx" , "onplatform" ){
 		this.executable = true;
 		this.initActive = true;
 
@@ -23,6 +23,7 @@ public class MovingPlatformController : Interface {
 
 	protected override void SetStartingValues ()
 	{
+		properties.SetProperty( "onplatform" , 0 );
 		Vector3 p = transform.position;
 		for( int i = 0 ; i < moves.Count ; i++ ){
 			moves[ i ] = new Vector3( p.x + moves[ i ].x , p.y + moves[ i ].y  , moves[ i ].z );

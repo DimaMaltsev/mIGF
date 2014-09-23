@@ -14,6 +14,7 @@ public static class PropertyRegistry {
 		{ "grounded" , "boolean" },
 		{ "onedge"   , "boolean" },
 		{ "walled" 	 , "boolean" },
+		{ "cubed" 	 , "boolean" },
 
 		{ "die" , "boolean" },
 		{ "jump", "boolean" },
@@ -23,7 +24,8 @@ public static class PropertyRegistry {
 		{ "onplatform" , "number" },
 
 		{ "right" , "boolean" },
-		{ "left"  , "boolean" }
+		{ "left"  , "boolean" },
+		{ "pushing" , "boolean" }
 	};
 	
 	public static string GetType( string propName ){
