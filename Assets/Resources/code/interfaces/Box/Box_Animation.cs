@@ -5,7 +5,7 @@ public class Box_Animation : Interface {
 	private Animator a;
 	private float lastSX = 0;
 
-	public Box_Animation() : base ( "sx" ){
+	public Box_Animation() : base ( "right" , "left" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -17,20 +17,18 @@ public class Box_Animation : Interface {
 
 	public override void Execute ()
 	{
-		float sx = properties.GetPropertyNumber( "sx" );
-		if( lastSX != sx ){
-			if( sx > 0 ){
-				a.SetBool( "rollRight" , true );
-				a.SetBool( "rollLeft" , false );
-			}else if( sx < 0 ){
-				a.SetBool( "rollRight" , false );
-				a.SetBool( "rollLeft" , true );
-			}else{
-				a.SetBool( "rollRight" , false );
-				a.SetBool( "rollLeft" , false );
-			}
+		bool right 	= properties.GetPropertyBoolean( "right" );
+		bool left 	= properties.GetPropertyBoolean( "left" );
 
-			lastSX = sx;
+		if( right ){
+			a.SetBool( "rollRight" , true );
+			a.SetBool( "rollLeft" , false );
+		}else if( left ){
+			a.SetBool( "rollRight" , false );
+			a.SetBool( "rollLeft" , true );
+		}else{
+			a.SetBool( "rollRight" , false );
+			a.SetBool( "rollLeft" , false );
 		}
 	}
 

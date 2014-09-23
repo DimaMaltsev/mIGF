@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Platformable : Interface {
 	private Rigidbody2D rb;
+	public bool MustHaveRigidBody = false;
+
 	public Platformable() : base( "onplatform" ){
 		this.executable = true;
 		this.initActive = true;
@@ -19,7 +21,7 @@ public class Platformable : Interface {
 	}
 
 	private void CheckThePlatform(){
-		if( rb == null ){
+		if( rb == null && MustHaveRigidBody ){
 			rb = GetComponent<Rigidbody2D>();
 			return;
 		}
@@ -27,10 +29,18 @@ public class Platformable : Interface {
 		Collider2D c = Physics2D.OverlapPoint( transform.position - Vector3.up );
 		if( c == null ) return;
 		float sx = ItsAPlatform( c );
-		Vector2 vel = rb.velocity;
+		Vector2 vel = Vector2.zero;
+
+		if( MustHaveRigidBody )
+			vel = rb.velocity;
+		else
+			vel = new Vector2( properties.GetPropertyNumber( "sx" ) , 0 );
+
 		properties.SetProperty( "onplatform" , vel.x + sx );
 		vel = new Vector2( vel.x + sx , vel.y );
-		rb.velocity = vel;
+
+		if( MustHaveRigidBody )
+			rb.velocity = vel;
 	}
 
 	private float ItsAPlatform( Collider2D c ){

@@ -2,21 +2,10 @@
 using System.Collections;
 
 public class Box_Moves : Interface {
-	private float sx = 0;
-	private float sy = 0;
 
-	private Rigidbody2D rb;
-	private Vector3 goal;
-
-	public Box_Moves() : base( "sx" ) {
+	public Box_Moves() : base( "sx" , "right" , "left" ) {
 		this.executable = true;
 		this.initActive = true;
-	}
-
-	protected override void SetStartingValues ()
-	{
-		goal = transform.position;
-		rb = GetComponent<Rigidbody2D>();
 	}
 
 	void OnGUI(){
@@ -26,38 +15,39 @@ public class Box_Moves : Interface {
 			MoveLeft();
 	}
 
+
 	public override void Execute (){
-		if( sx != 0 )
-			MoveBoxHor();
-		rb.velocity = new Vector2( sx , rb.velocity.y );
+		float sx = properties.GetPropertyNumber( "sx" );
+		float pl = properties.GetPropertyNumber( "onplatform" );
+
+		transform.position += Vector3.right * ( pl + sx ) * Time.deltaTime;
 	}
 
-	private void MoveBoxHor(){
-		float dist = ( transform.position - goal ).magnitude;
-		if( dist <= Mathf.Abs( sx ) * Time.deltaTime ){
-			Stop ();
-			transform.position = goal;
-		}
+	private void InvokeStopMoving(){
+		if( IsInvoking( "StopMoving" ) )
+			CancelInvoke( "StopMoving" );
+
+		Invoke ( "StopMoving" , 0.5f );
 	}
 
-	private void SetSx( float sx ){
-		this.sx = sx;
-		properties.SetProperty( "sx" , sx );
+	private void MoveRight(){
+		properties.SetProperty( "right" , true );
+		properties.SetProperty( "left" 	, false );
+		properties.SetProperty( "sx" , 1 );
+		InvokeStopMoving();
 	}
 
-	private void SetGoalPoint( int step ){
-		goal = new Vector3( Mathf.Floor( transform.position.x + step ) , transform.position.y , 0 );
-	}
-	private void Stop(){ 
-		SetSx( 0 );
+	private void MoveLeft(){
+		properties.SetProperty( "right" , false );
+		properties.SetProperty( "left" 	, true );
+		properties.SetProperty( "sx" , -1 );
+		InvokeStopMoving();
 	}
 
-	public void MoveRight(){ 
-		SetSx( 2.5f );
-		SetGoalPoint( 1 );
+	private void StopMoving(){
+		properties.SetProperty( "sx" , 0 );
+		properties.SetProperty( "right" , false );
+		properties.SetProperty( "left" 	, false );
 	}
-	public void MoveLeft(){ 
-		SetSx( -2.5f );
-		SetGoalPoint( -1 );
-	}
+	
 }

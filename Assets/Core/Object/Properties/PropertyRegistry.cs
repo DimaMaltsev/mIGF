@@ -20,7 +20,10 @@ public static class PropertyRegistry {
 		{ "down", "boolean" },
 		{ "animationJump" , "boolean" },
 
-		{ "onplatform" , "number" }
+		{ "onplatform" , "number" },
+
+		{ "right" , "boolean" },
+		{ "left"  , "boolean" }
 	};
 	
 	public static string GetType( string propName ){
