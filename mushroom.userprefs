@@ -2,11 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/Box/Box_Moves.cs">
     <Files>
-      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves.cs" Line="37" Column="22" />
-      <File FileName="Assets/Resources/code/interfaces/Box/Box_Animation.cs" Line="13" Column="35" />
-      <File FileName="Assets/Core/Object/Properties/PropertyRegistry.cs" Line="26" Column="23" />
-      <File FileName="Assets/Resources/code/interfaces/Common/Platformable.cs" Line="40" Column="28" />
-      <File FileName="Assets/Core/Object/Properties/PropertyFacade.cs" Line="54" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves.cs" Line="28" Column="22" />
+      <File FileName="Assets/Resources/code/interfaces/Box/Box_Animation.cs" Line="1" Column="1" />
+      <File FileName="Assets/Core/Object/Properties/PropertyRegistry.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/Common/Platformable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Core/Object/Properties/PropertyFacade.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Input_BigGuy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves_Vertical.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/spawners/BoxSpawner.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

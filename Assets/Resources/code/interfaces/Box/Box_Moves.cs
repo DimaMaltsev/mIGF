@@ -11,14 +11,6 @@ public class Box_Moves : Interface {
 		this.initActive = true;
 	}
 
-	void OnGUI(){
-		if( GUILayout.Button( "Right" ) )
-			MoveRight();
-		if( GUILayout.Button( "Left" ) )
-			MoveLeft();
-	}
-
-
 	public override void Execute (){
 		float sx = properties.GetPropertyNumber( "sx" );
 		float pl = properties.GetPropertyNumber( "onplatform" );
@@ -35,9 +27,6 @@ public class Box_Moves : Interface {
 		if( pl != 0 )
 			platformed = true;
 
-
-
-
 		transform.position += Vector3.right * ( pl + sx ) * Time.deltaTime;
 	}
 
@@ -48,22 +37,24 @@ public class Box_Moves : Interface {
 		Invoke ( "StopMoving" , 0.45f );
 	}
 
-	public void MoveRight(){
-		if( IsInvoking( "StopMoving" ) ) return;
+	public bool MoveRight(){
+		if( IsInvoking( "StopMoving" ) || ThereIsBlock( Vector3.right ) ) return false;
 
 		properties.SetProperty( "right" , true );
 		properties.SetProperty( "left" 	, false );
 		properties.SetProperty( "sx" , sx );
 		InvokeStopMoving();
+		return true;
 	}
 
-	public void MoveLeft(){
-		if( IsInvoking( "StopMoving" ) ) return;
+	public bool MoveLeft(){
+		if( IsInvoking( "StopMoving" ) || ThereIsBlock( Vector3.left ) ) return false;
 
 		properties.SetProperty( "right" , false );
 		properties.SetProperty( "left" 	, true );
 		properties.SetProperty( "sx" , -sx );
 		InvokeStopMoving();
+		return true;
 	}
 
 	private void StopMoving(){
@@ -79,5 +70,18 @@ public class Box_Moves : Interface {
 		properties.SetProperty( "right" , false );
 		properties.SetProperty( "left" 	, false );
 	}
-	
+
+	private bool ThereIsBlock( Vector3 shift ){
+		Vector3 point = transform.position + shift;
+		Collider2D c = Physics2D.OverlapPoint( point );
+		if( c == null ) return false;
+
+		if( c.GetComponent<Block_TypeDetection>() != null || c.GetComponent<Box_Moves>() != null ) return true;
+		return false;
+	}
+
+	private void TheyWantMeToDie(){
+		Messenger.Broadcast( "BoxDead" );
+		GetComponent<Dieable>().DestroyMyself();
+	}
 }

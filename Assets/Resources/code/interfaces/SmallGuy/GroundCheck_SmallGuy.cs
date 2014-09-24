@@ -21,7 +21,7 @@ public class GroundCheck_SmallGuy : Interface {
 
 	private bool CheckGround(){
 		float localScale = transform.localScale.x;
-		Vector3 p = transform.position - localScale * Vector3.right * 0.4f - Vector3.up;
+		Vector3 p = transform.position - localScale * Vector3.right * 0.5f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		bool grounded = false;
 
@@ -30,7 +30,7 @@ public class GroundCheck_SmallGuy : Interface {
 
 	private bool CheckEdge(){
 		float localScale = transform.localScale.x;
-		Vector3 p = transform.position + localScale * Vector3.right * 0.4f - Vector3.up;
+		Vector3 p = transform.position + localScale * Vector3.right * 0.5f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
 		return c == null;

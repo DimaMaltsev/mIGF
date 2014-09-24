@@ -22,7 +22,7 @@ public class Input_BigGuy : Interface {
 
 		properties.SetProperty( "down" , Input.GetButton( "Down" ) );
 
-		if( Input.GetButton( "Jump" ) )		properties.SetProperty( "die" , true );
+		if( Input.GetButton( "Jump" ) )	GetComponent<Dieable>().Die();
 
 		bool walled = properties.GetPropertyBoolean( "walled" ) &&
 			transform.localScale.x == direction;
@@ -31,15 +31,16 @@ public class Input_BigGuy : Interface {
 			transform.localScale.x == direction;
 		
 		if( cubed ){ 
-			MoveCube( direction );
-			if( direction != 0 ){
-				properties.SetProperty( "pushing" , true );
-				canMove = false;
-				properties.SetProperty( "sx" , 0 );
-				Invoke( "EnableMoves" , 0.2f );
-				return;
-			}
-			else properties.SetProperty( "pushing" , false );
+			if( MoveCube( direction ) ){
+				if( direction != 0 ){
+					properties.SetProperty( "pushing" , true );
+					canMove = false;
+					properties.SetProperty( "sx" , 0 );
+					Invoke( "EnableMoves" , 0.2f );
+					return;
+				}
+				else properties.SetProperty( "pushing" , false );
+			}else direction = 0;
 		}else properties.SetProperty( "pushing" , false );
 
 		if( walled ) direction = 0;
@@ -47,14 +48,15 @@ public class Input_BigGuy : Interface {
 		properties.SetProperty( "sx" , direction * sx );
 	}
 
-	private void MoveCube( int direction ) {
+	private bool MoveCube( int direction ) {
 		Box_Moves bm = GetCobeMovesInterface();
-		if( bm == null ) return;
+		if( bm == null ) return false;
 
 		if( direction == 1 )
-			bm.MoveRight();
+			return bm.MoveRight();
 		else if( direction == -1 )
-			bm.MoveLeft();
+			return bm.MoveLeft();
+		return false;
 
 	}
 

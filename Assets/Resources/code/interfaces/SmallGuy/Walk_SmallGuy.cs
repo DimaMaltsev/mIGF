@@ -65,8 +65,12 @@ public class Walk_SmallGuy : Interface {
 		rb = null;
 	}
 
+	private void TheyWantMeToDie(){
+		properties.SetProperty( "die" , true );
+	}
+	
 	private void DestroyGameObject(){
 		Messenger.Broadcast( "SmallGuyDead" );
-		Destroy( gameObject );
+		GetComponent<Dieable>().DestroyMyself();
 	}
 }

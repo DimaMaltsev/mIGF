@@ -13,7 +13,7 @@ public class GroundChecker_BigGuy : Interface {
 		
 		bool wall = CheckWall();
 		bool edge = CheckEdge() && !wall;
-		bool ground = CheckGround();
+		bool ground = CheckGround() || !edge;
 		bool cubed  = CheckCube();
 
 		properties.SetProperty( "onedge" , edge );

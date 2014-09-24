@@ -25,8 +25,12 @@ public class Die_BigGuy : Interface {
 		}
 	}
 
+	private void TheyWantMeToDie(){
+		properties.SetProperty( "die" , true );
+	}
+
 	private void DestroyGameObject(){
 		Messenger.Broadcast( "BigGuyDead" );
-		Destroy( gameObject );
+		GetComponent<Dieable>().DestroyMyself();
 	}
 }
