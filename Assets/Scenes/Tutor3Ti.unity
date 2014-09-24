@@ -3630,11 +3630,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moves:
-  - {x: 3, y: 0}
+  - {x: 3, y: 0, z: 0}
   looping: 1
   reverseOnEnd: 1
   moveSpeed: 2
-  speed: {x: 0, y: 0}
+  initEdgeWaitingTime: 0
+  speed: {x: 0, y: 0, z: 0}
 --- !u!114 &904554903
 MonoBehaviour:
   m_ObjectHideFlags: 0
