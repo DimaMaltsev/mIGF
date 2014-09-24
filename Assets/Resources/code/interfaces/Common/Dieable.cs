@@ -8,7 +8,7 @@ public class Dieable : Interface {
 	public void DestroyMyself(){
 		Destroy( gameObject );
 	}
-	public void Die(){
-		SendMessage( "TheyWantMeToDie" , SendMessageOptions.DontRequireReceiver );
+	public void Die( string reason = "none" ){
+		SendMessage( "TheyWantMeToDie" , reason , SendMessageOptions.DontRequireReceiver );
 	}
 }

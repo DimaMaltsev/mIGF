@@ -65,8 +65,15 @@ public class Walk_SmallGuy : Interface {
 		rb = null;
 	}
 
-	private void TheyWantMeToDie(){
-		properties.SetProperty( "die" , true );
+	private void TheyWantMeToDie( string reason ){
+		if( reason == "KillArea" ){
+			if( !IsInvoking( "DestroyGameObject" ) ){
+				Messenger.Broadcast<float>( "FreezeCamera" , 1 );
+				Invoke ( "DestroyGameObject" , 1 );
+			}
+		}
+		else
+			properties.SetProperty( "die" , true );
 	}
 	
 	private void DestroyGameObject(){

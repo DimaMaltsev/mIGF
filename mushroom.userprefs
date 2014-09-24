@@ -1,15 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/Box/Box_Moves.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/Common/Dieable.cs">
     <Files>
-      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves.cs" Line="28" Column="22" />
-      <File FileName="Assets/Resources/code/interfaces/Box/Box_Animation.cs" Line="1" Column="1" />
-      <File FileName="Assets/Core/Object/Properties/PropertyRegistry.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/code/interfaces/Common/Platformable.cs" Line="1" Column="1" />
-      <File FileName="Assets/Core/Object/Properties/PropertyFacade.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/code/interfaces/BigGuy/Input_BigGuy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves_Vertical.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/code/spawners/BoxSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/Die_BigGuy.cs" Line="28" Column="2" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/GroundCheck_SmallGuy.cs" Line="28" Column="20" />
+      <File FileName="Assets/Resources/code/interfaces/BigGuy/GroundChecker_BigGuy.cs" Line="16" Column="39" />
+      <File FileName="Assets/Resources/code/interfaces/Common/Dieable.cs" Line="8" Column="30" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Walk_SmallGuy.cs" Line="69" Column="19" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Input_SmallGuy.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
