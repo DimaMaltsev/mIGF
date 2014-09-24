@@ -80,8 +80,19 @@ public class Box_Moves : Interface {
 		return false;
 	}
 
-	private void TheyWantMeToDie(){
+	private void KillMe(){
+		print ( "asd" );
 		Messenger.Broadcast( "BoxDead" );
 		GetComponent<Dieable>().DestroyMyself();
+	}
+
+	private void TheyWantMeToDie( string reason ){
+		print ( "asd" );
+		if( reason == "KillArea" ){
+			if( !IsInvoking( "KillMe" ) ){
+				Invoke ( "KillMe" , 1 );
+			}
+		}else
+			KillMe();
 	}
 }

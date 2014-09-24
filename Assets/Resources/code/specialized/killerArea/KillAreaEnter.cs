@@ -6,7 +6,7 @@ public class KillAreaEnter : MonoBehaviour {
 	public bool killAll;
 
 	private void OnTriggerEnter2D( Collider2D other ){
-		if( canAffect == null ) return;
+		if( canAffect == null && !killAll ) return;
 
 		if( !killAll && other.tag != "" ){
 			for( int i = 0 ; i < canAffect.Length ; i++ ){
