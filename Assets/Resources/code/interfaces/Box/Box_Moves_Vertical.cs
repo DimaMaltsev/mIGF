@@ -12,7 +12,7 @@ public class Box_Moves_Vertical : Interface {
 
 	public override void Execute ()
 	{
-		if( properties.GetPropertyNumber( "sx" ) != 0 ) return;
+		//if( properties.GetPropertyNumber( "sx" ) != 0 ) return;
 
 		if( CheckFloor() ) return;
 
@@ -36,7 +36,19 @@ public class Box_Moves_Vertical : Interface {
 		if( c == null ) return false;
 		if( c.GetComponent<Block_TypeDetection>() == null && c.GetComponent<Box_Moves>() == null ) return false;
 
-		transform.position = c.transform.position + Vector3.up;
+		if( properties.GetPropertyNumber( "sx" ) == 0 )
+			transform.position = c.transform.position + Vector3.up;
+		else{
+			float x = transform.position.x;
+			transform.position = new Vector3( x , c.transform.position.y , 0 ) + Vector3.up;
+		}
+
 		return true;
 	}
 }
+
+
+
+
+
+
