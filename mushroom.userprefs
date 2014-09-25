@@ -1,15 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/BigGuy/Die_BigGuy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/code/interfaces/Box/Box_Moves_Vertical.cs">
     <Files>
+      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves.cs" Line="1" Column="1" />
       <File FileName="Assets/Resources/code/interfaces/BigGuy/Die_BigGuy.cs" Line="12" Column="2" />
       <File FileName="Assets/Resources/code/interfaces/SmallGuy/GroundCheck_SmallGuy.cs" Line="1" Column="1" />
       <File FileName="Assets/Resources/code/interfaces/BigGuy/GroundChecker_BigGuy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/code/interfaces/Common/Dieable.cs" Line="8" Column="30" />
-      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Walk_SmallGuy.cs" Line="77" Column="3" />
+      <File FileName="Assets/Resources/code/interfaces/Common/Dieable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/SmallGuy/Walk_SmallGuy.cs" Line="1" Column="1" />
       <File FileName="Assets/Resources/code/interfaces/SmallGuy/Input_SmallGuy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/code/specialized/killerArea/KillAreaEnter.cs" Line="19" Column="26" />
-      <File FileName="Assets/Resources/code/camera/Camera_Position.cs" Line="31" Column="2" />
+      <File FileName="Assets/Resources/code/specialized/killerArea/KillAreaEnter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/camera/Camera_Position.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/code/interfaces/Box/Box_Moves_Vertical.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

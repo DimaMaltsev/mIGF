@@ -12,8 +12,6 @@ public class Box_Moves_Vertical : Interface {
 
 	public override void Execute ()
 	{
-		//if( properties.GetPropertyNumber( "sx" ) != 0 ) return;
-
 		if( CheckFloor() ){
 			properties.SetProperty( "sy" , 0 );
 			return;
