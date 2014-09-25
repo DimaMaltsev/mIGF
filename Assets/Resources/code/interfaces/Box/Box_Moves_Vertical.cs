@@ -14,7 +14,10 @@ public class Box_Moves_Vertical : Interface {
 	{
 		//if( properties.GetPropertyNumber( "sx" ) != 0 ) return;
 
-		if( CheckFloor() ) return;
+		if( CheckFloor() ){
+			properties.SetProperty( "sy" , 0 );
+			return;
+		}
 
 		FallDown();
 	}
