@@ -91,6 +91,9 @@
      <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\hiddenArea\HiddenAreaController.cs" />
      <Compile Include="Assets\Resources\code\specialized\killerArea\KillAreaEnter.cs" />
+     <Compile Include="Assets\Resources\code\specialized\spike\SpikeCollider.cs" />
+     <Compile Include="Assets\Resources\code\specialized\spike\SpikeController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\spikeSection\SpikeSectionController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -51,6 +51,8 @@ public class Jump_SmallGuy : Interface {
 	}
 	
 	private void Jump(){
+		if( rb == null ) return;
+
 		jumpButtonReleased = false;
 		jumpsCount++;
 		properties.SetProperty( "animationJump" , false );
