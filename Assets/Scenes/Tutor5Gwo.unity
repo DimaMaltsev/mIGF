@@ -2092,11 +2092,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moves:
-  - {x: 0, y: -4}
+  - {x: 0, y: -4, z: .5}
   looping: 1
   reverseOnEnd: 1
   moveSpeed: 2
-  speed: {x: 0, y: 0}
+  initEdgeWaitingTime: .5
+  speed: {x: 0, y: 0, z: 0}
 --- !u!114 &137130377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25035,6 +25036,14 @@ Prefab:
     - target: {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
       propertyPath: moves.Array.data[0].y
       value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
+      propertyPath: moves.Array.data[0].z
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
+      propertyPath: initEdgeWaitingTime
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
