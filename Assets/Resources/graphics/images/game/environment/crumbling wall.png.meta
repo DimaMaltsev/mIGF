@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: f1d8beaa45cc5445f9a10e129db9f1a3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: crumbling wall
+    21300002: crumbling wall_0
+    21300004: crumbling wall_1
+    21300006: crumbling wall_2
+    21300008: crumbling wall_3
+    21300010: crumbling wall_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 84
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: crumbling wall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 114
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crumbling wall_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 114
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crumbling wall_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 114
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crumbling wall_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 114
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crumbling wall_4
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 114
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

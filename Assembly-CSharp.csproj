@@ -73,6 +73,8 @@
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Physics_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Box\Box_Animation.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Box\Box_Moves.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\Box\Box_Moves_Vertical.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\Common\Dieable.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Common\Platformable.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Guys\PlatformCheck.cs" />
      <Compile Include="Assets\Resources\code\interfaces\MovingPlatform\MovingPlatformController.cs" />
@@ -83,10 +85,15 @@
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Walk_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Test.cs" />
      <Compile Include="Assets\Resources\code\spawners\BigGuySpawner.cs" />
+     <Compile Include="Assets\Resources\code\spawners\BoxSpawner.cs" />
      <Compile Include="Assets\Resources\code\spawners\SmallGuySpawner.cs" />
      <Compile Include="Assets\Resources\code\specialized\blocks\Block_TypeDetection.cs" />
      <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\hiddenArea\HiddenAreaController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\killerArea\KillAreaEnter.cs" />
+     <Compile Include="Assets\Resources\code\specialized\spike\SpikeCollider.cs" />
+     <Compile Include="Assets\Resources\code\specialized\spike\SpikeController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\spikeSection\SpikeSectionController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

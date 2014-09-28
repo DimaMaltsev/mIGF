@@ -49,6 +49,8 @@ public class Jump_BigGuy : Interface {
 	}
 
 	private void Jump(){
+		if( rb == null ) return;
+
 		jumpButtonReleased = false;
 		properties.SetProperty( "animationJump" , false );
 		jumpJustStarted = true;

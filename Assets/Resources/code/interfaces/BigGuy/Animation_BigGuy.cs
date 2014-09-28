@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Animation_BigGuy : Interface {
 	private Animator a;
-	public Animation_BigGuy() : base( "sx" , "animationJump" , "grounded" , "onedge" , "die" ){
+	public Animation_BigGuy() : base( "sx" , "animationJump" , "grounded" , "onedge" , "die" , "pushing" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -19,6 +19,7 @@ public class Animation_BigGuy : Interface {
 		CheckJump();
 		CheckGrounded();
 		UpdateDying();
+		CheckPushing();
 	}
 
 	private void CheckWalk(){
@@ -50,5 +51,10 @@ public class Animation_BigGuy : Interface {
 
 		bool onedge = properties.GetPropertyBoolean( "onedge" );
 		a.SetBool( "balancing" , onedge );
+	}
+
+	private void CheckPushing(){
+		bool pushing = properties.GetPropertyBoolean( "pushing" );
+		a.SetBool( "pushing" , pushing );
 	}
 }

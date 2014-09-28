@@ -633,7 +633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f47cb42a128493d8b485676b1a7715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toActivate: {fileID: 0}
+  toActivate:
+  - {fileID: 512162413}
 --- !u!114 &52324169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f47cb42a128493d8b485676b1a7715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toActivate: {fileID: 0}
+  toActivate: []
 --- !u!114 &100106264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,6 +1512,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300006, guid: 58b0cf37fa1f3496e9ce84d5ae268c56,
         type: 3}
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 512162413}
+    - target: {fileID: 100000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
   m_RootGameObject: {fileID: 52324166}
@@ -3780,6 +3789,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 19366678}
     m_Modifications:
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -3811,6 +3824,14 @@ Prefab:
     - target: {fileID: 400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 512162413}
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
@@ -10104,7 +10125,15 @@ Prefab:
     - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
       propertyPath: toActivate
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.data[0]
+      value: 
       objectReference: {fileID: 512162413}
+    - target: {fileID: 100000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
   m_RootGameObject: {fileID: 1696036440}
@@ -11173,6 +11202,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 19366678}
     m_Modifications:
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -11210,6 +11243,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300006, guid: 58b0cf37fa1f3496e9ce84d5ae268c56,
         type: 3}
+    - target: {fileID: 11400000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
+      propertyPath: toActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e127ab5ac9d7f4f09a7de1324c574661, type: 2}
   m_RootGameObject: {fileID: 100106261}
@@ -11258,11 +11295,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moves:
-  - {x: 0, y: 4}
+  - {x: 0, y: 4, z: 0}
   looping: 1
   reverseOnEnd: 1
   moveSpeed: 2
-  speed: {x: 0, y: 0}
+  initEdgeWaitingTime: 0
+  speed: {x: 0, y: 0, z: 0}
 --- !u!114 &1557593990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12091,7 +12129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f47cb42a128493d8b485676b1a7715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toActivate: {fileID: 512162413}
+  toActivate:
+  - {fileID: 512162413}
 --- !u!114 &1696036446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13568,7 +13607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f47cb42a128493d8b485676b1a7715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toActivate: {fileID: 0}
+  toActivate:
+  - {fileID: 512162413}
 --- !u!114 &1913193051
 MonoBehaviour:
   m_ObjectHideFlags: 0

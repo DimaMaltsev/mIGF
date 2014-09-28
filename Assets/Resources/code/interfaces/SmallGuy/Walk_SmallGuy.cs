@@ -8,7 +8,7 @@ public class Walk_SmallGuy : Interface {
 	private float rbEnableTime = 0.7f;
 	private float deathAnimationTime = 0.8f;
 
-	public Walk_SmallGuy() : base ( "sx" , "x" , "die" ) {
+	public Walk_SmallGuy() : base ( "sx" , "x" , "die" , "onplatform" ) {
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -41,6 +41,7 @@ public class Walk_SmallGuy : Interface {
 		if( rb == null ) return;
 
 		float sx = properties.GetPropertyNumber( "sx" );
+		float psx= properties.GetPropertyNumber( "onplatform" );
 		float sy = rb.velocity.y;
 
 		Vector3 p = transform.position - Vector3.up;
@@ -48,7 +49,7 @@ public class Walk_SmallGuy : Interface {
 		if( c != null && c.tag == "BigGuy" && c.GetComponent<ObjectController>().propertyFacade.GetPropertyBoolean( "walled" ) == false )
 			sx = 0;
 
-		rb.velocity = new Vector2( sx , sy );
+		rb.velocity = new Vector2( sx + psx , sy );
 
 		properties.SetProperty( "x" , transform.position.x );
 	}
@@ -64,8 +65,19 @@ public class Walk_SmallGuy : Interface {
 		rb = null;
 	}
 
+	private void TheyWantMeToDie( string reason ){
+		if( reason == "KillArea" ){
+			if( !IsInvoking( "DestroyGameObject" ) ){
+				Messenger.Broadcast<float>( "FreezeCamera" , 1 );
+				Invoke ( "DestroyGameObject" , 1 );
+			}
+		}
+		else
+			properties.SetProperty( "die" , true );
+	}
+	
 	private void DestroyGameObject(){
 		Messenger.Broadcast( "SmallGuyDead" );
-		Destroy( gameObject );
+		GetComponent<Dieable>().DestroyMyself();
 	}
 }

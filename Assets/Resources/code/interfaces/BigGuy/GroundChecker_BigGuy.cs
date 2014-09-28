@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GroundChecker_BigGuy : Interface {
 
-	public GroundChecker_BigGuy() : base( "grounded" , "sx" , "onedge" , "walled" ){
+	public GroundChecker_BigGuy() : base( "grounded" , "sx" , "onedge" , "walled" , "cubed" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -13,11 +13,13 @@ public class GroundChecker_BigGuy : Interface {
 		
 		bool wall = CheckWall();
 		bool edge = CheckEdge() && !wall;
-		bool ground = CheckGround();
+		bool ground = CheckGround() || !edge;
+		bool cubed  = CheckCube();
 
 		properties.SetProperty( "onedge" , edge );
 		properties.SetProperty( "grounded" , ground );
 		properties.SetProperty( "walled" , wall );
+		properties.SetProperty( "cubed" , cubed );
 	}
 	
 	private bool CheckGround(){
@@ -45,5 +47,15 @@ public class GroundChecker_BigGuy : Interface {
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 		return ( c1 != null && c1.GetComponent<Block_TypeDetection>() != null ) || 
 			( c2 != null && c2.GetComponent<Block_TypeDetection>() != null );
+	}
+
+	private bool CheckCube(){
+		float localScale = transform.localScale.x;
+		Vector3 p1 = transform.position + localScale * Vector3.right * 0.7f;
+		Vector3 p2 = transform.position + localScale * Vector3.right * 0.7f + Vector3.up;
+		Collider2D c1 = Physics2D.OverlapPoint( p1 );
+		Collider2D c2 = Physics2D.OverlapPoint( p2 );
+		return ( c1 != null && c1.GetComponent<Box_Moves>() != null ) || 
+			( c2 != null && c2.GetComponent<Box_Moves>() != null );
 	}
 }

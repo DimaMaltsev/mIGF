@@ -17,7 +17,7 @@ public class Input_SmallGuy : Interface {
 		if( Input.GetButton( "Left" ) ) 	direction--;
 		if( Input.GetButtonDown( "Up" ) ) 	properties.SetProperty( "jump" , true );
 		if( Input.GetButtonUp( "Up" ) ) 	properties.SetProperty( "jump" , false );
-		if( Input.GetButton( "Jump" ) )	properties.SetProperty( "die" , true );
+		if( Input.GetButton( "Jump" ) )	GetComponent<Dieable>().Die();
 
 		bool walled = properties.GetPropertyBoolean( "walled" ) &&
 			transform.localScale.x == direction;

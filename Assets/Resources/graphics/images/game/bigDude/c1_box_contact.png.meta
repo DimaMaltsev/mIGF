@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 87ffe2011b85d488c9005427d65706c4
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: c1_box_contact_0
+    21300002: c1_box_contact_1
+    21300004: c1_box_contact_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,6 +45,36 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: c1_box_contact_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 174
+        height: 153
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: c1_box_contact_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 168
+        height: 153
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: c1_box_contact_2
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 179
+        height: 153
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
