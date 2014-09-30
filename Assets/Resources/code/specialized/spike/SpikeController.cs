@@ -7,7 +7,8 @@ public class SpikeController : MonoBehaviour {
 
 	public bool openedOnStart;
 
-	private bool opened = false;
+	public bool opened = false;
+
 	private SpriteRenderer sr;
 	private BoxCollider2D cldr;
 
