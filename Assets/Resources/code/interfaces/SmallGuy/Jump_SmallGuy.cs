@@ -60,7 +60,7 @@ public class Jump_SmallGuy : Interface {
 		jumped = true;
 		float vx = rb.velocity.x;
 		rb.velocity = new Vector2( vx , 0 );
-		rb.AddForce( Vector2.up * ( jumpsCount <= 1 ? 810 : 60 ) );
+		rb.AddForce( Vector2.up * ( jumpsCount <= 1 ? 810 : 550 ) );
 		Invoke( "FinishStartPhase" , 0.2f );
 	}
 }
