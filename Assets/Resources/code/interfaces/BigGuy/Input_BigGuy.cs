@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Input_BigGuy : Interface {
-	private float sx = 4;
+	private float sx = 4.5f;
 	private bool canMove = true;
 	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" , "canpush" , "pushing" ){
 		this.executable = true;

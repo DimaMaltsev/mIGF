@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Input_SmallGuy : Interface {
 
-	private float sx = 4;
+	private float sx = 4.5f;
 
 	public Input_SmallGuy() : base( "sx" , "die" , "jump" ) {
 		this.executable = true;
