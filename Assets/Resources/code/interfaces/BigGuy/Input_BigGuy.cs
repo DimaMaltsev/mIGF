@@ -4,7 +4,7 @@ using System.Collections;
 public class Input_BigGuy : Interface {
 	private float sx = 4;
 	private bool canMove = true;
-	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" , "cubed" , "pushing" ){
+	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" , "canpush" , "pushing" ){
 		this.executable = true;
 		this.initActive = true;
 	}
@@ -27,10 +27,10 @@ public class Input_BigGuy : Interface {
 		bool walled = properties.GetPropertyBoolean( "walled" ) &&
 			transform.localScale.x == direction;
 
-		bool cubed = properties.GetPropertyBoolean( "cubed" ) &&
+		bool canpush = properties.GetPropertyBoolean( "canpush" ) &&
 			transform.localScale.x == direction;
 		
-		if( cubed ){ 
+		if( canpush ){ 
 			if( MoveCube( direction ) ){
 				if( direction != 0 ){
 					properties.SetProperty( "pushing" , true );
@@ -49,29 +49,30 @@ public class Input_BigGuy : Interface {
 	}
 
 	private bool MoveCube( int direction ) {
-		Box_Moves bm = GetCobeMovesInterface();
-		if( bm == null ) return false;
+		PushAble ps = GetPushAbleInterface();
+		if( ps == null ) return false;
 
 		if( direction == 1 )
-			return bm.MoveRight();
+			ps.Push(1);
 		else if( direction == -1 )
-			return bm.MoveLeft();
-		return false;
+			ps.Push(-1);
+
+		return true;
 
 	}
 
-	private Box_Moves GetCobeMovesInterface(){
+	private PushAble GetPushAbleInterface(){
 		float localScale = transform.localScale.x;
 		Vector3 p1 = transform.position + localScale * Vector3.right * 0.7f;
 		Vector3 p2 = transform.position + localScale * Vector3.right * 0.7f + Vector3.up;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 
-		if( c1 != null && c1.GetComponent<Box_Moves>() != null )
-			return c1.GetComponent<Box_Moves>();
+		if( c1 != null && c1.GetComponent<PushAble>() != null )
+			return c1.GetComponent<PushAble>();
 
-		if ( c2 != null && c2.GetComponent<Box_Moves>() != null )
-			return c2.GetComponent<Box_Moves>();
+		if ( c2 != null && c2.GetComponent<PushAble>() != null )
+			return c2.GetComponent<PushAble>();
 		return null;
 	}
 

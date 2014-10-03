@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Camera_mockupMenu : MonoBehaviour {
@@ -12,7 +12,9 @@ public class Camera_mockupMenu : MonoBehaviour {
 				LoadLevel( levels[ i ] );
 			}
 		}
+
 	}
+
 
 	private void LoadLevel( string levelName ){
 		Messenger.Broadcast<string>( "LoadState" , levelName );

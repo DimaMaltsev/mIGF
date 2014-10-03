@@ -37,7 +37,7 @@ public class Box_Moves : Interface {
 		Invoke ( "StopMoving" , 0.45f );
 	}
 
-	public bool MoveRight(){
+	private bool MoveRight(){
 		if( IsInvoking( "StopMoving" ) || ThereIsBlock( Vector3.right ) ) return false;
 
 		properties.SetProperty( "right" , true );
@@ -47,7 +47,7 @@ public class Box_Moves : Interface {
 		return true;
 	}
 
-	public bool MoveLeft(){
+	private bool MoveLeft(){
 		if( IsInvoking( "StopMoving" ) || ThereIsBlock( Vector3.left ) ) return false;
 
 		properties.SetProperty( "right" , false );
@@ -94,5 +94,13 @@ public class Box_Moves : Interface {
 			}
 		}else
 			KillMe();
+	}
+
+	private void IveBeingPushed( object direction ){
+		int dir = int.Parse( direction.ToString() );
+		if( dir == 1 )
+			MoveRight();
+		else if( dir == -1 )
+			MoveLeft();
 	}
 }

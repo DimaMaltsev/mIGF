@@ -14,7 +14,7 @@ public static class PropertyRegistry {
 		{ "grounded" , "boolean" },
 		{ "onedge"   , "boolean" },
 		{ "walled" 	 , "boolean" },
-		{ "cubed" 	 , "boolean" },
+		{ "canpush"  , "boolean" },
 
 		{ "die" , "boolean" },
 		{ "jump", "boolean" },
