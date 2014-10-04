@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CrumblingWallController : MonoBehaviour {
 
-	private float crumbleDelay = 0.25f;
+	private float crumbleDelay = 0.45f;
 
 	private void Crumble(){
 		// TODO: emmit particle system
