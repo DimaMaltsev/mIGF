@@ -52,7 +52,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d8340c2e93d7d4e289a8987486bff633, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -81,9 +81,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b12e77ff88b5c453084f33ad08af832c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonUp: {fileID: 21300002, guid: 2b43bef38efe54ea1b25adf7e6700861, type: 3}
-  ButtonDown: {fileID: 21300004, guid: 2b43bef38efe54ea1b25adf7e6700861, type: 3}
-  ButtonPressed: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
