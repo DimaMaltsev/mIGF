@@ -2,16 +2,15 @@
 using System.Collections;
 
 public class ButtonController : MonoBehaviour {
-	public Sprite ButtonUp;
-	public Sprite ButtonDown;
+	
 
 	private bool pressed = false;
-	private SpriteRenderer spriteRenderer;
+	private Animator animator;
 	private Activator activator;
 
 	void Awake(){
-		spriteRenderer = GetComponent<SpriteRenderer>();
 		activator = GetComponent<Activator>();
+		animator = GetComponent<Animator>();
 	}
 
 	public void OnTriggerEnter2D( Collider2D other ){
@@ -21,12 +20,12 @@ public class ButtonController : MonoBehaviour {
 
 	public void OnTriggerExit2D( Collider2D other ){
 		pressed = false;
-		spriteRenderer.sprite = ButtonUp;
+		animator.SetBool( "pressed" , false );
 	}
 
 	private void Press(){
 		pressed = true;
-		spriteRenderer.sprite = ButtonDown;
+		animator.SetBool( "pressed" , true );
 		activator.Activate();
 	}
 

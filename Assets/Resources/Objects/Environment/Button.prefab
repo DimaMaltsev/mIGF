@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -42,6 +43,21 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .892857134, y: .142857149}
   m_Center: {x: 0, y: 0}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonUp: {fileID: 21300002, guid: 2b43bef38efe54ea1b25adf7e6700861, type: 3}
   ButtonDown: {fileID: 21300004, guid: 2b43bef38efe54ea1b25adf7e6700861, type: 3}
+  ButtonPressed: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
