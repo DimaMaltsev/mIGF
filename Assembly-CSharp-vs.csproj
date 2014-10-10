@@ -92,6 +92,7 @@
      <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\button\ButtonController.cs" />
      <Compile Include="Assets\Resources\code\specialized\crumblingWall\CrumblingWallController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\door\DoorController.cs" />
      <Compile Include="Assets\Resources\code\specialized\hiddenArea\HiddenAreaController.cs" />
      <Compile Include="Assets\Resources\code\specialized\killerArea\KillAreaEnter.cs" />
      <Compile Include="Assets\Resources\code\specialized\spike\SpikeCollider.cs" />
