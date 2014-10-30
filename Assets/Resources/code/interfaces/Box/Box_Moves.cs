@@ -81,13 +81,11 @@ public class Box_Moves : Interface {
 	}
 
 	private void KillMe(){
-		print ( "asd" );
 		Messenger.Broadcast( "BoxDead" );
 		GetComponent<Dieable>().DestroyMyself();
 	}
 
 	private void TheyWantMeToDie( string reason ){
-		print ( "asd" );
 		if( reason == "KillArea" ){
 			if( !IsInvoking( "KillMe" ) ){
 				Invoke ( "KillMe" , 1 );

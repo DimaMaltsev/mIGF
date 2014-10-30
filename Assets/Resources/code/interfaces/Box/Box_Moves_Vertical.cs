@@ -25,8 +25,8 @@ public class Box_Moves_Vertical : Interface {
 		float y = transform.position.y;
 		float sy= properties.GetPropertyNumber( "sy" );
 
-		sy+= fallingAcceleration;
-		y -= sy;
+		sy-= fallingAcceleration;
+		y += sy;
 
 		properties.SetProperty( "sy" , sy );
 		transform.position = new Vector3( x , y , 0 );
