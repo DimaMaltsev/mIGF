@@ -3,6 +3,10 @@ using System.Collections;
 
 public class Jump_BigGuy : Interface {
 
+	public float jumpPower = 1050;
+	public float jumpReactTime = 0.05f;
+	public float canJumpAgainAfter = 0.8f;
+
 	private bool jumped = false;
 	private bool jumpButtonReleased = true;
 	private Rigidbody2D rb;
@@ -40,7 +44,7 @@ public class Jump_BigGuy : Interface {
 
 		if( !IsInvoking( "Jump" ) ){
 			properties.SetProperty( "animationJump" , true );
-			Invoke ( "Jump" , 0.05f );
+			Invoke ( "Jump" , jumpReactTime );
 		}
 	}
 
@@ -57,7 +61,7 @@ public class Jump_BigGuy : Interface {
 		jumped = true;
 		float vx = rb.velocity.x;
 		rb.velocity = new Vector2( vx , 0 );
-		rb.AddForce( Vector2.up * 1050 );
-		Invoke( "FinishStartPhase" , 0.8f );
+		rb.AddForce( Vector2.up * jumpPower );
+		Invoke( "FinishStartPhase" , canJumpAgainAfter );
 	}
 }
