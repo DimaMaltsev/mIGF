@@ -9,11 +9,17 @@ public class MovingPlatformController : Interface {
 	public bool reverseOnEnd = false;
 	public float moveSpeed;
 	public float initEdgeWaitingTime = 0;
+	public bool moving = true;
+	public bool canBeEnabled = false;
+	public bool canBeDisabled = false;
+	public bool enableDisableOnButtonOut = false;
 
 	public Vector3 speed;
 
 	private int currentMoveIndex = 0;
 	private bool edgeWaiting = false;
+	private bool activatorTouched = false;
+	private bool stoping = false;
 
 	public MovingPlatformController() : base ( "sx" , "onplatform" ){
 		this.executable = true;
@@ -43,7 +49,7 @@ public class MovingPlatformController : Interface {
 			return; 
 		}
 
-		if( !edgeWaiting )
+		if( !edgeWaiting && moving )
 			MoveToCurrentPoint();
 	}
 
@@ -54,7 +60,14 @@ public class MovingPlatformController : Interface {
 
 		if( ( currentMove - pos ).magnitude < moveSpeed * Time.deltaTime){
 			transform.position = currentMove;
-			NextPoint();
+			if( !stoping )
+				NextPoint();
+			else{
+				moving = false;
+				stoping = false;
+
+				properties.SetProperty( "sx" , 0 );
+			}
 			return;
 		}
 
@@ -70,7 +83,8 @@ public class MovingPlatformController : Interface {
 	private void NextPoint(){
 		float edgePointTime = moves[ currentMoveIndex ].z;
 		edgeWaiting = true;
-
+		
+		properties.SetProperty( "sx" , 0 );
 		Invoke ( "FinishEdgeWaiting" , edgePointTime );
 
 		if( currentMoveIndex == moves.Count - 1 ){
@@ -89,5 +103,21 @@ public class MovingPlatformController : Interface {
 
 	private void FinishEdgeWaiting(){
 		edgeWaiting = false;
+	}
+
+	private void ActivateTrigger(){
+		if( !canBeEnabled ) return;
+		if( !enableDisableOnButtonOut && activatorTouched ) return;
+
+		moving = true;
+		activatorTouched = true;
+	}
+
+	private void DeActivateTrigger(){
+		if( !canBeDisabled ) return;
+		if( !enableDisableOnButtonOut && activatorTouched ) return;
+
+		stoping = true;
+		activatorTouched = true;
 	}
 }
