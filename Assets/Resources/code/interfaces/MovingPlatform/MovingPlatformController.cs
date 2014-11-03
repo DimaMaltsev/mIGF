@@ -60,9 +60,10 @@ public class MovingPlatformController : Interface {
 
 		if( ( currentMove - pos ).magnitude < moveSpeed * Time.deltaTime){
 			transform.position = currentMove;
-			if( !stoping )
+
+			if( !stoping ){
 				NextPoint();
-			else{
+			}else{
 				moving = false;
 				stoping = false;
 
@@ -110,6 +111,7 @@ public class MovingPlatformController : Interface {
 		if( !enableDisableOnButtonOut && activatorTouched ) return;
 
 		moving = true;
+		stoping = false;
 		activatorTouched = true;
 	}
 
