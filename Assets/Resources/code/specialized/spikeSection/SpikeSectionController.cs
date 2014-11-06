@@ -7,6 +7,10 @@ public class SpikeSectionController : MonoBehaviour {
 	private List<SpikeController> spikes = new List<SpikeController>();
 	private List<SpikeController> secondSpikes = new List<SpikeController>();
 
+	public bool 	reactOnButtonOut;
+	public bool 	reactOnSecondButtonToggle;
+	public bool 	reactOnSecondOutButtonToggle;
+
 	public bool 	loopSpikeSectionOpening;
 	public float 	spikeSectionLoopDelay;
 	public float 	spikeSectionInitToggleDelay;
@@ -16,6 +20,8 @@ public class SpikeSectionController : MonoBehaviour {
 
 	public bool		nowActive;
 
+	private bool touched = false;
+	private bool touchedOut = false;
 	private int currentSpikeIndex = 0;
 
 	void Start(){
@@ -86,6 +92,8 @@ public class SpikeSectionController : MonoBehaviour {
 
 	private void ToggleActive(){
 		nowActive = !nowActive;
+		currentSpikeIndex = 0;
+		secondSpikes.Clear();
 
 		if( nowActive )
 			LaunchToggling();
@@ -94,6 +102,17 @@ public class SpikeSectionController : MonoBehaviour {
 	}
 
 	public void ActivateTrigger(){
+		if( touched && !reactOnSecondButtonToggle ) return;
+
+		touched = true;
+		ToggleActive();
+	}
+
+	public void DeActivateTrigger(){
+		if( !reactOnButtonOut ) return;
+		if( touchedOut && !reactOnSecondOutButtonToggle ) return;
+		touchedOut = true;
+
 		ToggleActive();
 	}
 }
