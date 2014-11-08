@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fead3c4d54eb43be85806890cf4d30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loopSpikeSectionOpening: 1
+  loopSpikeSectionOpening: 0
   spikeSectionLoopDelay: 0
   spikeSectionInitToggleDelay: 0
   spikeToggleDelay: 0
