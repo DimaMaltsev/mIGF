@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Walk_SmallGuy : Interface {
 	private Rigidbody2D 	rb;
-	private BoxCollider2D 	bc;
+	private PolygonCollider2D 	bc;
 
 	private float rbEnableTime = 0.7f;
 	private float deathAnimationTime = 0.8f;
@@ -16,7 +16,7 @@ public class Walk_SmallGuy : Interface {
 	protected override void SetStartingValues ()
 	{
 		//rb = GetComponent<Rigidbody2D>();
-		bc = GetComponent<BoxCollider2D>();
+		bc = GetComponent<PolygonCollider2D>();
 
 		bc.sharedMaterial = new PhysicsMaterial2D();
 		bc.sharedMaterial.friction = 0;

@@ -15,9 +15,4 @@ public class ColliderSetupper : MonoBehaviour {
 		c.center = new Vector2 (0, -0.09f);
 		c.radius = 0.4f;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
