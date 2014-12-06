@@ -80,6 +80,7 @@
      <Compile Include="Assets\Resources\code\interfaces\Guys\PlatformCheck.cs" />
      <Compile Include="Assets\Resources\code\interfaces\MovingPlatform\MovingPlatformController.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Animation_SmallGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\SmallGuy\ColliderSetupper.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\GroundCheck_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Input_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Jump_SmallGuy.cs" />
