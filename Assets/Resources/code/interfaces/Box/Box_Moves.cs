@@ -76,7 +76,7 @@ public class Box_Moves : Interface {
 		Collider2D c = Physics2D.OverlapPoint( point );
 		if( c == null ) return false;
 
-		if( c.GetComponent<Block_TypeDetection>() != null || c.GetComponent<Box_Moves>() != null ) return true;
+		if( c.GetComponent<Block_TypeDetection>() != null || c.GetComponent<Box_Moves>() != null || c.GetComponent<DoorController>() != null ) return true;
 		return false;
 	}
 
