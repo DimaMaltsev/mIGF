@@ -1211,7 +1211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!61 &49653214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontal: 1
-  alwaysActive: 0
+  alwaysActive: 1
   OpenCloseSpeed: 4
   shift: 2
 --- !u!212 &49653216
@@ -3752,7 +3752,7 @@ Transform:
   m_PrefabInternal: {fileID: 1600711658}
   m_GameObject: {fileID: 132853914}
   m_LocalRotation: {x: 0, y: 0, z: -.00505349925, w: .999987245}
-  m_LocalPosition: {x: 10.2087994, y: 1.44583511, z: 0}
+  m_LocalPosition: {x: 3.90344477, y: 2.21405602, z: 0}
   m_LocalScale: {x: 1.00022793, y: 1.00022793, z: 1}
   m_Children: []
   m_Father: {fileID: 1097725622}
@@ -5981,7 +5981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!60 &198435577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11029,7 +11029,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!60 &374651141
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15194,7 +15194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!60 &549196693
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16050,7 +16050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!60 &587992665
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18963,7 +18963,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!61 &709423147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21922,15 +21922,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1787800919}
+    m_TransformParent: {fileID: 1097725622}
     m_Modifications:
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 20.749403
+      value: 8.20123291
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.9315629
+      value: 1.73756504
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21954,7 +21954,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalScale.x
@@ -29378,6 +29378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 132853915}
+  - {fileID: 1537608985}
   m_Father: {fileID: 1787800919}
   m_RootOrder: 1
 --- !u!1 &1099314317
@@ -32523,7 +32524,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!61 &1201110571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33825,7 +33826,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!61 &1232445171
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34685,7 +34686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b156451eb6bf948ac9c48ee7f86d6992, type: 2}
       propertyPath: alwaysActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b156451eb6bf948ac9c48ee7f86d6992, type: 2}
       propertyPath: OpenCloseSpeed
@@ -40009,7 +40010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!60 &1479268095
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40497,7 +40498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!114 &1497880761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41559,11 +41560,11 @@ Transform:
   m_PrefabInternal: {fileID: 830227709}
   m_GameObject: {fileID: 1537608984}
   m_LocalRotation: {x: 0, y: 0, z: -.00505349925, w: .999987245}
-  m_LocalPosition: {x: 20.749403, y: 5.9315629, z: 0}
+  m_LocalPosition: {x: 8.20123291, y: 1.73756504, z: 0}
   m_LocalScale: {x: 1.00022793, y: 1.00022793, z: 1}
   m_Children: []
-  m_Father: {fileID: 1787800919}
-  m_RootOrder: 8
+  m_Father: {fileID: 1097725622}
+  m_RootOrder: 1
 --- !u!114 &1537608986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43369,11 +43370,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e0f35514c87e14bf58a485e505bc21a7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.2087994
+      value: 3.90344477
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0f35514c87e14bf58a485e505bc21a7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.44583511
+      value: 2.21405602
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0f35514c87e14bf58a485e505bc21a7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -45796,7 +45797,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!61 &1688307398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46295,7 +46296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!61 &1717212015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48219,7 +48220,6 @@ Transform:
   - {fileID: 890386192}
   - {fileID: 2027451906}
   - {fileID: 1626859190}
-  - {fileID: 1537608985}
   - {fileID: 709423146}
   - {fileID: 1803480425}
   - {fileID: 1232445170}
@@ -48549,7 +48549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787800919}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!114 &1803480426
 MonoBehaviour:
   m_ObjectHideFlags: 0
