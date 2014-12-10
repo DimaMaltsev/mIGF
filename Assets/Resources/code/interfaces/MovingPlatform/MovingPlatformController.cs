@@ -86,7 +86,10 @@ public class MovingPlatformController : Interface {
 		edgeWaiting = true;
 		
 		properties.SetProperty( "sx" , 0 );
-		Invoke ( "FinishEdgeWaiting" , edgePointTime );
+		if( edgePointTime != 0 )
+			Invoke ( "FinishEdgeWaiting" , edgePointTime );
+		else
+			FinishEdgeWaiting();
 
 		if( currentMoveIndex == moves.Count - 1 ){
 			if( looping ){
