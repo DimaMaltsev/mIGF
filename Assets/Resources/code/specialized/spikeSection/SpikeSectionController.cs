@@ -30,8 +30,12 @@ public class SpikeSectionController : MonoBehaviour {
 	}
 
 	private void LaunchToggling(){
-		if( spikes.Count != 0 && nowActive )
-			Invoke ( "ToggleSpike" , spikeSectionInitToggleDelay );
+		if( spikes.Count != 0 && nowActive ){
+			if( spikeSectionInitToggleDelay != 0 )
+				Invoke ( "ToggleSpike" , spikeSectionInitToggleDelay );
+			else
+				ToggleSpike();
+		}
 	}
 
 	private void FindSpikes(){
@@ -64,19 +68,29 @@ public class SpikeSectionController : MonoBehaviour {
 		ActualToggleSpike( spike );
 		if( spikeSecondToggleDelay != 0 ){
 			secondSpikes.Add( spike );
-			Invoke ( "SecondToggle" , spikeSecondToggleDelay );
+			if( spikeSecondToggleDelay != 0 )
+				Invoke ( "SecondToggle" , spikeSecondToggleDelay );
+			else
+				SecondToggle();
 		}
 
 		if( ++currentSpikeIndex == spikes.Count )
 			currentSpikeIndex = 0;
 
 		if( currentSpikeIndex == 0 && loopSpikeSectionOpening ){
-			Invoke ( "ToggleSpike" , spikeSectionLoopDelay );
+			if( spikeSectionLoopDelay != 0 )
+				Invoke ( "ToggleSpike" , spikeSectionLoopDelay );
+			else
+				ToggleSpike();
 			return;
 		}
 
-		if ( currentSpikeIndex != 0 )
-			Invoke ( "ToggleSpike" , spikeToggleDelay );
+		if ( currentSpikeIndex != 0 ){
+			if( spikeToggleDelay != 0 )
+				Invoke ( "ToggleSpike" , spikeToggleDelay );
+			else
+				ToggleSpike();
+		}
 	}
 
 	private void hideAllSpikes(){
