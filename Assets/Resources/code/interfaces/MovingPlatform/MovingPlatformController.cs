@@ -13,6 +13,7 @@ public class MovingPlatformController : Interface {
 	public bool canBeEnabled = false;
 	public bool canBeDisabled = false;
 	public bool enableDisableOnButtonOut = false;
+	public float waitBeforeStartMovingTime;
 
 	public Vector3 speed;
 
@@ -20,6 +21,7 @@ public class MovingPlatformController : Interface {
 	private bool edgeWaiting = false;
 	private bool activatorTouched = false;
 	private bool stoping = false;
+	private bool lastMoving = false;
 
 	public MovingPlatformController() : base ( "sx" , "onplatform" ){
 		this.executable = true;
@@ -41,6 +43,10 @@ public class MovingPlatformController : Interface {
 		moves.Reverse();
 	}
 
+	private void StartBehaviour(){
+		moving = true;
+	}
+
 	public override void Execute ()
 	{
 		if( moves.Count == 0 ){ 
@@ -49,8 +55,18 @@ public class MovingPlatformController : Interface {
 			return; 
 		}
 
-		if( !edgeWaiting && moving )
+		if( !lastMoving && moving ){
+			moving = false;
+			lastMoving = true;
+			if( waitBeforeStartMovingTime != 0 ){
+				Invoke("StartBehaviour" , waitBeforeStartMovingTime);
+			}
+			else
+				StartBehaviour();
+		}else if( !edgeWaiting && moving ){
 			MoveToCurrentPoint();
+			lastMoving = moving;
+		}
 	}
 
 	private void MoveToCurrentPoint(){
@@ -66,7 +82,7 @@ public class MovingPlatformController : Interface {
 			}else{
 				moving = false;
 				stoping = false;
-
+				lastMoving = false;
 				properties.SetProperty( "sx" , 0 );
 			}
 			return;
@@ -113,6 +129,9 @@ public class MovingPlatformController : Interface {
 		if( !canBeEnabled ) return;
 		if( !enableDisableOnButtonOut && activatorTouched ) return;
 
+		if( IsInvoking("StartBehaviour") )
+			CancelInvoke( "StartBehaviour" );
+
 		moving = true;
 		stoping = false;
 		activatorTouched = true;
@@ -121,6 +140,13 @@ public class MovingPlatformController : Interface {
 	private void DeActivateTrigger(){
 		if( !canBeDisabled ) return;
 		if( !enableDisableOnButtonOut && activatorTouched ) return;
+
+		if( IsInvoking("StartBehaviour") ){
+			CancelInvoke( "StartBehaviour" );
+			moving = false;
+			lastMoving = false;
+			return;
+		}
 
 		stoping = true;
 		activatorTouched = true;
