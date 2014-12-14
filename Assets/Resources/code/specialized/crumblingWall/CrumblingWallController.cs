@@ -11,7 +11,8 @@ public class CrumblingWallController : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D other){
-		if( other.tag != "BigGuy" ) return;
+		print ("asda");
+		if( other.tag != "BigGuy" && other.tag != "Box" ) return;
 
 		if( !IsInvoking( "Crumble") )
 			Invoke( "Crumble" , crumbleDelay );
