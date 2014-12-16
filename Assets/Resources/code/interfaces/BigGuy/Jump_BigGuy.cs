@@ -24,20 +24,18 @@ public class Jump_BigGuy : Interface {
 			return;
 		}
 
-		
 		bool jump = properties.GetPropertyBoolean( "jump" );
 
 		if( !jump && !jumpButtonReleased )
 			jumpButtonReleased = true;
 
 		if( jumpJustStarted ) return;
+		if( !properties.GetPropertyBoolean("grounded") ) return;
 
 		bool grounded = properties.GetPropertyBoolean( "grounded" );
 
 		if( grounded )
 			jumped = false;
-
-
 
 		if( !jump || jumped || !jumpButtonReleased)
 			return;

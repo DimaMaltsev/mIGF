@@ -34,6 +34,7 @@ public class Jump_SmallGuy : Interface {
 			jumpButtonReleased = true;
 		
 		if( jumpJustStarted ) return;
+		//if( jumpsCount == 0 && !properties.GetPropertyBoolean("grounded") ) return;
 
 		bool grounded = properties.GetPropertyBoolean( "grounded" );
 		
@@ -60,6 +61,9 @@ public class Jump_SmallGuy : Interface {
 
 		jumpButtonReleased = false;
 		jumpsCount++;
+		if( !properties.GetPropertyBoolean("grounded") )
+			jumpsCount++;
+
 		properties.SetProperty( "animationJump" , false );
 		jumpJustStarted = true;
 		jumped = true;
