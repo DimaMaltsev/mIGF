@@ -11,11 +11,12 @@ public class GroundChecker_BigGuy : Interface {
 	
 	public override void Execute ()
 	{
-		
-		bool wall = CheckWall();
-		bool edge = CheckEdge() && !wall;
+
 		bool ground = CheckGround();
+		bool wall = CheckWall();
+		bool edge = CheckEdge() && (!wall || !ground);
 		bool canpush  = CheckPush();
+
 
 		properties.SetProperty( "onedge" , edge );
 		properties.SetProperty( "grounded" , ground || !edge);
