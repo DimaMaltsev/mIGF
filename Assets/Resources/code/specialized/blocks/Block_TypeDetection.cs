@@ -34,7 +34,7 @@ public class Block_TypeDetection : MonoBehaviour {
 		DetectMyType();
 	}
 
-	private void DetectMyType(){
+	public void DetectMyType(){
 		Vector3 p = transform.position;
 
 		Collider2D[] up 	= Physics2D.OverlapPointAll( p + Vector3.up 	);

@@ -24,6 +24,10 @@ public class HiddenAreaController : Interface {
 	public void ActivateTrigger(){
 		HideElements();
 		Activate();
+		
+		for( int i = 0 ; i < elements.Count ; i++ ){
+			TriggerTypeDetectionForNeighBours( elements[i] );
+		}
 	}
 
 	private void FadeElements(){
@@ -32,15 +36,46 @@ public class HiddenAreaController : Interface {
 		for( int i = 0 ; i < elements.Count ; i++ )
 			fadedOut += FadeElement( elements[ i ] ) ? 1 : 0;
 
-		if( fadedOut == elements.Count )
+		if( fadedOut == elements.Count ){
 			Deactivate();
+		}
+	}
+
+	private void TriggerTypeDetectionForNeighBours(Transform el){
+		Vector3 p = el.position;
+		Collider2D[] up 	= Physics2D.OverlapPointAll( p + Vector3.up 	);
+		Collider2D[] right 	= Physics2D.OverlapPointAll( p + Vector3.right 	);
+		Collider2D[] down 	= Physics2D.OverlapPointAll( p + Vector3.down 	);
+		Collider2D[] left 	= Physics2D.OverlapPointAll( p + Vector3.left 	);
+
+		Transform b_up 		= ThereIsABlock( up 	);
+		Transform b_right 	= ThereIsABlock( right 	);
+		Transform b_left 	= ThereIsABlock( left 	);
+		Transform b_down 	= ThereIsABlock( down 	);
+
+		Transform[] blocks = new Transform[]{ b_up, b_right, b_down, b_left };
+		for( int i = 0 ; i < blocks.Length ; i++ )
+			if( blocks[ i ] != null )
+				blocks[ i ].GetComponent<Block_TypeDetection>().DetectMyType();
+	}
+
+	private Transform ThereIsABlock( Collider2D[] others ){
+		if( others != null ){
+			for( int i = 0 ; i < others.Length; i++ ){
+				Collider2D block = others[ i ];
+				if( block.GetComponent<Block_TypeDetection>() != null && block.transform.parent != transform )
+					return block.transform;
+			}
+		}
+		
+		return null;
 	}
 
 	private void HideElements(){
 		for( int i = 0 ; i < elements.Count ; i++ )
 			HideElement( elements[ i ] );
 	}
-
+	
 	private bool FadeElement( Transform el ){
 		SpriteRenderer sr = el.GetComponent<SpriteRenderer>();
 		if( sr == null ) return true;

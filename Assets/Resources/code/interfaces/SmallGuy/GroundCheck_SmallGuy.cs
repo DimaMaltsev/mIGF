@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class GroundCheck_SmallGuy : Interface {
+	private float changeScaleTime = 0.2f;
 	public GroundCheck_SmallGuy() : base( "grounded" , "sx" , "onedge" , "walled" ){
 		this.executable = true;
 		this.initActive = true;
@@ -15,8 +16,18 @@ public class GroundCheck_SmallGuy : Interface {
 		bool ground = CheckGround();
 
 		properties.SetProperty( "onedge" , edge && ground );
-		properties.SetProperty( "grounded" , ground );
+		properties.SetProperty( "grounded" , ground || !edge );
 		properties.SetProperty( "walled" , wall );
+
+		if(!edge && !ground && properties.GetPropertyNumber("sx") == 0 ){
+			if( !IsInvoking("ChangeScale") )
+				Invoke("ChangeScale",changeScaleTime);
+		}else if(IsInvoking("ChangeScale"))
+			CancelInvoke("ChangeScale");
+	}
+
+	private void ChangeScale(){
+		transform.localScale = new Vector3( -transform.localScale.x, transform.localScale.y , 1 );
 	}
 
 	private bool CheckGround(){

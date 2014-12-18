@@ -68,6 +68,7 @@
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Collider_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Die_BigGuy.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\BigGuy\FreeSpaceCheck_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\GroundChecker_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Input_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Jump_BigGuy.cs" />
@@ -82,6 +83,7 @@
      <Compile Include="Assets\Resources\code\interfaces\MovingPlatform\MovingPlatformController.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Animation_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\ColliderSetupper.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\SmallGuy\FreeSpaceCheck_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\GroundCheck_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Input_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Jump_SmallGuy.cs" />
