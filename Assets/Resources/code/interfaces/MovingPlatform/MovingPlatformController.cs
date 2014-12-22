@@ -13,6 +13,7 @@ public class MovingPlatformController : Interface {
 	public bool canBeEnabled = false;
 	public bool canBeDisabled = false;
 	public bool enableDisableOnButtonOut = false;
+	public bool goToNextStepWithoutActivation = true;
 	public float waitBeforeStartMovingTime;
 
 	public Vector3 speed;
@@ -49,6 +50,7 @@ public class MovingPlatformController : Interface {
 
 	public override void Execute ()
 	{
+		return;
 		if( moves.Count == 0 ){ 
 			Deactivate();
 			Debug.LogError( "Moves for Moving_Platform are not defined!" );
@@ -98,6 +100,7 @@ public class MovingPlatformController : Interface {
 	}
 
 	private void NextPoint(){
+
 		float edgePointTime = moves[ currentMoveIndex ].z;
 		edgeWaiting = true;
 		
@@ -113,12 +116,16 @@ public class MovingPlatformController : Interface {
 					moves.Reverse();
 				currentMoveIndex = 0;
 			}
-			else
-				Deactivate();
-			return;
+			else{
+				moving = false;
+			}
+		}else{
+			currentMoveIndex ++;
 		}
 
-		currentMoveIndex ++;
+		if(!goToNextStepWithoutActivation){
+			moving = false;
+		}
 	}
 
 	private void FinishEdgeWaiting(){
