@@ -10,7 +10,7 @@ public class _MovingPlatformController : Interface {
 	public float speed;
 	public bool moving;
 	public float reactDelay;
-
+	
 	private bool stoping = false;
 	private int reactCount = 0;
 
@@ -26,8 +26,8 @@ public class _MovingPlatformController : Interface {
 		for( int i = 0 ; i < points.Count ; i++ ){
 			points[ i ] = new Vector3( p.x + points[ i ].x , p.y + points[ i ].y  , points[ i ].z );
 		}
-
 		points.Add (transform.position);
+		transform.position -= Vector3.forward * transform.position.z;
 	}
 
 	public override void Execute ()
@@ -37,16 +37,24 @@ public class _MovingPlatformController : Interface {
 
 		Vector3 p 		= transform.position;
 		Vector3 delta 	= points [0] - p;
+		delta -= delta.z * Vector3.forward;
 		Vector3 shift 	= delta.normalized * speed;
 
 		if( delta.magnitude < speed * Time.deltaTime ){
 			transform.position = points[0];
 			shift = Vector3.zero;
-			ShiftPoint();
 			if( stoping ){
 				moving = false;
 				stoping = false;
+			}else{
+				float pointDelay = points[0].z;
+				if( pointDelay != 0 ){
+					moving = false;
+					Invoke ( "EnableMoving" , pointDelay );
+				}
 			}
+			
+			ShiftPoint();
 		}else{
 			transform.position += shift * Time.deltaTime;
 			transform.position = new Vector3(transform.position.x, transform.position.y , 0);
@@ -71,6 +79,11 @@ public class _MovingPlatformController : Interface {
 	}
 
 	private void EnableDisableMoving(){
+		if( IsInvoking( "EnableMoving" ) ){
+			CancelInvoke( "EnableMoving" );
+			return;
+		}
+
 		reactCount++;
 		if(!moving || stoping){
 			EnableMoving();
