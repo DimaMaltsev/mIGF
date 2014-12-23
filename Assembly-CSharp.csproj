@@ -81,6 +81,7 @@
      <Compile Include="Assets\Resources\code\interfaces\Common\PushAble.cs" />
      <Compile Include="Assets\Resources\code\interfaces\Guys\PlatformCheck.cs" />
      <Compile Include="Assets\Resources\code\interfaces\MovingPlatform\MovingPlatformController.cs" />
+     <Compile Include="Assets\Resources\code\interfaces\MovingPlatform\_MovingPlatformController.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\Animation_SmallGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\ColliderSetupper.cs" />
      <Compile Include="Assets\Resources\code\interfaces\SmallGuy\FreeSpaceCheck_SmallGuy.cs" />

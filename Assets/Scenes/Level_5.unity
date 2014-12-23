@@ -6440,6 +6440,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 2
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &364058701
@@ -7363,7 +7364,8 @@ Prefab:
       propertyPath: reverseOnEnd
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
   m_RootGameObject: {fileID: 551251060}
   m_IsPrefabParent: 0
@@ -10321,27 +10323,22 @@ Transform:
 --- !u!114 &551251062
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70,
-    type: 2}
-  m_PrefabInternal: {fileID: 402044568}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551251060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a146b689bb52e49888b33a289bc0e1f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0691dfd69a29e4e34a1c0f4e31744297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moves:
+  points:
   - {x: -2, y: 0, z: 0}
-  looping: 0
-  reverseOnEnd: 1
-  moveSpeed: 2
-  initEdgeWaitingTime: 0
+  reactOnButtonOn: 1
+  reactOnButtonOff: 1
+  reactCountLimit: 0
+  speed: 5
   moving: 0
-  canBeEnabled: 1
-  canBeDisabled: 1
-  enableDisableOnButtonOut: 0
-  waitBeforeStartMovingTime: 0
-  speed: {x: 0, y: 0, z: 0}
+  reactDelay: 2
 --- !u!114 &551251063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10640,6 +10637,7 @@ MonoBehaviour:
   canBeEnabled: 0
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &598966774
@@ -11215,6 +11213,7 @@ MonoBehaviour:
   canBeEnabled: 0
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &629953352
@@ -16905,6 +16904,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &946802801
@@ -19599,6 +19599,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &1055502362
@@ -25095,6 +25096,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &1347625813
@@ -27732,6 +27734,7 @@ MonoBehaviour:
   canBeEnabled: 0
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &1482014066
@@ -28656,6 +28659,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 0
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &1543097750
@@ -31309,6 +31313,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 2
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &1709855542
@@ -37220,6 +37225,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 4
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &2010908454
@@ -38458,6 +38464,7 @@ MonoBehaviour:
   canBeEnabled: 1
   canBeDisabled: 0
   enableDisableOnButtonOut: 0
+  goToNextStepWithoutActivation: 1
   waitBeforeStartMovingTime: 4
   speed: {x: 0, y: 0, z: 0}
 --- !u!114 &2057320661
