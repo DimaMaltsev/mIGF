@@ -12,6 +12,8 @@ public class _MovingPlatformController : Interface {
 	public float reactDelay;
 	public bool keepActiveAfterLoop;
 	public bool moveOnlyOnActivations;
+	public bool canBeDisabled;
+	public bool canBeEnabled;
 
 	private bool stoping = false;
 	private int reactCount = 0;
@@ -101,9 +103,13 @@ public class _MovingPlatformController : Interface {
 		}
 
 		if(!moving || stoping){
-			EnableMoving();
+			if(canBeEnabled){
+				EnableMoving();
+			}
 		}else{
-			DisableMoving();
+			if(canBeDisabled){
+				DisableMoving();
+			}
 		}
 	}
 
