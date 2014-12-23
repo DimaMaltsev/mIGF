@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ButtonController : MonoBehaviour {
-	
+
+	private List<Collider2D> contactors = new List<Collider2D>();
 
 	private bool pressed = false;
 	private Animator animator;
@@ -14,15 +16,30 @@ public class ButtonController : MonoBehaviour {
 		InitPolygonCollier();
 	}
 
+	void Update(){
+		for(int i = 0; i < contactors.Count; i++){
+			if(contactors[i] == null){
+				contactors.RemoveAt(i);
+				i--;
+
+				if(contactors.Count == 0 )
+					UnPress();
+			}
+		}
+	}
+
 	public void OnTriggerEnter2D( Collider2D other ){
 		if( pressed || !ValidatePress( other ) ) return;
+		contactors.Add (other);
 		Press();
 	}
 
 	public void OnTriggerExit2D( Collider2D other ){
 		if( !pressed || !ValidatePress( other ) ) return;
+		contactors.Remove (other);
 
-		UnPress();
+		if(contactors.Count == 0 )
+			UnPress();
 	}
 
 	private void UnPress(){
