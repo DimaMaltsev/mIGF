@@ -60,7 +60,6 @@ public class _MovingPlatformController : Interface {
 				if( !keepActiveAfterLoop ){
 					moving = false;
 				}
-				print ("Point End " + movesCount);
 				movesCount = -1;
 			}
 
@@ -79,7 +78,6 @@ public class _MovingPlatformController : Interface {
 
 	private void ShiftPoint(){
 		movesCount++;
-		print ("Point UP " + movesCount);
 		points.Add(points[0]);
 		points.RemoveAt (0);
 	}
@@ -96,10 +94,12 @@ public class _MovingPlatformController : Interface {
 	private void EnableDisableMoving(){
 		if( IsInvoking( "EnableMoving" ) ){
 			CancelInvoke( "EnableMoving" );
-			return;
 		}
 
-		reactCount++;
+		if( reactCountLimit != 0 ){
+			reactCount++;
+		}
+
 		if(!moving || stoping){
 			EnableMoving();
 		}else{
