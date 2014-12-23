@@ -248,28 +248,27 @@ GameObject:
 --- !u!114 &410164527
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70,
-    type: 2}
-  m_PrefabInternal: {fileID: 1969440463}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 410164526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a146b689bb52e49888b33a289bc0e1f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0691dfd69a29e4e34a1c0f4e31744297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moves:
-  - {x: 0, y: -7, z: 0}
-  looping: 1
-  reverseOnEnd: 1
-  moveSpeed: 2
-  initEdgeWaitingTime: 0
+  points:
+  - {x: -2, y: 0, z: 0}
+  - {x: -2, y: 2, z: 0}
+  - {x: -4, y: 2, z: 0}
+  - {x: -4, y: 4, z: 0}
+  reactOnButtonOn: 1
+  reactOnButtonOff: 1
+  reactCountLimit: 0
+  speed: 5
   moving: 1
-  canBeEnabled: 1
-  canBeDisabled: 1
-  enableDisableOnButtonOut: 1
-  goToNextStepWithoutActivation: 0
-  waitBeforeStartMovingTime: .100000001
-  speed: {x: 0, y: 0, z: 0}
+  reactDelay: 0
+  keepActiveAfterLoop: 0
+  moveOnlyOnActivations: 0
 --- !u!114 &410164528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,7 +1520,8 @@ Prefab:
       propertyPath: goToNextStepWithoutActivation
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ff660f31fceba4978afc4ecda7cf0d70, type: 2}
   m_RootGameObject: {fileID: 410164526}
   m_IsPrefabParent: 0

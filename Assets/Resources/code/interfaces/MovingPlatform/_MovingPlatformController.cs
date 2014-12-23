@@ -10,9 +10,12 @@ public class _MovingPlatformController : Interface {
 	public float speed;
 	public bool moving;
 	public float reactDelay;
-	
+	public bool keepActiveAfterLoop;
+	public bool moveOnlyOnActivations;
+
 	private bool stoping = false;
 	private int reactCount = 0;
+	private int movesCount = 0;
 
 	public _MovingPlatformController() : base( "sx" , "sy" , "onplatform" ){
 		this.initActive = true;
@@ -53,8 +56,18 @@ public class _MovingPlatformController : Interface {
 					Invoke ( "EnableMoving" , pointDelay );
 				}
 			}
-			
+			if( movesCount > points.Count - 2 ){
+				if( !keepActiveAfterLoop ){
+					moving = false;
+				}
+				print ("Point End " + movesCount);
+				movesCount = -1;
+			}
+
 			ShiftPoint();
+			if(moveOnlyOnActivations){
+				moving = false;
+			}
 		}else{
 			transform.position += shift * Time.deltaTime;
 			transform.position = new Vector3(transform.position.x, transform.position.y , 0);
@@ -65,6 +78,8 @@ public class _MovingPlatformController : Interface {
 	}
 
 	private void ShiftPoint(){
+		movesCount++;
+		print ("Point UP " + movesCount);
 		points.Add(points[0]);
 		points.RemoveAt (0);
 	}
