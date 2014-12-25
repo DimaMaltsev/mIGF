@@ -9153,7 +9153,7 @@ Transform:
   m_PrefabInternal: {fileID: 743334171}
   m_GameObject: {fileID: 255263307}
   m_LocalRotation: {x: 0, y: 0, z: -.00505349925, w: .999987245}
-  m_LocalPosition: {x: 37.0049896, y: 2.69134665, z: 0}
+  m_LocalPosition: {x: 39.9669456, y: 5.46818018, z: 0}
   m_LocalScale: {x: 1.00022793, y: 1.00022793, z: 1}
   m_Children: []
   m_Father: {fileID: 381106484}
@@ -11025,7 +11025,7 @@ MonoBehaviour:
   reactOnSecondOutButtonToggle: 0
   loopSpikeSectionOpening: 0
   spikeSectionLoopDelay: 0
-  spikeSectionInitToggleDelay: 0
+  spikeSectionInitToggleDelay: .00999999978
   spikeToggleDelay: 0
   spikeSecondToggleDelay: 0
   nowActive: 1
@@ -14098,7 +14098,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 538663d887e2745dbacbbdba25b4744e, type: 2}
       propertyPath: spikeSectionInitToggleDelay
-      value: 0
+      value: .00999999978
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 538663d887e2745dbacbbdba25b4744e, type: 2}
       propertyPath: spikeToggleDelay
@@ -14107,6 +14107,10 @@ Prefab:
     - target: {fileID: 11400004, guid: 538663d887e2745dbacbbdba25b4744e, type: 2}
       propertyPath: spikeSecondToggleDelay
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 538663d887e2745dbacbbdba25b4744e, type: 2}
+      propertyPath: nowActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 538663d887e2745dbacbbdba25b4744e, type: 2}
@@ -24345,11 +24349,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 37.0049896
+      value: 39.9669456
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.69134665
+      value: 5.46818018
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -36546,7 +36550,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 605e50e3e27554d218dfee51cd365eb3, type: 2}
       propertyPath: toActivate.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 323368132}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 605e50e3e27554d218dfee51cd365eb3, type: 2}
   m_RootGameObject: {fileID: 1919158535}
@@ -59210,7 +59214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toActivate:
-  - {fileID: 0}
+  - {fileID: 323368132}
 --- !u!114 &1919158541
 MonoBehaviour:
   m_ObjectHideFlags: 0
