@@ -51,6 +51,8 @@ public class JumpMushroomController : MonoBehaviour {
 	private void OnTriggerEnter2D( Collider2D other ){
 		if( !Launchable( other ) ) return;
 		if( justJumped.Contains( other.transform ) ) return;
+		bool downInputPressed = other.GetComponent<ObjectController> ().propertyFacade.GetPropertyBoolean ("down");
+		if( downInputPressed ) return;
 
 		float vy = GetVelocity( other );
 		if( vy < -0.1 )

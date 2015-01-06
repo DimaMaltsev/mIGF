@@ -16,7 +16,7 @@ public class PropertyFacade {
 	private Property FindPropertyFor( string name , string getOrSet = "GET" ){
 		Property p = FindProperty( name );
 		if( p == null ){
-			Debug.Log( getOrSet + " not existing property '" + name + "'" );
+			//Debug.Log( getOrSet + " not existing property '" + name + "'" );
 			return null;
 		}
 		return p;
@@ -51,7 +51,12 @@ public class PropertyFacade {
 
 	public bool GetPropertyBoolean( string name ){
 		Property p = FindPropertyFor( name );
-		return bool.Parse( p.Get() );
+
+		if( p != null ){
+			return bool.Parse( p.Get() );
+		}else{
+			return false;
+		}
 	}
 
 	public void SetProperty( string name , object value ){

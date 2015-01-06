@@ -61,8 +61,13 @@ public class Box_Moves : Interface {
 	private void StopMoving(){
 		float newx = 0;
 		if( properties.GetPropertyNumber( "onplatform" ) != 0 ){
-			Vector3 pos = Physics2D.OverlapPoint( transform.position - Vector3.up ).transform.parent.position;
-			newx = pos.x + Mathf.Round( transform.position.x - pos.x );
+			Collider2D c = Physics2D.OverlapPoint( transform.position - Vector3.up );
+			if( c != null ){
+				Vector3 pos = c.transform.parent.position;
+				newx = pos.x + Mathf.Round( transform.position.x - pos.x );
+			}else{
+				properties.SetProperty( "onplatform" , 0);
+			}
 		}else
 			newx = Mathf.Round( transform.position.x );
 
