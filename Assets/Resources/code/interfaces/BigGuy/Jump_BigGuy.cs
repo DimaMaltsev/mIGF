@@ -10,7 +10,7 @@ public class Jump_BigGuy : Interface {
 	private bool jumped = false;
 	private bool jumpButtonReleased = true;
 	private Rigidbody2D rb;
-	private bool jumpJustStarted = false;
+	public bool jumpJustStarted = false;
 
 	public Jump_BigGuy() : base( "jump" , "grounded" , "animationJump" ){
 		this.executable = true;

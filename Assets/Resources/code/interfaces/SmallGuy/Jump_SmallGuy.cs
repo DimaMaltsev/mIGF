@@ -4,6 +4,7 @@ using System.Collections;
 public class Jump_SmallGuy : Interface {
 
 	public float firstJumpPower = 880;
+	public float onBigGuyJumpAddition = 100;
 	public float secondJumpPower = 780;
 	public float jumpReactTime = 0.05f;
 	public float canJumpAgainAfter = 0.2f;
@@ -59,6 +60,15 @@ public class Jump_SmallGuy : Interface {
 	private void Jump(){
 		if( rb == null ) return;
 
+		float jumpAddition = 0;
+
+		if( jumpsCount == 0 && properties.GetPropertyBoolean("grounded")){
+			Collider2D c = Physics2D.OverlapPoint( new Vector2(transform.position.x, transform.position.y) - Vector2.up );
+			if( c!= null && c.GetComponent<Collider_BigGuy>() != null && !c.GetComponent<Jump_BigGuy>().jumpJustStarted){
+				jumpAddition = onBigGuyJumpAddition;
+			}
+		}
+
 		jumpButtonReleased = false;
 		jumpsCount++;
 		if( !properties.GetPropertyBoolean("grounded") )
@@ -69,7 +79,7 @@ public class Jump_SmallGuy : Interface {
 		jumped = true;
 		float vx = rb.velocity.x;
 		rb.velocity = new Vector2( vx , 0 );
-		rb.AddForce( Vector2.up * ( jumpsCount <= 1 ? firstJumpPower : secondJumpPower ) );
+		rb.AddForce( Vector2.up * ( jumpsCount == 1 ? firstJumpPower + jumpAddition: secondJumpPower ) );
 		Invoke( "FinishStartPhase" , canJumpAgainAfter );
 	}
 }
