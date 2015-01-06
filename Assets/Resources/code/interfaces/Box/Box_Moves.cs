@@ -5,6 +5,7 @@ public class Box_Moves : Interface {
 
 	private float sx = 2.4f;
 	private bool  platformed = false;
+	private object direction;
 
 	public Box_Moves() : base( "sx" , "right" , "left" ) {
 		this.executable = true;
@@ -69,6 +70,7 @@ public class Box_Moves : Interface {
 		properties.SetProperty( "sx" , 0 );
 		properties.SetProperty( "right" , false );
 		properties.SetProperty( "left" 	, false );
+		GetComponent<PushAble> ().canBePushed = true;
 	}
 
 	private bool ThereIsBlock( Vector3 shift ){
@@ -95,6 +97,16 @@ public class Box_Moves : Interface {
 	}
 
 	private void IveBeingPushed( object direction ){
+		this.direction = direction;
+		if(IsInvoking("ActualPush")){
+			CancelInvoke("ActualPush");
+		}
+		Invoke ("ActualPush", 0.1f);
+		GetComponent<PushAble> ().canBePushed = false;
+	}
+
+	private void ActualPush(){
+		GetComponent<Box_Controller> ().Touched ();
 		int dir = int.Parse( direction.ToString() );
 		if( dir == 1 )
 			MoveRight();

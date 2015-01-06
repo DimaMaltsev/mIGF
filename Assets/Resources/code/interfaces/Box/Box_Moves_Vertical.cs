@@ -4,20 +4,31 @@ using System.Collections;
 public class Box_Moves_Vertical : Interface {
 
 	private float fallingAcceleration = 0.01f;
+	private Box_Controller boxController;
+	private bool flying = false;
 
 	public Box_Moves_Vertical() : base ( "sx" , "sy" ){
 		this.executable = true;
 		this.initActive = true;
 	}
 
+	protected override void SetStartingValues ()
+	{
+		boxController = GetComponent<Box_Controller> ();
+	}
+
 	public override void Execute ()
 	{
 		if( CheckFloor() ){
-			properties.SetProperty( "sy" , 0 );
-			return;
-		}
+			if( flying ){
+				boxController.Land();
+			}
 
-		FallDown();
+			properties.SetProperty( "sy" , 0 );
+			flying = false;
+		}else{
+			FallDown();
+		}
 	}
 
 	private void FallDown(){
@@ -30,6 +41,8 @@ public class Box_Moves_Vertical : Interface {
 
 		properties.SetProperty( "sy" , sy );
 		transform.position = new Vector3( x , y , 0 );
+		boxController.Touched ();
+		flying = true;
 	}
 
 	private bool CheckFloor(){

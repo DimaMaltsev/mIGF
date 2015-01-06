@@ -50,7 +50,7 @@ public class Input_BigGuy : Interface {
 
 	private bool MoveCube( int direction ) {
 		PushAble ps = GetPushAbleInterface();
-		if( ps == null ) return false;
+		if( ps == null || !ps.canBePushed) return false;
 
 		if( direction == 1 )
 			ps.Push(1);

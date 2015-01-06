@@ -70,9 +70,9 @@ TextureImporter:
     - name: c1_jump_210_2
       rect:
         serializedVersion: 2
-        x: 420
+        x: 421
         y: 0
-        width: 210
+        width: 209
         height: 153
       alignment: 0
       pivot: {x: .5, y: .5}

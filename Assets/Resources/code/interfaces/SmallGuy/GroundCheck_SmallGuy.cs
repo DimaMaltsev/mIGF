@@ -14,7 +14,6 @@ public class GroundCheck_SmallGuy : Interface {
 		bool wall = CheckWall();
 		bool edge = CheckEdge() && !wall;
 		bool ground = CheckGround();
-
 		properties.SetProperty( "onedge" , edge && ground );
 		properties.SetProperty( "grounded" , ground || !edge );
 		properties.SetProperty( "walled" , wall );
@@ -34,9 +33,9 @@ public class GroundCheck_SmallGuy : Interface {
 		float localScale = transform.localScale.x;
 		Vector3 p = transform.position - localScale * Vector3.right * 0.4f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
-		bool grounded = false;
 
-		return c != null;
+
+		return c != null && CountBigGuyUnderMe(c);
 	}
 
 	private bool CheckEdge(){
@@ -44,7 +43,7 @@ public class GroundCheck_SmallGuy : Interface {
 		Vector3 p = transform.position + localScale * Vector3.right * 0.4f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
-		return c == null;
+		return c == null || !CountBigGuyUnderMe(c);
 	}
 
 	private bool CheckWall(){
@@ -53,5 +52,14 @@ public class GroundCheck_SmallGuy : Interface {
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
 		return c != null && ( c.GetComponent<Block_TypeDetection>() != null || c.GetComponent<Box_Moves>() != null);
+	}
+
+	private bool CountBigGuyUnderMe(Collider2D c){
+		if(c.GetComponent<Collider_BigGuy>() == null)
+			return true;
+
+		if( c.gameObject.layer == 10 )
+			return false;
+		return true;
 	}
 }

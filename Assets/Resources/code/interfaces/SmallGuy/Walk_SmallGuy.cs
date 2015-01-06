@@ -49,8 +49,8 @@ public class Walk_SmallGuy : Interface {
 		if( c != null && c.tag == "BigGuy" && c.GetComponent<ObjectController>().propertyFacade.GetPropertyBoolean( "walled" ) == false )
 			sx = 0;
 
-		rb.velocity = new Vector2( sx + psx , sy );
-
+		rb.velocity = new Vector2 (0, sy);
+		transform.position += new Vector3 (sx + psx, 0, 0) * Time.deltaTime;
 		properties.SetProperty( "x" , transform.position.x );
 	}
 
