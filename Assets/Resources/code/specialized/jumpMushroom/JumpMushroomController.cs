@@ -76,7 +76,8 @@ public class JumpMushroomController : MonoBehaviour {
 	}
 
 	void Update(){
-		Collider2D[] c = Physics2D.OverlapPointAll (transform.position);
+		Vector2 p = new Vector2 (transform.position.x, transform.position.y);
+		Collider2D[] c = Physics2D.OverlapAreaAll (p - new Vector2(0.5f, 0.5f), p + new Vector2(0.5f, 0.5f));
 		canBeUsed = true;
 
 		for( int i = 0 ; i < c.Length ; i++ ){
