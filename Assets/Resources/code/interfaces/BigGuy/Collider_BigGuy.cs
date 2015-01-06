@@ -14,8 +14,5 @@ public class Collider_BigGuy : MonoBehaviour {
 
 		p.sharedMaterial = new PhysicsMaterial2D();
 		p.sharedMaterial.friction = 0;
-		//CircleCollider2D c = GetComponent<CircleCollider2D> ();
-		//c.center = new Vector2 (0, -0.09f);
-		//c.radius = 0.4f;
 	}
 }

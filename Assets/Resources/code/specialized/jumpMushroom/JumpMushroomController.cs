@@ -7,6 +7,7 @@ public class JumpMushroomController : MonoBehaviour {
 	private List<Transform> justJumped = new List<Transform>();
 
 	private Animator a;
+	private bool canBeUsed = true;
 
 	public float charactersJumpValue = 1000;
 	public float boxJumpValue = 0.2f;
@@ -49,6 +50,7 @@ public class JumpMushroomController : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D( Collider2D other ){
+		if( !canBeUsed ) return;
 		if( !Launchable( other ) ) return;
 		if( justJumped.Contains( other.transform ) ) return;
 		bool downInputPressed = other.GetComponent<ObjectController> ().propertyFacade.GetPropertyBoolean ("down");
@@ -71,5 +73,20 @@ public class JumpMushroomController : MonoBehaviour {
 		if( jumper.GetComponent<Box_Moves>() == null ) return jumper.GetComponent<Rigidbody2D>().velocity.y;
 
 		return jumper.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "sy" );
+	}
+
+	void Update(){
+		Collider2D[] c = Physics2D.OverlapPointAll (transform.position);
+		canBeUsed = true;
+
+		for( int i = 0 ; i < c.Length ; i++ ){
+			if( c[i].transform != transform ){
+				if( c[i].GetComponent<Box_Moves>() != null )
+					canBeUsed = false;
+				
+				if( c[i].GetComponent<Input_BigGuy>() != null )
+					canBeUsed = false;
+			}
+		}
 	}
 }
