@@ -65,8 +65,8 @@ public class Jump_SmallGuy : Interface {
 		if( jumpsCount == 0 && properties.GetPropertyBoolean("grounded")){
 			Collider2D c = Physics2D.OverlapPoint( new Vector2(transform.position.x, transform.position.y) - Vector2.up );
 			if( c!= null && c.GetComponent<Collider_BigGuy>() != null) {
-				Rigidbody2D rb = c.GetComponent<Rigidbody2D>();
-				if( rb != null && rb.velocity.y <= 0 ){
+				Rigidbody2D brb = c.GetComponent<Rigidbody2D>();
+				if( brb != null && brb.velocity.y <= 0 ){
 					jumpAddition = onBigGuyJumpAddition;
 				}
 			}
