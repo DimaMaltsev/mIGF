@@ -30,43 +30,51 @@ public class Block_TypeDetection : MonoBehaviour {
 		// _|
 		{ 
 			"1,1,0,0", new Dictionary<string, int >{
-				{"0,0,0,0", 36}
+				{"*,0,*,*", 36}
 			}
 		},
 		{ 
 			"0,1,1,0", new Dictionary<string, int >{
-				{"0,0,0,0", 33}
+				{"*,*,*,0", 33}
 			}
 		},
 		{ 
 			"0,0,1,1", new Dictionary<string, int >{
-				{"0,0,0,0", 34}
+				{"*,*,0,*", 34}
 			}
 		},
 		{
 			"1,0,0,1", new Dictionary<string, int >{
-				{"0,0,0,0", 35}
+				{"0,*,*,*", 35}
 			}
 		},
 		// _|_
 		{
 			"1,1,0,1", new Dictionary<string, int >{
-				{"0,0,0,0", 27}
+				{"0,0,*,*", 27},
+				{"1,0,*,*", 40},
+				{"0,1,*,*", 44}
 			}
 		},
 		{
 			"0,1,1,1", new Dictionary<string, int >{
-				{"0,0,0,0", 25}
+				{"*,*,0,0", 25},
+				{"*,*,0,1", 39},
+				{"*,*,1,0", 43}
 			}
 		},
 		{
 			"1,0,1,1", new Dictionary<string, int >{
-				{"0,0,0,0", 26}
+				{"0,*,0,*", 26},
+				{"0,*,1,*", 38},
+				{"1,*,0,*", 42}
 			}
 		},
 		{
 			"1,1,1,0", new Dictionary<string, int >{
-				{"0,0,0,0", 24}
+				{"*,0,*,0", 24},
+				{"*,1,*,0", 37},
+				{"*,0,*,1", 41}
 			}
 		},
 		// .
@@ -84,7 +92,9 @@ public class Block_TypeDetection : MonoBehaviour {
 				{"0,1,1,1", 16},
 				{"1,1,0,1", 17},
 				{"1,1,1,0", 18},
-				{"1,0,1,1", 19}
+				{"1,0,1,1", 19},
+				{"0,1,1,0", 45},
+				{"1,0,0,1", 46}
 			}
 		}
 
@@ -137,8 +147,19 @@ public class Block_TypeDetection : MonoBehaviour {
 		int outputType = blockTypeMap[ type ];
 		if(blockCornersTypeMap.ContainsKey(type)){
 			Dictionary<string,int> ct = blockCornersTypeMap[type];
-			if(ct.ContainsKey(cornerType))
-				outputType = ct[cornerType];
+			foreach(KeyValuePair<string,int> pair in ct){
+				string key = pair.Key;
+				for(int i=0; i < pair.Key.Length; i++){
+					if(pair.Key[i] != cornerType[i] && pair.Key[i] != '*'){
+						key = "";
+						break;
+					}
+				}
+				if(key != ""){
+					outputType = ct[key];
+					break;
+				}
+			}
 		}
 		spriteRenderer.sprite = spriteLibrary.blocks[ outputType ];
 	}
