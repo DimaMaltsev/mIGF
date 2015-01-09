@@ -12,7 +12,6 @@ public class BoxSpawner : Spawner {
 
 	void Start(){
 		Messenger.AddListener( "BoxDead" , OnBoxDead );
-		boxesCount--;
 
 		if(spawnOnStart){
 			InternalSpawn();
@@ -20,6 +19,7 @@ public class BoxSpawner : Spawner {
 	}
 	
 	private void OnBoxDead(){
+		boxesCount--;
 		if( autoRespawn ){
 			InternalSpawn();
 		}
