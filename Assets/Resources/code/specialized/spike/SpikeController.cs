@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class SpikeController : MonoBehaviour {
-	public Sprite OpenedSpikeSprite;
-	public Sprite ClosedSpikeSprite;
 
 	public bool openedOnStart;
 
@@ -11,10 +9,12 @@ public class SpikeController : MonoBehaviour {
 
 	private SpriteRenderer sr;
 	private BoxCollider2D cldr;
+	private Animator a;
 
 	void Awake(){
 		sr = GetComponent<SpriteRenderer>();
 		cldr = GetComponent<BoxCollider2D>();
+		a = GetComponent<Animator> ();
 	}
 
 	void Start(){
@@ -31,13 +31,13 @@ public class SpikeController : MonoBehaviour {
 	}
 
 	private void Open(){
-		sr.sprite = OpenedSpikeSprite;
 		cldr.enabled = true;
+		a.SetBool ("opened", true);
 	}
 
 	private void Close(){
-		sr.sprite = ClosedSpikeSprite;
 		cldr.enabled = false;
+		a.SetBool ("opened", false);
 	}
 
 	private void ActivateTrigger(){

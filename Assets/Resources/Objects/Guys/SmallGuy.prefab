@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstJumpPower: 880
+  onBigGuyJumpAddition: 300
   secondJumpPower: 780
   jumpReactTime: .0500000007
   canJumpAgainAfter: .200000003

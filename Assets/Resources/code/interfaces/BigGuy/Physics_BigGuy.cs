@@ -28,8 +28,9 @@ public class Physics_BigGuy : Interface {
 		float sx = properties.GetPropertyNumber( "sx" );
 		float psx= properties.GetPropertyNumber( "onplatform" );
 		float sy = rb.velocity.y;
-		
-		rb.velocity = new Vector2( sx + psx , sy );
+
+		rb.velocity = new Vector2 (0, sy);
+		transform.position += new Vector3 (sx + psx, 0, 0) * Time.deltaTime;
 
 		if( properties.GetPropertyBoolean( "down" ) ){
 			SetPassiveLayer();

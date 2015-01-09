@@ -14,5 +14,8 @@ public class ColliderSetupper : MonoBehaviour {
 		CircleCollider2D c = GetComponent<CircleCollider2D> ();
 		c.center = new Vector2 (0, -0.09f);
 		c.radius = 0.4f;
+
+		p.sharedMaterial = new PhysicsMaterial2D();
+		p.sharedMaterial.friction = 0;
 	}
 }

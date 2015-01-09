@@ -5,6 +5,7 @@ public class Box_Moves : Interface {
 
 	private float sx = 2.4f;
 	private bool  platformed = false;
+	private object direction;
 
 	public Box_Moves() : base( "sx" , "right" , "left" ) {
 		this.executable = true;
@@ -60,8 +61,13 @@ public class Box_Moves : Interface {
 	private void StopMoving(){
 		float newx = 0;
 		if( properties.GetPropertyNumber( "onplatform" ) != 0 ){
-			Vector3 pos = Physics2D.OverlapPoint( transform.position - Vector3.up ).transform.parent.position;
-			newx = pos.x + Mathf.Round( transform.position.x - pos.x );
+			Collider2D c = Physics2D.OverlapPoint( transform.position - Vector3.up );
+			if( c != null ){
+				Vector3 pos = c.transform.parent.position;
+				newx = pos.x + Mathf.Round( transform.position.x - pos.x );
+			}else{
+				properties.SetProperty( "onplatform" , 0);
+			}
 		}else
 			newx = Mathf.Round( transform.position.x );
 
@@ -69,6 +75,7 @@ public class Box_Moves : Interface {
 		properties.SetProperty( "sx" , 0 );
 		properties.SetProperty( "right" , false );
 		properties.SetProperty( "left" 	, false );
+		GetComponent<PushAble> ().canBePushed = true;
 	}
 
 	private bool ThereIsBlock( Vector3 shift ){
@@ -95,6 +102,16 @@ public class Box_Moves : Interface {
 	}
 
 	private void IveBeingPushed( object direction ){
+		this.direction = direction;
+		if(IsInvoking("ActualPush")){
+			CancelInvoke("ActualPush");
+		}
+		Invoke ("ActualPush", 0.1f);
+		GetComponent<PushAble> ().canBePushed = false;
+	}
+
+	private void ActualPush(){
+		GetComponent<Box_Controller> ().Touched ();
 		int dir = int.Parse( direction.ToString() );
 		if( dir == 1 )
 			MoveRight();
