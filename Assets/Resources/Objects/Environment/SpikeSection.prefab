@@ -44,7 +44,7 @@ MonoBehaviour:
   reactOnSecondOutButtonToggle: 0
   loopSpikeSectionOpening: 1
   spikeSectionLoopDelay: 0
-  spikeSectionInitToggleDelay: 0
+  spikeSectionInitToggleDelay: .00100000005
   spikeToggleDelay: .200000003
   spikeSecondToggleDelay: 1
   nowActive: 1
