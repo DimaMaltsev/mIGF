@@ -15,7 +15,7 @@ public class GroundCheck_SmallGuy : Interface {
 		bool edge = CheckEdge() && !wall;
 		bool ground = CheckGround();
 		properties.SetProperty( "onedge" , edge && ground );
-		properties.SetProperty( "grounded" , ground || !edge );
+		properties.SetProperty( "grounded" , ground || ( !edge && !wall ));
 		properties.SetProperty( "walled" , wall );
 
 		if(!edge && !ground && properties.GetPropertyNumber("sx") == 0 ){
@@ -48,7 +48,7 @@ public class GroundCheck_SmallGuy : Interface {
 
 	private bool CheckWall(){
 		float localScale = transform.localScale.x;
-		Vector3 p = transform.position + localScale * Vector3.right * 0.4f;
+		Vector3 p = transform.position + localScale * Vector3.right * 0.7f;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
 		return c != null && ( c.GetComponent<Block_TypeDetection>() != null || c.GetComponent<Box_Moves>() != null);

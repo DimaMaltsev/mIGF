@@ -27,17 +27,25 @@ public class Platformable : Interface {
 		}
 
 		float platformSpeed = 0;
-		Collider2D c = Physics2D.OverlapPoint( transform.position - Vector3.up );
+		Collider2D c1 = Physics2D.OverlapPoint( transform.position - Vector3.up );
+		Collider2D c2 = Physics2D.OverlapPoint( transform.position - Vector3.up + Vector3.right);
+		Collider2D c3 = Physics2D.OverlapPoint( transform.position - Vector3.up - Vector3.right);
 
-		if( c != null ){
-			Transform pl = GetPlatform( c );
-			if( pl != null ){
-				float pPlatformSpeed = pl.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "onplatform" );
-				float pSx = pl.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "sx" );
+		Collider2D[] cls = new Collider2D[]{c1,c2,c3};
 
-				platformSpeed = pPlatformSpeed + pSx;
+		for (int i = 0; i < cls.Length; i++) {
+			Collider2D c = cls[i];
+			if( c != null ){
+				Transform pl = GetPlatform( c );
+				if( pl != null ){
+					float pPlatformSpeed = pl.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "onplatform" );
+					float pSx = pl.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber( "sx" );
+					
+					platformSpeed = pPlatformSpeed + pSx;
+				}
 			}
 		}
+
 		properties.SetProperty( "onplatform" , platformSpeed );
 	}
 

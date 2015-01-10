@@ -35,7 +35,7 @@ public class Physics_BigGuy : Interface {
 		if( properties.GetPropertyBoolean( "down" ) ){
 			SetPassiveLayer();
 			layersSleep = true;
-			Invoke ( "LayersWakeUp" , 0.2f );
+			Invoke ( "LayersWakeUp" , 0.1f );
 		}
 
 		if( !layersSleep )
@@ -60,7 +60,7 @@ public class Physics_BigGuy : Interface {
 		}
 
 		bool passiveLayer = smallGuy == null || 
-			( smallGuy.position.y < transform.position.y + 0.5f ||
+			( smallGuy.position.y < transform.position.y + 0.8f ||
 			 ( smallGuy.GetComponent<Rigidbody2D>() != null && smallGuy.GetComponent<Rigidbody2D>().velocity.y > 1 ) );
 
 		if( passiveLayer ) SetPassiveLayer();

@@ -43,6 +43,7 @@ public class Walk_SmallGuy : Interface {
 		float sx = properties.GetPropertyNumber( "sx" );
 		float psx= properties.GetPropertyNumber( "onplatform" );
 		float sy = rb.velocity.y;
+		float dy = 0;
 
 		Vector3 p = transform.position - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
@@ -50,7 +51,8 @@ public class Walk_SmallGuy : Interface {
 			sx = 0;
 
 		rb.velocity = new Vector2 (0, sy);
-		transform.position += new Vector3 (sx + psx, 0, 0) * Time.deltaTime;
+
+		transform.position += new Vector3 (sx + psx, dy, 0) * Time.deltaTime;
 		properties.SetProperty( "x" , transform.position.x );
 	}
 
