@@ -63,8 +63,8 @@ public class Input_BigGuy : Interface {
 
 	private PushAble GetPushAbleInterface(){
 		float localScale = transform.localScale.x;
-		Vector3 p1 = transform.position + localScale * Vector3.right * 0.7f;
-		Vector3 p2 = transform.position + localScale * Vector3.right * 0.7f + Vector3.up;
+		Vector3 p1 = transform.position + localScale * Vector3.right * 1.2f;
+		Vector3 p2 = transform.position + localScale * Vector3.right * 1.2f + Vector3.up;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 

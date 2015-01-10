@@ -17,7 +17,6 @@ public class GroundChecker_BigGuy : Interface {
 		bool edge = CheckEdge() && (!wall || !ground);
 		bool canpush  = CheckPush();
 
-
 		properties.SetProperty( "onedge" , edge );
 		properties.SetProperty( "grounded" , ground || !edge);
 		properties.SetProperty( "walled" , wall );
@@ -54,18 +53,18 @@ public class GroundChecker_BigGuy : Interface {
 
 	private bool CheckWall(){
 		float localScale = transform.localScale.x;
-		Vector3 p1 = transform.position + localScale * Vector3.right * 0.7f;
-		Vector3 p2 = transform.position + localScale * Vector3.right * 0.7f + Vector3.up;
+		Vector3 p1 = transform.position + localScale * Vector3.right * 1.2f;
+		Vector3 p2 = transform.position + localScale * Vector3.right * 1.2f + Vector3.up;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
-		return ( c1 != null && c1.GetComponent<Block_TypeDetection>() != null ) || 
-			( c2 != null && c2.GetComponent<Block_TypeDetection>() != null );
+		return ( c1 != null && ( c1.GetComponent<Block_TypeDetection>() != null || c1.GetComponent<Box_Moves>() != null) ) || 
+			( c2 != null && ( c2.GetComponent<Block_TypeDetection>() != null || c2.GetComponent<Box_Moves>() != null));
 	}
 
 	private bool CheckPush(){
 		float localScale = transform.localScale.x;
-		Vector3 p1 = transform.position + localScale * Vector3.right * 0.7f;
-		Vector3 p2 = transform.position + localScale * Vector3.right * 0.7f + Vector3.up;
+		Vector3 p1 = transform.position + localScale * Vector3.right * 1.2f;
+		Vector3 p2 = transform.position + localScale * Vector3.right * 1.2f + Vector3.up;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 		return ( c1 != null && c1.GetComponent<PushAble>() != null ) || 
