@@ -13,7 +13,7 @@ TagManager:
   - Moving_Platform
   - Hidden_Area
   - Box
-  - ParalaxLayerContent
+  - Paralax
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

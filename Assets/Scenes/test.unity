@@ -8786,7 +8786,7 @@ GameObject:
   - 4: {fileID: 416077160}
   m_Layer: 0
   m_Name: Content
-  m_TagString: ParalaxLayerContent
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10453,7 +10453,7 @@ GameObject:
   - 114: {fileID: 497149456}
   m_Layer: 0
   m_Name: Paralax
-  m_TagString: Untagged
+  m_TagString: Paralax
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10470,6 +10470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c488b5dc6d0a84322bdced07223779dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paralaxSpeedAffector: .100000001
   yShift: 5
   movingLayers:
   - {fileID: 636192396}
@@ -15761,6 +15762,30 @@ Prefab:
     - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_TagString
+      value: Paralax
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: paralaxSpeedAffector
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
@@ -31577,7 +31602,7 @@ GameObject:
   - 4: {fileID: 1550295903}
   m_Layer: 0
   m_Name: Content
-  m_TagString: ParalaxLayerContent
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34567,7 +34592,7 @@ GameObject:
   - 4: {fileID: 1681101280}
   m_Layer: 0
   m_Name: Content
-  m_TagString: ParalaxLayerContent
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41897,7 +41922,7 @@ GameObject:
   - 4: {fileID: 2049300694}
   m_Layer: 0
   m_Name: Content
-  m_TagString: ParalaxLayerContent
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

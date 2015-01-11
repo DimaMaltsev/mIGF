@@ -7,6 +7,8 @@ public class ParalaxController : MonoBehaviour {
 	private float z;
 	private float y;
 
+
+	public float paralaxSpeedAffector;
 	public float yShift;
 	public Transform[] movingLayers;
 

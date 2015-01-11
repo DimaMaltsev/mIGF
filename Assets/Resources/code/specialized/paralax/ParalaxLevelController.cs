@@ -12,6 +12,13 @@ public class ParalaxLevelController : MonoBehaviour {
 	private Transform c0;
 	private Transform c1;
 	private Transform c2;
+	private ParalaxController paralaxController;
+	private float paralaxSpeedAffector;
+
+	void Awake(){
+		paralaxController = GameObject.FindGameObjectWithTag ("Paralax").GetComponent<ParalaxController>();
+		paralaxSpeedAffector = paralaxController.paralaxSpeedAffector;
+	}
 
 	void Start () {
 		CreateLayerDuplications ();
@@ -62,8 +69,8 @@ public class ParalaxLevelController : MonoBehaviour {
 	}
 
 	public void CameraMove(Vector3 diff){
-		totalHorShift -= diff.x * horizontalAffection/10;
-		transform.position -= Vector3.right * diff.x * horizontalAffection/10;
+		totalHorShift -= diff.x * horizontalAffection * paralaxSpeedAffector;
+		transform.position -= Vector3.right * diff.x * horizontalAffection * paralaxSpeedAffector;
 
 		if( Mathf.Abs( totalHorShift ) >= contentDuplicationShift){
 			ChangeContentPositions();
