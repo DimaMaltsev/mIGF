@@ -9,6 +9,11 @@ public class Camera_Position : MonoBehaviour {
 	private bool cameraFrozen = false;
 	void Awake(){
 		camera = GetComponent<Camera>();
+		float red = Mathf.Floor(64000 / 255)/1000;
+		float green = Mathf.Floor(79000 / 255)/1000;
+		float blue = Mathf.Floor(61000 / 255)/1000;
+		Color r = new Color (red, green, blue);
+		camera.backgroundColor = r;///new Color (64/255,79/255,61/255);
 		Messenger.AddListener<Transform>( "SmallGuySpawned" , OnSmallGuySpawned );
 		Messenger.AddListener<Transform>( "BigGuySpawned" 	, OnBigGuySpawned 	);
 		Messenger.AddListener<float>( "FreezeCamera" , OnFreezeCamera );
