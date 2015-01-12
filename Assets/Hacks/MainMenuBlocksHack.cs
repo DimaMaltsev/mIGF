@@ -59,7 +59,13 @@ public class MainMenuBlocksHack : MonoBehaviour {
 		}
 
 		for( int i = 0; i < mostLeftBlocks.Count; i++ ){
-			mostLeftBlocks[i].transform.position += Vector3.right * ( additionalBlocksColumnsCount + 1 );
+			Transform block = mostLeftBlocks[i];
+			block.transform.position += Vector3.right * ( additionalBlocksColumnsCount + 1 );
+
+			HasGrass grass = block.GetComponent<HasGrass>();
+			if(grass != null){
+				grass.AddGrass();
+			}
 		}
 	}
 

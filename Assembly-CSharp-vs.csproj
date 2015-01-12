@@ -65,6 +65,7 @@
      <Compile Include="Assets\GameCore\SpriteLibrary\SpriteLibrary.cs" />
      <Compile Include="Assets\GameCore\Utils\Activator.cs" />
      <Compile Include="Assets\Hacks\FloatingPointerBehaviour.cs" />
+     <Compile Include="Assets\Hacks\HasGrass.cs" />
      <Compile Include="Assets\Hacks\MainMenuBlocksHack.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMenu.cs" />
