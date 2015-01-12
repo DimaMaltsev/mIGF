@@ -4,6 +4,7 @@ using System.Collections;
 public class Input_SmallGuy : Interface {
 
 	private float sx = 4.5f;
+	private bool itIsMenu = false;
 
 	public Input_SmallGuy() : base( "sx" , "die" , "jump", "down" ) {
 		this.executable = true;
@@ -12,6 +13,11 @@ public class Input_SmallGuy : Interface {
 
 	public override void Execute ()
 	{
+		if( itIsMenu ){
+			properties.SetProperty( "sx" , sx );
+			return;
+		}
+
 		float direction = 0;
 		if( Input.GetButton( "Right" ) ) 	direction++;
 		if( Input.GetButton( "Left" ) ) 	direction--;
@@ -27,5 +33,9 @@ public class Input_SmallGuy : Interface {
 		if( walled ) direction = 0;
 
 		properties.SetProperty( "sx" , sx * direction );
+	}
+
+	public void ItIsMenu(){
+		itIsMenu = true;
 	}
 }

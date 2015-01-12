@@ -74,7 +74,7 @@ GameObject:
   - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Paralax
-  m_TagString: Untagged
+  m_TagString: Paralax
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -683,6 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c488b5dc6d0a84322bdced07223779dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paralaxSpeedAffector: .100000001
   yShift: 5
   movingLayers:
   - {fileID: 400014}

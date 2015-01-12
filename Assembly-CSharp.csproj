@@ -55,6 +55,7 @@
      <Compile Include="Assets\Core\Object\Properties\Property.cs" />
      <Compile Include="Assets\Core\Object\Properties\PropertyFacade.cs" />
      <Compile Include="Assets\Core\Object\Properties\PropertyRegistry.cs" />
+     <Compile Include="Assets\Core\Ui\UiController.cs" />
      <Compile Include="Assets\Core\Utils\Remover.cs" />
      <Compile Include="Assets\Core\states\StatesManager.cs" />
      <Compile Include="Assets\Core\test.cs" />
@@ -63,6 +64,8 @@
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
      <Compile Include="Assets\GameCore\SpriteLibrary\SpriteLibrary.cs" />
      <Compile Include="Assets\GameCore\Utils\Activator.cs" />
+     <Compile Include="Assets\Hacks\FloatingPointerBehaviour.cs" />
+     <Compile Include="Assets\Hacks\MainMenuBlocksHack.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMenu.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />

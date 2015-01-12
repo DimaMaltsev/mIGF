@@ -4,6 +4,8 @@ using System.Collections;
 public class Input_BigGuy : Interface {
 	private float sx = 4.5f;
 	private bool canMove = true;
+	private bool itIsMenu = false;
+
 	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" , "canpush" , "pushing" ){
 		this.executable = true;
 		this.initActive = true;
@@ -11,6 +13,11 @@ public class Input_BigGuy : Interface {
 
 	public override void Execute ()
 	{
+		if( itIsMenu ){
+			properties.SetProperty( "sx" , sx );
+			return;
+		}
+
 		int direction = 0;
 		if( !canMove ) return;
 
@@ -82,5 +89,9 @@ public class Input_BigGuy : Interface {
 
 	private void EnableMoves(){
 		canMove = true;
+	}
+
+	public void ItIsMenu(){
+		itIsMenu = true;
 	}
 }

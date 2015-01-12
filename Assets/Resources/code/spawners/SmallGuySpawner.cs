@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class SmallGuySpawner : Spawner {
+	
+	public bool menu = false;
 
 	public SmallGuySpawner() : base( "SmallGuy" , "Guys" ){}
 
@@ -12,6 +14,9 @@ public class SmallGuySpawner : Spawner {
 
 	protected override void ConfigureSpawnedObject (GameObject spawnObject)
 	{
+		if( menu ){
+			spawnObject.GetComponent<Input_SmallGuy>().ItIsMenu();
+		}
 		Messenger.Broadcast<Transform>( "SmallGuySpawned" , spawnObject.transform );
 	}
 
