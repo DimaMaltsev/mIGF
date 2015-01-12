@@ -14,6 +14,7 @@ public class HasGrass : MonoBehaviour {
 		grass.transform.parent = transform;
 		grass.transform.position = Vector3.zero;
 		grass.transform.localPosition = Vector3.up * 1.43f;
+		AddGrass ();
 	}
 
 	public void AddGrass(){
