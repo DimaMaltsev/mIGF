@@ -5,14 +5,36 @@ public class Input_BigGuy : Interface {
 	private float sx = 4.5f;
 	private bool canMove = true;
 	private bool itIsMenu = false;
+	private bool cutScene = false;
 
 	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" , "canpush" , "pushing" ){
 		this.executable = true;
 		this.initActive = true;
 	}
 
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+
+		Messenger.AddListener ("CutSceneEnd", CutSceneEnd);
+		Messenger.AddListener ("CutSceneStart", CutSceneStart);
+	}
+
+	private void CutSceneEnd(){
+		cutScene = false;
+	}
+
+	private void CutSceneStart(){
+		cutScene = true;
+		properties.SetProperty( "jump" , false );
+		properties.SetProperty( "sx" , 0 );
+		properties.SetProperty( "down" , false );
+	}
+
 	public override void Execute ()
 	{
+		if( cutScene ) return;
+
 		if( itIsMenu ){
 			properties.SetProperty( "sx" , sx );
 			return;

@@ -64,9 +64,11 @@
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
      <Compile Include="Assets\GameCore\SpriteLibrary\SpriteLibrary.cs" />
      <Compile Include="Assets\GameCore\Utils\Activator.cs" />
-     <Compile Include="Assets\Hacks\FloatingPointerBehaviour.cs" />
-     <Compile Include="Assets\Hacks\HasGrass.cs" />
-     <Compile Include="Assets\Hacks\MainMenuBlocksHack.cs" />
+     <Compile Include="Assets\Hacks\CutScenes\CutSceneTrigger.cs" />
+     <Compile Include="Assets\Hacks\CutScenes\CutScenesController.cs" />
+     <Compile Include="Assets\Hacks\MainMenu\FloatingPointerBehaviour.cs" />
+     <Compile Include="Assets\Hacks\MainMenu\HasGrass.cs" />
+     <Compile Include="Assets\Hacks\MainMenu\MainMenuBlocksHack.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMenu.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
@@ -102,6 +104,7 @@
      <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\button\ButtonController.cs" />
      <Compile Include="Assets\Resources\code\specialized\crumblingWall\CrumblingWallController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\testDialog.cs" />
      <Compile Include="Assets\Resources\code\specialized\door\DoorController.cs" />
      <Compile Include="Assets\Resources\code\specialized\hiddenArea\HiddenAreaController.cs" />
      <Compile Include="Assets\Resources\code\specialized\jumpMushroom\JumpMushroomController.cs" />
