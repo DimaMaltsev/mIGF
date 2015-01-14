@@ -16,4 +16,9 @@ public class CrumblingWallController : MonoBehaviour {
 		if( !IsInvoking( "Crumble") )
 			Invoke( "Crumble" , crumbleDelay );
 	}
+
+	private void IveBeingPushed(){
+		if( !IsInvoking( "Crumble") )
+			Invoke( "Crumble" , crumbleDelay );
+	}
 }

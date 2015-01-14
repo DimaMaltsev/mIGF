@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 3c05c065235c049ffbf12cb644ea0807
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: grass_0
+    21300002: grass_1
+    21300004: grass_3
+    21300006: grass_5
+    21300008: grass_7
+    21300010: grass_9
+    21300012: grass_10
+    21300014: grass_12
+    21300016: grass_14
+    21300018: grass_16
+    21300020: grass_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 84
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: grass_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 78
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 33
+        width: 64
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_3
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 33
+        width: 120
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_5
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 32
+        width: 63
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_7
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 33
+        width: 48
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_9
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 33
+        width: 63
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_10
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 33
+        width: 120
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_12
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 33
+        width: 78
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_14
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 32
+        width: 63
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_16
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 33
+        width: 48
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_17
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 33
+        width: 120
+        height: 159
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

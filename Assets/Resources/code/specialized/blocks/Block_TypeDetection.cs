@@ -6,6 +6,7 @@ public class Block_TypeDetection : MonoBehaviour {
 	private SpriteLibrary spriteLibrary;
 	private SpriteRenderer spriteRenderer;
 	public string tmp;
+	public bool detectType = true;
 
 	private Dictionary<string,int> blockTypeMap = new Dictionary<string, int>{
 		{ "0,1,1,1" , 0 },
@@ -106,7 +107,8 @@ public class Block_TypeDetection : MonoBehaviour {
 	}
 
 	void Start(){
-		DetectMyType();
+		if( detectType )
+			DetectMyType();
 	}
 
 	public void DetectMyType(){

@@ -4,13 +4,42 @@ using System.Collections;
 public class Input_BigGuy : Interface {
 	private float sx = 4.5f;
 	private bool canMove = true;
+	private bool itIsMenu = false;
+	private bool cutScene = false;
+
 	public Input_BigGuy() : base( "sx" , "die" , "jump" , "walled" , "canpush" , "pushing" ){
 		this.executable = true;
 		this.initActive = true;
 	}
 
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+
+		Messenger.AddListener ("CutSceneEnd", CutSceneEnd);
+		Messenger.AddListener ("CutSceneStart", CutSceneStart);
+	}
+
+	private void CutSceneEnd(){
+		cutScene = false;
+	}
+
+	private void CutSceneStart(){
+		cutScene = true;
+		properties.SetProperty( "jump" , false );
+		properties.SetProperty( "sx" , 0 );
+		properties.SetProperty( "down" , false );
+	}
+
 	public override void Execute ()
 	{
+		if( cutScene ) return;
+
+		if( itIsMenu ){
+			properties.SetProperty( "sx" , sx );
+			return;
+		}
+
 		int direction = 0;
 		if( !canMove ) return;
 
@@ -49,34 +78,42 @@ public class Input_BigGuy : Interface {
 	}
 
 	private bool MoveCube( int direction ) {
-		PushAble ps = GetPushAbleInterface();
-		if( ps == null || !ps.canBePushed) return false;
+		PushAble[] pushable = GetPushAbleInterface();
+		bool result = false;
+		for(int i = 0; i < pushable.Length; i++ ){
+			if( pushable[i] == null || !pushable[i].canBePushed) continue;
+			result = true;
+			if( direction == 1 )
+				pushable[i].Push(1);
+			else if( direction == -1 )
+				pushable[i].Push(-1);
+		}
 
-		if( direction == 1 )
-			ps.Push(1);
-		else if( direction == -1 )
-			ps.Push(-1);
-
-		return true;
+		return result;
 
 	}
 
-	private PushAble GetPushAbleInterface(){
+	private PushAble[] GetPushAbleInterface(){
 		float localScale = transform.localScale.x;
+		PushAble[] result = new PushAble[2];
 		Vector3 p1 = transform.position + localScale * Vector3.right * 1.2f;
 		Vector3 p2 = transform.position + localScale * Vector3.right * 1.2f + Vector3.up;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 
 		if( c1 != null && c1.GetComponent<PushAble>() != null )
-			return c1.GetComponent<PushAble>();
+			result[0] = c1.GetComponent<PushAble>();
 
 		if ( c2 != null && c2.GetComponent<PushAble>() != null )
-			return c2.GetComponent<PushAble>();
-		return null;
+			result[1] = c2.GetComponent<PushAble>();
+		return result;
 	}
 
 	private void EnableMoves(){
 		canMove = true;
+	}
+
+	public void ItIsMenu(){
+		itIsMenu = true;
 	}
 }

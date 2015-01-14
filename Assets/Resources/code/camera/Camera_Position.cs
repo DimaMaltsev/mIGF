@@ -7,8 +7,19 @@ public class Camera_Position : MonoBehaviour {
 
 	private Camera camera;
 	private bool cameraFrozen = false;
+
+	private float lastDiff = 0;
+
+	public bool verticalConstraint = false;
+	public bool fireEveryOneBlockEvent = false;
+
 	void Awake(){
 		camera = GetComponent<Camera>();
+		float red = Mathf.Floor(64000 / 255)/1000;
+		float green = Mathf.Floor(79000 / 255)/1000;
+		float blue = Mathf.Floor(61000 / 255)/1000;
+		Color r = new Color (red, green, blue);
+		camera.backgroundColor = r;///new Color (64/255,79/255,61/255);
 		Messenger.AddListener<Transform>( "SmallGuySpawned" , OnSmallGuySpawned );
 		Messenger.AddListener<Transform>( "BigGuySpawned" 	, OnBigGuySpawned 	);
 		Messenger.AddListener<float>( "FreezeCamera" , OnFreezeCamera );
@@ -25,8 +36,18 @@ public class Camera_Position : MonoBehaviour {
 		if( coef == 0 ) return;
 
 		Vector3 finalPos = pos / coef - Vector3.forward * 10;
+		if( verticalConstraint ) finalPos = new Vector3(finalPos.x , transform.position.y , finalPos.z );
+	
+		Vector3 newPos = Vector3.Lerp( transform.position , finalPos , Time.deltaTime * 10 );
+		lastDiff += newPos.x - transform.position.x;
+		transform.position = newPos;
 
-		transform.position = Vector3.Lerp( transform.position , finalPos , Time.deltaTime * 10 );
+		if( Mathf.Abs(lastDiff) >= 1 ){
+			if( fireEveryOneBlockEvent ){
+				Messenger.Broadcast("CameraOneBlockStep");
+			}
+			lastDiff = lastDiff - 1;
+		}
 	}
 
 	private void OnSmallGuySpawned( Transform smallGuy ){

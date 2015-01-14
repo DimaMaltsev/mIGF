@@ -22,7 +22,7 @@ public class GroundChecker_BigGuy : Interface {
 		properties.SetProperty( "walled" , wall );
 		properties.SetProperty( "canpush" , canpush );
 
-		if(!edge && !ground && properties.GetPropertyNumber("sx") == 0 ){
+		if(!edge && !ground && properties.GetPropertyNumber("sx") == 0 && ! wall ){
 			if( !IsInvoking("ChangeScale") )
 				Invoke("ChangeScale",changeScaleTime);
 		}else if(IsInvoking("ChangeScale"))
