@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &11910586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -463,6 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &13128604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -541,6 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &14650490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -751,6 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &27158174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -961,6 +965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &32875926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1039,6 +1044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &34025245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1117,6 +1123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &36012970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1243,6 +1250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &38145523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1321,6 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &38173031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1399,6 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &38735653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1477,6 +1487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &40668678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1555,6 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &41414780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1633,6 +1645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &42426213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1755,6 +1768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &47731398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2053,6 +2067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &51612166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2219,6 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &56872505
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2297,6 +2313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &57377750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2375,6 +2392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &58548192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2497,6 +2515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &63620890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2619,6 +2638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &65892504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2873,6 +2893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &84051244
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2951,6 +2972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &84851013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3316,6 +3338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &93977715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3394,6 +3417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &94019404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3472,6 +3496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &97495296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3703,6 +3728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &101181551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3917,6 +3943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &109344741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3995,6 +4022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &112455278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4073,6 +4101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &112743642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4503,6 +4532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &119978855
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4625,6 +4655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &128590785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4703,6 +4734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &128951627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4781,6 +4813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &129106797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4947,6 +4980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &138006843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5069,6 +5103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &139055648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5147,6 +5182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &140914227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5269,6 +5305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &144583466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5391,6 +5428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &147511102
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5469,6 +5507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &148581754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5547,6 +5586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &150885203
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5625,6 +5665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &154247368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5703,6 +5744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &154769727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5781,6 +5823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &156542542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5859,6 +5902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &158223496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5981,6 +6025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &160956309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6059,6 +6104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &162138213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6137,6 +6183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &162138827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6259,6 +6306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &163473933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6337,6 +6385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &168059438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6591,6 +6640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &172581977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6669,6 +6719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &173994519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6791,6 +6842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &175364013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6869,6 +6921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &177273284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6947,6 +7000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &179524075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7025,6 +7079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &181296918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7147,6 +7202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &189487528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7225,6 +7281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &194376717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7523,6 +7580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &206719068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7601,6 +7659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &207766057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7723,6 +7782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &211698931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7801,6 +7861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &213777668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7923,6 +7984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &217879832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8001,6 +8063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &218073231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8079,6 +8142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &218394316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8157,6 +8221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &219027761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8279,6 +8344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &220598629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8401,6 +8467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &221152950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8634,6 +8701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &222149359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8712,6 +8780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &226685021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8790,6 +8859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &229407351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8868,6 +8938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &231349055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8946,6 +9017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &235069419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9024,6 +9096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &235293578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9190,6 +9263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &238503031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9525,6 +9599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &248205957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9603,6 +9678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &248904213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10202,6 +10278,72 @@ Transform:
   - {fileID: 838416889}
   m_Father: {fileID: 1267447143}
   m_RootOrder: 0
+--- !u!1 &257703266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 1caf8b81c3a8e485fa03cbc996dda8ad, type: 2}
+  m_PrefabInternal: {fileID: 1843527437}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 257703267}
+  - 20: {fileID: 257703268}
+  - 92: {fileID: 1331698844}
+  - 124: {fileID: 1331698843}
+  - 81: {fileID: 1331698842}
+  - 114: {fileID: 1331698841}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &257703267
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 1caf8b81c3a8e485fa03cbc996dda8ad, type: 2}
+  m_PrefabInternal: {fileID: 1843527437}
+  m_GameObject: {fileID: 257703266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1331698840}
+  m_Father: {fileID: 1267447143}
+  m_RootOrder: 3
+--- !u!20 &257703268
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000002, guid: 1caf8b81c3a8e485fa03cbc996dda8ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1843527437}
+  m_GameObject: {fileID: 257703266}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .338787168, g: .566176474, b: .154033318, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 45
+  orthographic: 1
+  orthographic size: 8.39999962
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294965247
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1 &264437041
 GameObject:
   m_ObjectHideFlags: 0
@@ -10245,6 +10387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &264437044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10367,6 +10510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &265383770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10445,6 +10589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &265512476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10523,6 +10668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &265868077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10689,6 +10835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &270175566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10767,6 +10914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &270456730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10993,6 +11141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &277814386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11180,6 +11329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &279104442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11583,6 +11733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &289874250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11661,6 +11812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &291877714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11739,6 +11891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &292085178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11817,6 +11970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &292476661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11939,6 +12093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &294578035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12017,6 +12172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &295127229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12183,6 +12339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &305623281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12261,6 +12418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &306946343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12383,6 +12541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &308221056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12461,6 +12620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &309161995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12998,6 +13158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &325997143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13340,6 +13501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &343195304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13462,6 +13624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &345807345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13540,6 +13703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &349297573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13618,6 +13782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &349508081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13784,6 +13949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &356383796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13950,6 +14116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &361255270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14072,6 +14239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &363709988
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14238,6 +14406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &368702040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14360,6 +14529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &370308784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14526,6 +14696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &371554322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14648,6 +14819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &375067524
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14770,6 +14942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &376565416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14892,6 +15065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &377556897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15014,6 +15188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &380980440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15241,6 +15416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &385747325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15319,6 +15495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &386392893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15397,6 +15574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &388050068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15563,6 +15741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &393652668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15641,6 +15820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &395141068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15719,6 +15899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &395208349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15797,6 +15978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &395967696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15875,6 +16057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &396230569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15953,6 +16136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &396746839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16031,6 +16215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &397469262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16109,6 +16294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &397494185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16187,6 +16373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &398394150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16309,6 +16496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &403286320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16431,6 +16619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &404428641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16509,6 +16698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &406851586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16631,6 +16821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &410774378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16852,6 +17043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &414771335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16974,6 +17166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &414944645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17140,6 +17333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &424845292
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17218,6 +17412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &425601245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17428,6 +17623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &432466924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17594,6 +17790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &436295154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17672,6 +17869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &440106713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17838,6 +18036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &444924285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17916,6 +18115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &446955700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17994,6 +18194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &449102270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18273,6 +18474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &459213767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18439,6 +18641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &464378399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18517,6 +18720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &466474186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18639,6 +18843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &472516819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18805,6 +19010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &475289107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18964,6 +19170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &477708363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19218,6 +19425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &486434370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19340,6 +19548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &489160321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19594,6 +19803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &495977497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19760,6 +19970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &504272183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19882,6 +20093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &505318076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19960,6 +20172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &508826414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20126,6 +20339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &517474036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20204,6 +20418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &517522330
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20282,6 +20497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &519885707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20360,6 +20576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &520299666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20526,6 +20743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &529373073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20648,6 +20866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &531961534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20726,6 +20945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &543116092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20880,6 +21100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &549889308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20970,6 +21191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &550916579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21173,6 +21395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &561501402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21251,6 +21474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &562020364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21461,6 +21685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &571941861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21539,6 +21764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &574931284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21617,6 +21843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &581549584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21695,6 +21922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &584429201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21773,6 +22001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &585766809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21851,6 +22080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &586002108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21929,6 +22159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &586733515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22007,6 +22238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &591575046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22085,6 +22317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &592012619
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22552,6 +22785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &606557232
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22718,6 +22952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &613255587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22796,6 +23031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &614023175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22874,6 +23110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &615920272
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23040,6 +23277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &618620108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23162,6 +23400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &622742117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23240,6 +23479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &623426585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23406,6 +23646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &627388707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23484,6 +23725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &630659467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23562,6 +23804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &630850671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23684,6 +23927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &633756917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23762,6 +24006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &633921561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23840,6 +24085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &640543337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24027,6 +24273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &643988928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24105,6 +24352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &644340277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24359,6 +24607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &665032663
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24437,6 +24686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &665195263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24515,6 +24765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &666516169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24681,6 +24932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &670256433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24803,6 +25055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &671382361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24925,6 +25178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &673463995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25156,6 +25410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &674655609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25322,6 +25577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &679944765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25444,6 +25700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &682528102
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25662,6 +25919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &689016081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25828,6 +26086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &704325590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26126,6 +26385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &713014834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26336,6 +26596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &722587562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26458,6 +26719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &726242888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26580,6 +26842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &727312453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26702,6 +26965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &729801721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26868,6 +27132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &732316103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27034,6 +27299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &737054453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27200,6 +27466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &741358253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27410,6 +27677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &746091614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27488,6 +27756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &746788894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27666,6 +27935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &749592674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27744,6 +28014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &753053722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27822,6 +28093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &753458272
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27944,6 +28216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &759143096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28022,6 +28295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &762027808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28100,6 +28374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &763198002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28178,6 +28453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &765838041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28388,6 +28664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &771669636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28466,6 +28743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &772398527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28588,6 +28866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &775230113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28798,6 +29077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &783111632
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28920,6 +29200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &784783888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28998,6 +29279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &784898821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29076,6 +29358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &785088108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29198,6 +29481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &787092567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29276,6 +29560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &787824721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29618,6 +29903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &805228143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29989,6 +30275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &815325558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30067,6 +30354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &818853471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30145,6 +30433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &818965285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30267,6 +30556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &823967444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30625,6 +30915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &838416891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30703,6 +30994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &839769194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30825,6 +31117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &841253513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31123,6 +31416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &850144170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31245,6 +31539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &851033139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31455,6 +31750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &859812832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31713,6 +32009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &871327235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31791,6 +32088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &874238753
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31913,6 +32211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &874905464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32035,6 +32334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &880219880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32111,6 +32411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785d9dd658ba74794bbe67e464f35c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: 0
 --- !u!212 &880693270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32221,6 +32522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &884549011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32299,6 +32601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &885413340
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32553,6 +32856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &895562398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32631,6 +32935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &896559922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32709,6 +33014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &896799218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32875,6 +33181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &903758830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33041,6 +33348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &907700637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33207,6 +33515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &910407005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33329,6 +33638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &919067399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33451,6 +33761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &927949273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33573,6 +33884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &944410193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33827,6 +34139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &948676886
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33905,6 +34218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &948677204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34071,6 +34385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &953320968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34518,6 +34833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &964636109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34596,6 +34912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &968496813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34718,6 +35035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &969841289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34796,6 +35114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &972630280
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34874,6 +35193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &974032627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34996,6 +35316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &980766874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35206,6 +35527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &989272376
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35284,6 +35606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &992608262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35362,6 +35685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &992864468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35440,6 +35764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &994762159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35518,6 +35843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &996174233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35596,6 +35922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &996807877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35674,6 +36001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &997654247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35840,6 +36168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1011346596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35918,6 +36247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1012188138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36040,6 +36370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1014340631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36118,6 +36449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1016674037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36196,6 +36528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1020483354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36274,6 +36607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1022005176
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36352,6 +36686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1022830901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36430,6 +36765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1023830548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36508,6 +36844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1025412412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36630,6 +36967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1029753384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36708,6 +37046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1030406531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37182,6 +37521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1048011248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37260,6 +37600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1049219856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37338,6 +37679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1049839557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37416,6 +37758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1051010398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37494,6 +37837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1054372590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37616,6 +37960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1056098400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37694,6 +38039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1056135361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37772,6 +38118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1056831332
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37850,6 +38197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1058623359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37928,6 +38276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1060028585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38006,6 +38355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1061851236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38128,6 +38478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1066598387
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38206,6 +38557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1069643768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38416,6 +38768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1084093734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38494,6 +38847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1084923264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38572,6 +38926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1085274290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38914,6 +39269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1095218717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39036,6 +39392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1098594965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39114,6 +39471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1098704564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39192,6 +39550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1099263251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39358,6 +39717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1102624865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39436,6 +39796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1103678820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39558,6 +39919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1107158477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39680,6 +40042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1107365441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39758,6 +40121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1109941649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39836,6 +40200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1111179310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39958,6 +40323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1113560822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40036,6 +40402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1114171735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40230,6 +40597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1122774617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40308,6 +40676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1125657545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40386,6 +40755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1126895208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40508,6 +40878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1131411797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40630,6 +41001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1134387337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40840,6 +41212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1141261305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40918,6 +41291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1141753456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41040,6 +41414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1145226346
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41118,6 +41493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1145858896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41284,6 +41660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1148824715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41406,6 +41783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1152986466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41484,6 +41862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1155312187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41694,6 +42073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1158031916
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41924,6 +42304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1165640054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42002,6 +42383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1166855589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42388,6 +42770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1182310481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42466,6 +42849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1185308165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42544,6 +42928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1186931851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42622,6 +43007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1192923370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42700,6 +43086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1196018964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42778,6 +43165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1196343501
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42856,6 +43244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1198759006
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42978,6 +43367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1201419274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43056,6 +43446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1203372357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43134,6 +43525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1205176283
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43476,6 +43868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1229854684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43554,6 +43947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1233258784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43764,6 +44158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1242668824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44333,7 +44728,7 @@ Transform:
   - {fileID: 255569635}
   - {fileID: 1444500826}
   - {fileID: 1120522714}
-  - {fileID: 1331698840}
+  - {fileID: 257703267}
   - {fileID: 746890038}
   - {fileID: 221483548}
   - {fileID: 1406085163}
@@ -44453,6 +44848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1269967953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44531,6 +44927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1272325117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44745,6 +45142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1281997230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44823,6 +45221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1283326811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44945,6 +45344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1291470863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45111,6 +45511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1297395813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45189,6 +45590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1297937342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45355,6 +45757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1299962664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45433,6 +45836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1300080562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45555,6 +45959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1307661493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45721,6 +46126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1316233910
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45799,6 +46205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1316562053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45877,6 +46284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1318368509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45999,6 +46407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1323265245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46328,13 +46737,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1331698840}
   - 20: {fileID: 1331698845}
-  - 92: {fileID: 1331698844}
-  - 124: {fileID: 1331698843}
-  - 81: {fileID: 1331698842}
-  - 114: {fileID: 1331698841}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: TextCamera
+  m_TagString: TextCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46349,27 +46754,29 @@ Transform:
   m_LocalPosition: {x: -12.5272598, y: 6.1405921, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1267447143}
-  m_RootOrder: 3
+  m_Father: {fileID: 257703267}
+  m_RootOrder: 0
 --- !u!114 &1331698841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad,
     type: 2}
   m_PrefabInternal: {fileID: 1843527437}
-  m_GameObject: {fileID: 1331698839}
+  m_GameObject: {fileID: 257703266}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eec859ee659b4f4e8681f9baf33a310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalConstraint: 0
+  fireEveryOneBlockEvent: 0
 --- !u!81 &1331698842
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 8100000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad,
     type: 2}
   m_PrefabInternal: {fileID: 1843527437}
-  m_GameObject: {fileID: 1331698839}
+  m_GameObject: {fileID: 257703266}
   m_Enabled: 1
 --- !u!124 &1331698843
 Behaviour:
@@ -46377,7 +46784,7 @@ Behaviour:
   m_PrefabParentObject: {fileID: 12400000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad,
     type: 2}
   m_PrefabInternal: {fileID: 1843527437}
-  m_GameObject: {fileID: 1331698839}
+  m_GameObject: {fileID: 257703266}
   m_Enabled: 1
 --- !u!92 &1331698844
 Behaviour:
@@ -46385,7 +46792,7 @@ Behaviour:
   m_PrefabParentObject: {fileID: 9200000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad,
     type: 2}
   m_PrefabInternal: {fileID: 1843527437}
-  m_GameObject: {fileID: 1331698839}
+  m_GameObject: {fileID: 257703266}
   m_Enabled: 1
 --- !u!20 &1331698845
 Camera:
@@ -46396,8 +46803,8 @@ Camera:
   m_GameObject: {fileID: 1331698839}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .338787168, g: .566176474, b: .154033318, a: .0196078438}
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -46409,15 +46816,15 @@ Camera:
   field of view: 45
   orthographic: 1
   orthographic size: 8.39999962
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2048
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_HDR: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
 --- !u!1001 &1335453257
@@ -46507,6 +46914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1337562219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46629,6 +47037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1343261614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46755,6 +47164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1349031515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46877,6 +47287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1349822190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46999,6 +47410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1356641858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47121,6 +47533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1357514184
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47199,6 +47612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1360862176
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47277,6 +47691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1362699671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47355,6 +47770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1363635000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47433,6 +47849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1365224918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47511,6 +47928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1365295414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47589,6 +48007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1365872098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47667,6 +48086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1366361077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47898,6 +48318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1374696274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48020,6 +48441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1376282608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48142,6 +48564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1377932253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48264,6 +48687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1384929154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48342,6 +48766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1389313953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48649,6 +49074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1393029238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48727,6 +49153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1394862906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48805,6 +49232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1397432672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49013,6 +49441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326009c1e4d0d48d18abc91844d3b55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: 0
 --- !u!212 &1406085165
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49079,6 +49508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1406700865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49157,6 +49587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1410323576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49235,6 +49666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1414378270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49313,6 +49745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1418199013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49479,6 +49912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1422201261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49601,6 +50035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1425225674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49723,6 +50158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1428013794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49889,6 +50325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1432500759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49967,6 +50404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1436172309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50045,6 +50483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1436295779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50123,6 +50562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1440802055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50229,6 +50669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1445091624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50351,6 +50792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1447477986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50473,6 +50915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1453210488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50551,6 +50994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1454909597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50849,6 +51293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1468403762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50971,6 +51416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1470896236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51049,6 +51495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1475642674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51259,6 +51706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1478793238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51425,6 +51873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1480259573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51679,6 +52128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1492654708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51893,6 +52343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1503893645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51971,6 +52422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1508837782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52049,6 +52501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1509610732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52127,6 +52580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1510835057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52205,6 +52659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1511215727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52371,6 +52826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1517105579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52537,6 +52993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1517761761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52615,6 +53072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1522025299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52693,6 +53151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1527763534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52771,6 +53230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1528611872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52849,6 +53309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1528700568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52971,6 +53432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1530379960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53093,6 +53555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1532918250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53368,6 +53831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1540042973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53446,6 +53910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1541048740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53524,6 +53989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1545443648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53646,6 +54112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1545859009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53768,6 +54235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1556724600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53846,6 +54314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1558226568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53968,6 +54437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1562763495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54178,6 +54648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1570085648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54388,6 +54859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1585268239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54510,6 +54982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1591794955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54632,6 +55105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1596796252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54754,6 +55228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1599898840
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54876,6 +55351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1604774969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55096,6 +55572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1610225535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55218,6 +55695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1616803135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55328,6 +55806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1617693708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55462,6 +55941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1623294034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55584,6 +56064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1627513309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55706,6 +56187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1632731157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56025,6 +56507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1639694478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56147,6 +56630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1643727671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56269,6 +56753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1646909864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56391,6 +56876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1649448105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56513,6 +56999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1654518068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56591,6 +57078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1656787645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56757,6 +57245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1658790960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57071,6 +57560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1674936124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57193,6 +57683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1676948463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57271,6 +57762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1677825473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57569,6 +58061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1694866832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57647,6 +58140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1696044752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57725,6 +58219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1697649187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57847,6 +58342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1698406773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58013,6 +58509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1700795183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58135,6 +58632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1701221675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58257,6 +58755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1702551682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58335,6 +58834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1703115698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58522,6 +59022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1704532406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58688,6 +59189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1705671678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58766,6 +59268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1706756045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59054,6 +59557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1717198940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59132,6 +59636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1719239440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59407,6 +59912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1736433675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59573,6 +60079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1743125402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59651,6 +60158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1743978756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59821,6 +60329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1751153293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59899,6 +60408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1751761647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60065,6 +60575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1755715170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60143,6 +60654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1756711340
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60309,6 +60821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1761212527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60431,6 +60944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1769510348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60509,6 +61023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1774444914
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60587,6 +61102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1782480998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60665,6 +61181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1784547781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60879,6 +61396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1788916584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60957,6 +61475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1790313075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61035,6 +61554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1792207919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61113,6 +61633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1799712251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61191,6 +61712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1800667471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61401,6 +61923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1802506561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61479,6 +62002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1803583764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61645,6 +62169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1808115986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61767,6 +62292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1810095339
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61945,6 +62471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1816237349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62023,6 +62550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1819490039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62101,6 +62629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1820948542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62179,6 +62708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1821010833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62467,6 +62997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1830905709
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62545,6 +63076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1834067875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62623,6 +63155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1834532060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62743,7 +63276,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad, type: 2}
-  m_RootGameObject: {fileID: 1331698839}
+  m_RootGameObject: {fileID: 257703266}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1001 &1858002252
@@ -62833,6 +63366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1860544192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62911,6 +63445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1861823152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62989,6 +63524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1863313172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63067,6 +63603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1863998664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63189,6 +63726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1866944862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63267,6 +63805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1867815494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63345,6 +63884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1868714426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63511,6 +64051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1870385041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63677,6 +64218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1872163390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63843,6 +64385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1875811833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63965,6 +64508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1879953721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64043,6 +64587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1880861915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64165,6 +64710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1886742143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64243,6 +64789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1887708132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64365,6 +64912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1891394299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64443,6 +64991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1891995918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64829,6 +65378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1902693029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64951,6 +65501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1906865491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65073,6 +65624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1909918302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65195,6 +65747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1914093604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65273,6 +65826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1914654992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65395,6 +65949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1918313322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65473,6 +66028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1918690872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65551,6 +66107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1919501705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65629,6 +66186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1921053487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65707,6 +66265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1923942055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65785,6 +66344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1924257693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65907,6 +66467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1930408238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65985,6 +66546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1934150470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66063,6 +66625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1935315829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66141,6 +66704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1936877233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66219,6 +66783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1942677269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66341,6 +66906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1949248046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66463,6 +67029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1953458138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66541,6 +67108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1955557968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66619,6 +67187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1959670325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67382,6 +67951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1984801082
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67460,6 +68030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1987325458
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67582,6 +68153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1997279751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67660,6 +68232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1998616117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67738,6 +68311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2002771357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67860,6 +68434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2004249235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67982,6 +68557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2007072788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68060,6 +68636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2008552333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68226,6 +68803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2014994128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68304,6 +68882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2016222686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68382,6 +68961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2016571673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68504,6 +69084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2022229665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68582,6 +69163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2024505195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68836,6 +69418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2040153261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68914,6 +69497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2040163852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69036,6 +69620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2040475627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69114,6 +69699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2044768839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69236,6 +69822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2053646541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69358,6 +69945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2057360999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69524,6 +70112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2063008021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69602,6 +70191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2063553174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69900,6 +70490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2084703129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70086,6 +70677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2089186212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70164,6 +70756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2091740287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70374,6 +70967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2098160716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70452,6 +71046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2098324763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70574,6 +71169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2101055852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70652,6 +71248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2102224728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70818,6 +71415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2113004274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70984,6 +71582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2116169890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71106,6 +71705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2119557098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71184,6 +71784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2122346976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71394,6 +71995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2128441755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71472,6 +72074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2131373537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71550,6 +72153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2135377969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71628,6 +72232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2136041038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71706,6 +72311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2139383974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71872,6 +72478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2145603204
 BoxCollider2D:
   m_ObjectHideFlags: 0
