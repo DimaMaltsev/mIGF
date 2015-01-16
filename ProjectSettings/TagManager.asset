@@ -16,6 +16,7 @@ TagManager:
   - Paralax
   - UI
   - ParalaxLayerContent
+  - TextCamera
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   User Layer 8: BigGuyActive
   User Layer 9: SmallGuy
   User Layer 10: BigGuyPassive
-  User Layer 11: 
+  User Layer 11: Text
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 
@@ -53,4 +54,8 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: TextSortingLayer
+    userID: 1
+    uniqueID: 1542217043
     locked: 0
