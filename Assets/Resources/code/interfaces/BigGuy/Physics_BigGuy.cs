@@ -60,8 +60,8 @@ public class Physics_BigGuy : Interface {
 		}
 
 		bool passiveLayer = smallGuy == null || 
-			( smallGuy.position.y < transform.position.y + 0.8f ||
-			 ( smallGuy.GetComponent<Rigidbody2D>() != null && smallGuy.GetComponent<Rigidbody2D>().velocity.y > 1 ) );
+						(smallGuy.position.y < transform.position.y + 0.8f ||
+						(smallGuy.GetComponent<Rigidbody2D> () != null && smallGuy.GetComponent<Rigidbody2D> ().velocity.y > 1));
 
 		if( passiveLayer ) SetPassiveLayer();
 		else SetActiveLayer();
