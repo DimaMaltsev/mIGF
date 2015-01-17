@@ -51,13 +51,19 @@ public class Platformable : Interface {
 
 	private Transform GetPlatform( Collider2D c ){
 
-		if( c.transform.parent != null && c.transform.parent.tag == "Moving_Platform" ){
+		if( c.transform.parent != null && c.transform.parent.tag == "Moving_Platform" && !SpesificRejector(c)){
 			return c.transform.parent;
 		}
 
-		if ( c.GetComponent<Platformable>() != null ){
+		if ( c.GetComponent<Platformable>() != null && !SpesificRejector(c)){
 			return c.transform;
 		}
 		return null;
+	}
+
+	private bool SpesificRejector(Collider2D c){
+		if( c.GetComponent<Walk_SmallGuy>() != null ) return true;
+		if( transform.GetComponent<Box_Moves>() != null && c.GetComponent<Collider_BigGuy>() != null ) return true;
+		return false;
 	}
 }
