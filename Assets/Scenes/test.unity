@@ -5351,6 +5351,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 15ca9c3aea64f4c158b0737e4e6edf2f, type: 2}
+      propertyPath: startCameraShift.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 15ca9c3aea64f4c158b0737e4e6edf2f, type: 2}
+      propertyPath: startCameraShift.y
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15ca9c3aea64f4c158b0737e4e6edf2f, type: 2}
   m_RootGameObject: {fileID: 1775750389}
@@ -6572,7 +6580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd5f385033e974f3896325b4b7d263ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCameraShift: {x: 0, y: 0}
+  startCameraShift: {x: 10, y: 10}
 --- !u!4 &1775750392
 Transform:
   m_ObjectHideFlags: 0
