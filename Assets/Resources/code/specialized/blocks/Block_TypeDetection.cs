@@ -179,9 +179,20 @@ public class Block_TypeDetection : MonoBehaviour {
 	}
 
 	private bool ThisBlockIsValid( Collider2D block ){
+
+		bool moving = IsMovingPlatform( block.transform ) || IsMovingPlatform(transform);
 		return 
 			block.GetComponent<Block_TypeDetection>() != null && 
 				( block.transform.parent == transform.parent || 
-				 block.transform.parent.tag == "Hidden_Area" || transform.parent.tag == "Hidden_Area");
+				 (!moving && ( block.transform.parent.tag == "Hidden_Area" || transform.parent.tag == "Hidden_Area")));
+	}
+   	private bool IsMovingPlatform(Transform block){
+		Transform parent = block.parent;
+		if( block.parent.tag == "Hidden_Area" && block.parent.parent != null ){
+			parent = block.parent.parent;
+			print (parent.tag);
+		}
+
+		return parent.GetComponent<_MovingPlatformController> () != null || parent.GetComponent<MovingPlatformController> () != null;
 	}
 }
