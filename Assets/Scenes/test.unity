@@ -1490,6 +1490,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiSpriteOrderShift: 10
   uiHolder: {fileID: 1356568255}
+--- !u!1 &427621517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 427621520}
+  - 61: {fileID: 427621519}
+  - 114: {fileID: 427621518}
+  m_Layer: 0
+  m_Name: CameraFreezer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &427621518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427621517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5250b7f079747288b6ffed2c8a2d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFreezePoint: {x: 0, y: 0}
+  unfreezeWaitTime: 1
+--- !u!61 &427621519
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427621517}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 4, y: 2}
+  m_Center: {x: 0, y: 0}
+--- !u!4 &427621520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427621517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1001 &442501073
 Prefab:
   m_ObjectHideFlags: 0
@@ -5359,6 +5412,10 @@ Prefab:
       propertyPath: startCameraShift.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 15ca9c3aea64f4c158b0737e4e6edf2f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15ca9c3aea64f4c158b0737e4e6edf2f, type: 2}
   m_RootGameObject: {fileID: 1775750389}
@@ -6555,7 +6612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1775750390
 BoxCollider2D:
   m_ObjectHideFlags: 0

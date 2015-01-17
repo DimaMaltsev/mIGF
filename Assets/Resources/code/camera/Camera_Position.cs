@@ -5,10 +5,13 @@ public class Camera_Position : MonoBehaviour {
 	private Transform bigGuy;
 	private Transform smallGuy;
 	private Vector2 cameraShift;
+	private Vector2 freezePoint;
 
 	private Camera camera;
 	private bool cameraFrozen = false;
 	private bool cutSceneOn = false;
+	private bool freezeOnPoint = false;
+
 
 	private float lastDiff = 0;
 
@@ -28,6 +31,8 @@ public class Camera_Position : MonoBehaviour {
 		Messenger.AddListener<Vector2>( "CutSceneCameraShift" , OnCutSceneCameraShift );
 		Messenger.AddListener( "CutSceneStart" , OnCutSceneStart );
 		Messenger.AddListener( "CutSceneEnd" , OnCutSceneEnd );
+		Messenger.AddListener<Vector2>( "FreezeOnPoint" , FreezeOnPoint );
+		Messenger.AddListener( "DeFreezeOnPoint" , DeFreezeOnPoint );
 	}
 
 	void Update () {
@@ -42,10 +47,15 @@ public class Camera_Position : MonoBehaviour {
 
 		Vector3 shift = new Vector3 (cameraShift.x, cameraShift.y, 0);
 
-		Vector3 finalPos = pos / coef - Vector3.forward * 10 + shift;
+		Vector3 finalPos = Vector3.zero;
+		if( freezeOnPoint ){
+			finalPos = new Vector3( freezePoint.x, freezePoint.y, transform.position.z);
+		}else{
+			finalPos = pos / coef - Vector3.forward * 10 + shift;
+		}
 		if( verticalConstraint ) finalPos = new Vector3(finalPos.x , transform.position.y , finalPos.z );
 
-		if(cutSceneOn){
+		if(cutSceneOn || freezeOnPoint){
 			if((finalPos - transform.position).magnitude > 2 ){
 				finalPos = transform.position + (finalPos - transform.position).normalized * 2;
 			}
@@ -86,10 +96,25 @@ public class Camera_Position : MonoBehaviour {
 		cameraShift = shift;
 	}
 	private void OnCutSceneStart(){
+		if( freezeOnPoint ) return;
+
 		cutSceneOn = true;
 	}
 	private void OnCutSceneEnd(){
+		if( freezeOnPoint ) return;
+
 		cameraShift = Vector2.zero;
 		cutSceneOn = false;
+	}
+
+	private void FreezeOnPoint(Vector2 point){
+		if( cutSceneOn ) return;
+
+		freezeOnPoint = true;
+	}
+	private void DeFreezeOnPoint(){
+		if( cutSceneOn ) return;
+
+		freezeOnPoint = false;
 	}
 }
