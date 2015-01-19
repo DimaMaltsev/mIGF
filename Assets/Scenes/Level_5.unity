@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &7349120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -559,6 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &18338641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -637,6 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &23537394
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -715,6 +718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &26655083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -877,6 +881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &34871190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -955,6 +960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &35216354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1033,6 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &43960870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1111,6 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &49658213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1189,6 +1197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &50065439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1493,6 +1502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &63903853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1571,6 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &69804398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1773,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &72870521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1895,6 +1907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &74648246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2162,6 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &93437937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2197,6 +2211,50 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &94293627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 94293628}
+  - 114: {fileID: 94293629}
+  m_Layer: 0
+  m_Name: Level1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &94293628
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 94293627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1673104447}
+  m_Father: {fileID: 212302612}
+  m_RootOrder: 1
+--- !u!114 &94293629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 94293627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965326e17a87c41449497ac0444a0cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalAffection: 2
+  verticalAffection: 0
+  contentDuplicationShift: 24.2999992
 --- !u!1001 &94859942
 Prefab:
   m_ObjectHideFlags: 0
@@ -2284,6 +2342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &97556759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2572,6 +2631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &110092510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2829,11 +2889,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.50378036
+      value: 7.77527618
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -22.3907185
+      value: -12.8119497
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0cf17005189149c9a3fc95f55a8a28f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3003,6 +3063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &130150517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3081,6 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &132667036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3191,6 +3253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &139375675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3281,6 +3344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &141807858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3359,6 +3423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &142336832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3437,6 +3502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &154584221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3515,6 +3581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &156836288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3776,6 +3843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &160980185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3854,6 +3922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &169952829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3932,6 +4001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &170521759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4054,6 +4124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &173651955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4176,6 +4247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &175722192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4298,6 +4370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &178365454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4376,6 +4449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &180453438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4454,6 +4528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &186434878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4532,6 +4607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &188404645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4723,6 +4799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &191814269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4782,7 +4859,7 @@ Transform:
   m_PrefabInternal: {fileID: 1204578006}
   m_GameObject: {fileID: 199935464}
   m_LocalRotation: {x: 0, y: 0, z: -.00505349925, w: .999987245}
-  m_LocalPosition: {x: 6.1737175, y: -13.8904133, z: 0}
+  m_LocalPosition: {x: 5.62991333, y: -13.9076986, z: 0}
   m_LocalScale: {x: 1.00022793, y: 1.00022793, z: 1}
   m_Children: []
   m_Father: {fileID: 635998804}
@@ -4799,6 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785d9dd658ba74794bbe67e464f35c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: 0
 --- !u!212 &199935467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4953,6 +5031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &208438740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4988,6 +5067,37 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &212302611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 212302612}
+  m_Layer: 0
+  m_Name: Moving
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212302612
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 212302611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 385932177}
+  - {fileID: 94293628}
+  - {fileID: 960973225}
+  - {fileID: 372304579}
+  m_Father: {fileID: 341532701}
+  m_RootOrder: 1
 --- !u!1 &212563757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,6 +5141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &212563760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5294,6 +5405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &219369700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5372,6 +5484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &219655358
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5450,6 +5563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &219797797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5588,6 +5702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &221054556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5710,6 +5825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &231194105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5933,6 +6049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &242457581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6099,6 +6216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &244016028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6177,6 +6295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &245331799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6255,6 +6374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &246765957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6333,6 +6453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &247376010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6511,6 +6632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &256897986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6853,6 +6975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &268059219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6931,6 +7054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &270383361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7010,6 +7134,34 @@ Prefab:
   m_RootGameObject: {fileID: 831051572}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &279405895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 279405896}
+  m_Layer: 0
+  m_Name: Content
+  m_TagString: ParalaxLayerContent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &279405896
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 279405895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 386979989}
+  m_Father: {fileID: 960973225}
+  m_RootOrder: 0
 --- !u!1001 &284416745
 Prefab:
   m_ObjectHideFlags: 0
@@ -7142,6 +7294,57 @@ Prefab:
   m_RootGameObject: {fileID: 1594303386}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &292462411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 292462412}
+  - 212: {fileID: 292462413}
+  m_Layer: 0
+  m_Name: sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &292462412
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 292462411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0664710999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 507201531}
+  m_RootOrder: 0
+--- !u!212 &292462413
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200006, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 292462411}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -101
+  m_Sprite: {fileID: 21300000, guid: 5a4b6a78d569d4e1d9d1c6384b24a173, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &293417059
 GameObject:
   m_ObjectHideFlags: 0
@@ -7185,6 +7388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &293417062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7308,6 +7512,35 @@ Prefab:
   m_RootGameObject: {fileID: 1035766433}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &308382718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 308382719}
+  m_Layer: 0
+  m_Name: Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &308382719
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 308382718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.2999992, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2063811200}
+  - {fileID: 885659221}
+  m_Father: {fileID: 507201531}
+  m_RootOrder: 2
 --- !u!1001 &313944429
 Prefab:
   m_ObjectHideFlags: 0
@@ -7483,6 +7716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &318255013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7670,6 +7904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &323129147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7748,6 +7983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &323520271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7826,6 +8062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &325454030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8008,6 +8245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &337410419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8086,6 +8324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &339294483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8165,6 +8404,55 @@ Prefab:
   m_RootGameObject: {fileID: 361247856}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &341532700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 341532701}
+  - 114: {fileID: 341532702}
+  m_Layer: 0
+  m_Name: Paralax
+  m_TagString: Paralax
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &341532701
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 341532700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.5, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 507201531}
+  - {fileID: 212302612}
+  m_Father: {fileID: 2076123732}
+  m_RootOrder: 42
+--- !u!114 &341532702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 341532700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c488b5dc6d0a84322bdced07223779dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paralaxSpeedAffector: .100000001
+  yShift: 5
+  movingLayers:
+  - {fileID: 385932177}
+  - {fileID: 94293628}
+  - {fileID: 960973225}
+  - {fileID: 372304579}
 --- !u!1 &342903800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8208,6 +8496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &342903803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8330,6 +8619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &350532139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8452,6 +8742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &359266260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8530,6 +8821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &361247859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8765,6 +9057,50 @@ Prefab:
   m_RootGameObject: {fileID: 1718281282}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &372304578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 372304579}
+  - 114: {fileID: 372304580}
+  m_Layer: 0
+  m_Name: Cloud1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372304579
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 372304578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0131492615, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1839330861}
+  m_Father: {fileID: 212302612}
+  m_RootOrder: 3
+--- !u!114 &372304580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 372304578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965326e17a87c41449497ac0444a0cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalAffection: 4
+  verticalAffection: 0
+  contentDuplicationShift: 24.2999992
 --- !u!1 &376923809
 GameObject:
   m_ObjectHideFlags: 0
@@ -8808,6 +9144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &376923812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8886,6 +9223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &378665016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8920,6 +9258,101 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &385932176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 385932177}
+  - 114: {fileID: 385932178}
+  m_Layer: 0
+  m_Name: Level0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &385932177
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 385932176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1927386437}
+  m_Father: {fileID: 212302612}
+  m_RootOrder: 0
+--- !u!114 &385932178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 385932176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965326e17a87c41449497ac0444a0cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalAffection: 1
+  verticalAffection: 0
+  contentDuplicationShift: 24.2999992
+--- !u!1 &386979988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100038, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 386979989}
+  - 212: {fileID: 386979990}
+  m_Layer: 0
+  m_Name: cloud_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &386979989
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400038, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 386979988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.32999992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279405896}
+  m_RootOrder: 0
+--- !u!212 &386979990
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200014, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 386979988}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -97
+  m_Sprite: {fileID: 21300000, guid: 213e76259cfd74046ad284d1b217c45d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &387969864
 Prefab:
@@ -9008,6 +9441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &388260799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9086,6 +9520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &388675628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9216,6 +9651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &397296540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9294,6 +9730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &400221760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9493,6 +9930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &417089324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9552,7 +9990,7 @@ Transform:
   m_PrefabInternal: {fileID: 124915469}
   m_GameObject: {fileID: 422794456}
   m_LocalRotation: {x: 0, y: 0, z: -.00505349925, w: .999987245}
-  m_LocalPosition: {x: 9.50378036, y: -22.3907185, z: 0}
+  m_LocalPosition: {x: 7.77527618, y: -12.8119497, z: 0}
   m_LocalScale: {x: 1.00022793, y: 1.00022793, z: 1}
   m_Children: []
   m_Father: {fileID: 2076123732}
@@ -9569,6 +10007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326009c1e4d0d48d18abc91844d3b55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: 0
 --- !u!212 &422794459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9679,6 +10118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &434988567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9801,6 +10241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &437151083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10302,6 +10743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &466326798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10666,6 +11108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &482931703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10744,6 +11187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &483389912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10822,6 +11266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &487540052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11121,6 +11566,37 @@ Prefab:
   m_RootGameObject: {fileID: 1481867771}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &507201530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 507201531}
+  m_Layer: 0
+  m_Name: Static
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &507201531
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 507201530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 292462412}
+  - {fileID: 1641201260}
+  - {fileID: 308382719}
+  - {fileID: 1597224254}
+  m_Father: {fileID: 341532701}
+  m_RootOrder: 0
 --- !u!1 &511828678
 GameObject:
   m_ObjectHideFlags: 0
@@ -11643,6 +12119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &514877509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11765,6 +12242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &519206023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11843,6 +12321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &519529135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12045,6 +12524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &530126742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12123,6 +12603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &531754642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12201,6 +12682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &533930287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12499,6 +12981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &543480729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12577,6 +13060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &544933941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12655,6 +13139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &547592004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12844,6 +13329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &555281799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12922,6 +13408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &555436833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13088,6 +13575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &570128549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13166,6 +13654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &581750528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13244,6 +13733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &583083062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13322,6 +13812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &587812732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13400,6 +13891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &591428936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13478,6 +13970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &595591422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13802,6 +14295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &606391694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13880,6 +14374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &612318714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13958,6 +14453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &612842481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14036,6 +14532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &615437510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14158,6 +14655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &621488872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14280,6 +14778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &625249198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14358,6 +14857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &625329036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14506,6 +15006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &630883999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14846,6 +15347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &646121665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15034,6 +15536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &649931047
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15112,6 +15615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &652238434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15190,6 +15694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &652593392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15378,6 +15883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &655798075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15500,6 +16006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &662498027
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15578,6 +16085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &662536988
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15656,6 +16164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &680328905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15866,6 +16375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &690812168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15944,6 +16454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &693798263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16022,6 +16533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &696753185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16100,6 +16612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &700120702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16320,6 +16833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &704633447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16398,6 +16912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &709221509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16476,6 +16991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &713757308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16717,6 +17233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &721059289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16839,6 +17356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &725016294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16982,6 +17500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &726597422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17169,6 +17688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &739295741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17247,6 +17767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &740425506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17369,6 +17890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &744658003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17535,6 +18057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &756928723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17613,6 +18136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &757270189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17812,6 +18336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &761529569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18200,6 +18725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &789016196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18278,6 +18804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &793778851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18356,6 +18883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &797468582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18466,6 +18994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &800370531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18557,6 +19086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &801549839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18864,6 +19394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &814801494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19030,6 +19561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &825167788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19108,6 +19640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &825791228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19274,6 +19807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &830526010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19352,6 +19886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &831051575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19480,6 +20015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &845981034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19558,6 +20094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &848853545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19680,6 +20217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &850825290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19758,6 +20296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &851048079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19836,6 +20375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &864493613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19914,6 +20454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &865450088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19992,6 +20533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &867607838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20070,6 +20612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &868335969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20305,6 +20848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &877107397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20383,6 +20927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &877708903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20461,6 +21006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &878419470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20539,6 +21085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &878433320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20661,6 +21208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &884721308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20695,6 +21243,57 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &885659220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 885659221}
+  - 212: {fileID: 885659222}
+  m_Layer: 0
+  m_Name: skyline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885659221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 885659220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 308382719}
+  m_RootOrder: 1
+--- !u!212 &885659222
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200010, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 885659220}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -100
+  m_Sprite: {fileID: 21300000, guid: db1ea7a99fac1412eb6c823fbece9b46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &893407509
 GameObject:
@@ -20739,6 +21338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &893407512
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20817,6 +21417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &898450314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20984,6 +21585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eec859ee659b4f4e8681f9baf33a310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalConstraint: 0
+  fireEveryOneBlockEvent: 0
 --- !u!81 &902779077
 AudioListener:
   m_ObjectHideFlags: 0
@@ -21469,6 +22072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &918452867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21547,6 +22151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &918700534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21625,6 +22230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &928047555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21835,6 +22441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &941997113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22107,6 +22714,50 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 05fc1a73a4da346d0987e80bad417a0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &960973224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 960973225}
+  - 114: {fileID: 960973226}
+  m_Layer: 0
+  m_Name: Cloud2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &960973225
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 960973224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0131492615, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 279405896}
+  m_Father: {fileID: 212302612}
+  m_RootOrder: 2
+--- !u!114 &960973226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 960973224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965326e17a87c41449497ac0444a0cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalAffection: 3
+  verticalAffection: 0
+  contentDuplicationShift: 24.2999992
 --- !u!1 &961999977
 GameObject:
   m_ObjectHideFlags: 0
@@ -22150,6 +22801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &961999980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22392,6 +23044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &968691194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22470,6 +23123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &969370979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22548,6 +23202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &969721210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22626,6 +23281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &971655704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22704,6 +23360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &973825629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22782,6 +23439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &976848213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22961,6 +23619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &980532052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23083,6 +23742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &986262740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23249,6 +23909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &999003589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23327,6 +23988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1003806018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23513,6 +24175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1014580042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23675,6 +24338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1016386752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23753,6 +24417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1019237087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23831,6 +24496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1019293447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23957,6 +24623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1021496579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24079,6 +24746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1025594208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24201,6 +24869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1028682201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24367,6 +25036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1033965121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24489,6 +25159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1035766436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24876,6 +25547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1058071695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24954,6 +25626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1060274393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25361,6 +26034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1080145503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25439,6 +26113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1081054985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25517,6 +26192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1081899258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25639,6 +26315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1085725752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25805,6 +26482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1094019056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25884,6 +26562,57 @@ Prefab:
   m_RootGameObject: {fileID: 902779074}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1096703397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1096703398}
+  - 212: {fileID: 1096703399}
+  m_Layer: 0
+  m_Name: skyline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1096703398
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1096703397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597224254}
+  m_RootOrder: 1
+--- !u!212 &1096703399
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1096703397}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -100
+  m_Sprite: {fileID: 21300000, guid: db1ea7a99fac1412eb6c823fbece9b46, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1098783919
 Prefab:
   m_ObjectHideFlags: 0
@@ -25971,6 +26700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1100014710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26185,6 +26915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1107912266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26263,6 +26994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1110366261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26385,6 +27117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1113891560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26731,6 +27464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1124078164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26809,6 +27543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1124239154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27072,6 +27807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1133913205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27238,6 +27974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1143475150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27316,6 +28053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1144565603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27636,6 +28374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1162001227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27714,6 +28453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1162896152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27792,6 +28532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1163851015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27870,6 +28611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1181446046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28178,6 +28920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1193398668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28269,6 +29012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1194549621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28347,6 +29091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1194963093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28469,6 +29214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1200024144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28547,6 +29293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1200921940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28679,11 +29426,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e0f35514c87e14bf58a485e505bc21a7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.1737175
+      value: 5.62991333
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0f35514c87e14bf58a485e505bc21a7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -13.8904133
+      value: -13.9076986
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0f35514c87e14bf58a485e505bc21a7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -28941,6 +29688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1213813641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29283,6 +30031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1233509233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29361,6 +30110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1234466160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29439,6 +30189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1234873613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29517,6 +30268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1234885406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29639,6 +30391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1237555720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29765,6 +30518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1240373723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29887,6 +30641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1246669284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30065,6 +30820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1257679986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30319,6 +31075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1274389765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30491,6 +31248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1288471704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30569,6 +31327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1290090361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30844,6 +31603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1305165622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30879,6 +31639,50 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &1311000950
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2076123732}
+    m_Modifications:
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_RootGameObject: {fileID: 341532700}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1311102210
 GameObject:
   m_ObjectHideFlags: 0
@@ -30922,6 +31726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1311102213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31000,6 +31805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1311386681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31078,6 +31884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1312972216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31156,6 +31963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1315675356
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31322,6 +32130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1332658134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31616,6 +32425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1341015294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31715,6 +32525,57 @@ Prefab:
   m_RootGameObject: {fileID: 1622134882}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1345930905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1345930906}
+  - 212: {fileID: 1345930907}
+  m_Layer: 0
+  m_Name: sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1345930906
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1345930905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597224254}
+  m_RootOrder: 0
+--- !u!212 &1345930907
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200012, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1345930905}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -101
+  m_Sprite: {fileID: 21300000, guid: 5a4b6a78d569d4e1d9d1c6384b24a173, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1346812871
 Prefab:
   m_ObjectHideFlags: 0
@@ -32002,6 +32863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1364261078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32080,6 +32942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1369480819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32158,6 +33021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1372013023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32324,6 +33188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1375247912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32638,6 +33503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1384360535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32760,6 +33626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1389284782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32838,6 +33705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1389759633
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32960,6 +33828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1405036949
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33038,6 +33907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1405269008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33168,6 +34038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1409927276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33290,6 +34161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1417109585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33456,6 +34328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1421830022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33578,6 +34451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1425381741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33700,6 +34574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1428260170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33822,6 +34697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1433535584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34032,6 +34908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1440331080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34110,6 +34987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1443999665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34188,6 +35066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1447642496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34266,6 +35145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1448146237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34520,6 +35400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1465333218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34598,6 +35479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1472921890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34916,6 +35798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1481867774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35109,6 +35992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1488270869
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35319,6 +36203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1499301057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35506,6 +36391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1506324062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35672,6 +36558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1509629073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35794,6 +36681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1512391449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35872,6 +36760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1519538822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35950,6 +36839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1528251077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36072,6 +36962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1533813997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36194,6 +37085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1537816260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36272,6 +37164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1538836936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36350,6 +37243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1538953107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36428,6 +37322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1546192525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36550,6 +37445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1554938513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36628,6 +37524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1558386017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36750,6 +37647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1568480985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36828,6 +37726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1568506363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36906,6 +37805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1570979091
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36984,6 +37884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1580058181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37106,6 +38007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1586254045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37184,6 +38086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1593448585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37262,6 +38165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1594303389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37297,6 +38201,35 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1597224253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1597224254}
+  m_Layer: 0
+  m_Name: Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1597224254
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1597224253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.2999992, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1345930906}
+  - {fileID: 1096703398}
+  m_Father: {fileID: 507201531}
+  m_RootOrder: 3
 --- !u!1 &1602544884
 GameObject:
   m_ObjectHideFlags: 0
@@ -37572,6 +38505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1612461928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37650,6 +38584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1619284264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37822,6 +38757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1623832573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38104,6 +39040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1639590541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38138,6 +39075,57 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1641201259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1641201260}
+  - 212: {fileID: 1641201261}
+  m_Layer: 0
+  m_Name: skyline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1641201260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1641201259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.507064819, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 507201531}
+  m_RootOrder: 1
+--- !u!212 &1641201261
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200008, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1641201259}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -100
+  m_Sprite: {fileID: 21300000, guid: db1ea7a99fac1412eb6c823fbece9b46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1644583780
 Prefab:
@@ -38474,6 +39462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1662701327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38753,6 +39742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1668624800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38895,6 +39885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1670216943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39029,6 +40020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1670911742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39064,6 +40056,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1673104446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1673104447}
+  m_Layer: 0
+  m_Name: Content
+  m_TagString: ParalaxLayerContent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673104447
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1673104446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1881094052}
+  m_Father: {fileID: 94293628}
+  m_RootOrder: 0
 --- !u!1 &1676465066
 GameObject:
   m_ObjectHideFlags: 0
@@ -39107,6 +40127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1676465069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39296,6 +40317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1682942823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39374,6 +40396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1689174529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39452,6 +40475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1691023266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39662,6 +40686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1707842047
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39852,6 +40877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1718281285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39974,6 +41000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1735351091
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40133,6 +41160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1748187870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40211,6 +41239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1748889733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40377,6 +41406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1775574115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40675,6 +41705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1790361405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40709,6 +41740,57 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1794016176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1794016177}
+  - 212: {fileID: 1794016178}
+  m_Layer: 0
+  m_Name: cloud_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1794016177
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1794016176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.1999998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1839330861}
+  m_RootOrder: 0
+--- !u!212 &1794016178
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200018, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1794016176}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -96
+  m_Sprite: {fileID: 21300000, guid: 1bb1a918242e940daab5ac5bc275bb00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1794075725
 Prefab:
@@ -40797,6 +41879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1796217381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40875,6 +41958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1798391541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41041,6 +42125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1804393712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41119,6 +42204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1813186695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41285,6 +42371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1818847575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41407,6 +42494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1824315594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41529,6 +42617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1827176733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41607,6 +42696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1828034579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41685,6 +42775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1828194860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41807,6 +42898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1833440442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41989,6 +43081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1835849335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42177,6 +43270,34 @@ Prefab:
   m_RootGameObject: {fileID: 1798391538}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1839330860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1839330861}
+  m_Layer: 0
+  m_Name: Content
+  m_TagString: ParalaxLayerContent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1839330861
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1839330860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1794016177}
+  m_Father: {fileID: 372304579}
+  m_RootOrder: 0
 --- !u!1 &1841107012
 GameObject:
   m_ObjectHideFlags: 0
@@ -42220,6 +43341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1841107015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42298,6 +43420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1841745458
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42420,6 +43543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1842335302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42575,6 +43699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1844657321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42653,6 +43778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1848161422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42731,6 +43857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1848347108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42897,6 +44024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1854456940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43107,6 +44235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1869039465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43185,6 +44314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1877768876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43263,6 +44393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1880973791
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43297,6 +44428,57 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: c3e48e2cb64f44af99d2677797839b04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1881094051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1881094052}
+  - 212: {fileID: 1881094053}
+  m_Layer: 0
+  m_Name: wood_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1881094052
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1881094051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .5, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1673104447}
+  m_RootOrder: 0
+--- !u!212 &1881094053
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200004, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1881094051}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -98
+  m_Sprite: {fileID: 21300000, guid: e80c2c29d584b4114b33904a79c95682, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1881228080
 GameObject:
@@ -43341,6 +44523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1881228083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43419,6 +44602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1882982579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43541,6 +44725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1884779392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43607,6 +44792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1885691715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43742,6 +44928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1890767121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43864,6 +45051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1894149112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44030,6 +45218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1899414852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44153,6 +45342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1903164805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44232,6 +45422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1904943703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44507,6 +45698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1914509275
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44694,6 +45886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1917620527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44772,6 +45965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1918705489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44910,6 +46104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1923908852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45108,6 +46303,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 58b0cf37fa1f3496e9ce84d5ae268c56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1927386436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1927386437}
+  m_Layer: 0
+  m_Name: Content
+  m_TagString: ParalaxLayerContent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1927386437
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1927386436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.5, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1931220883}
+  m_Father: {fileID: 385932177}
+  m_RootOrder: 0
 --- !u!1001 &1930864048
 Prefab:
   m_ObjectHideFlags: 0
@@ -45152,6 +46375,57 @@ Prefab:
   m_RootGameObject: {fileID: 388675625}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1931220882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1931220883}
+  - 212: {fileID: 1931220884}
+  m_Layer: 0
+  m_Name: wood_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1931220883
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1931220882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.42999983, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1927386437}
+  m_RootOrder: 0
+--- !u!212 &1931220884
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200002, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 1931220882}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -99
+  m_Sprite: {fileID: 21300000, guid: 3aab1e5aa518a4118a81c1951452a116, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1932631380
 GameObject:
   m_ObjectHideFlags: 0
@@ -45195,6 +46469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1932631383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45361,6 +46636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1937093356
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45691,6 +46967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1952969642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45769,6 +47046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1956888622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45891,6 +47169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1968368716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46019,6 +47298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1973579312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46097,6 +47377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1974553282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46451,6 +47732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &1992140255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46573,6 +47855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2002441489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46695,6 +47978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2005873636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47026,6 +48310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2014856069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47376,6 +48661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2019454931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47630,6 +48916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2034192726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47796,6 +49083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2040021941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47952,6 +49240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2044158088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48030,6 +49319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2047360912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48152,6 +49442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2050406523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48230,6 +49521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2053567759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48590,6 +49882,57 @@ Prefab:
   m_RootGameObject: {fileID: 2143758017}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &2063811199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2063811200}
+  - 212: {fileID: 2063811201}
+  m_Layer: 0
+  m_Name: sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2063811200
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: 01a0869a6a05b408fbdc323cf094cea1, type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 2063811199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 308382719}
+  m_RootOrder: 0
+--- !u!212 &2063811201
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200016, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1311000950}
+  m_GameObject: {fileID: 2063811199}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: -101
+  m_Sprite: {fileID: 21300000, guid: 5a4b6a78d569d4e1d9d1c6384b24a173, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2067075396
 GameObject:
   m_ObjectHideFlags: 0
@@ -48633,6 +49976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2067075399
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48780,6 +50124,7 @@ Transform:
   - {fileID: 1383607426}
   - {fileID: 1145146701}
   - {fileID: 1971073535}
+  - {fileID: 341532701}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &2076123733
@@ -48836,6 +50181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2076598263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48958,6 +50304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2091375996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49124,6 +50471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2105410832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49346,6 +50694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2111978858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49572,6 +50921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2116905098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49782,6 +51132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2121675022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49860,6 +51211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2124365728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49938,6 +51290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2124403615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50340,6 +51693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2134033185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50506,6 +51860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: 
+  detectType: 1
 --- !u!61 &2143758020
 BoxCollider2D:
   m_ObjectHideFlags: 0
