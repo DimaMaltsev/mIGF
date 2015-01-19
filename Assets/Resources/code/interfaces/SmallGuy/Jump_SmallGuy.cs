@@ -16,10 +16,19 @@ public class Jump_SmallGuy : Interface {
 
 	private int jumpsCount = 0;
 	private int jumpsLimit = 2;
+	
+	private ObjectController objCtrl;
 
 	public Jump_SmallGuy() : base( "jump" , "grounded" , "animationJump" ){
 		this.executable = true;
 		this.initActive = true;
+	}
+
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+		objCtrl = GetComponent<ObjectController> ();
+		//objCtrl.PlaySound ("ti_appears");
 	}
 	
 	public override void Execute ()
@@ -59,6 +68,8 @@ public class Jump_SmallGuy : Interface {
 	
 	private void Jump(){
 		if( rb == null ) return;
+		
+		objCtrl.PlaySound ("ti_jump");
 
 		float jumpAddition = 0;
 
@@ -84,5 +95,7 @@ public class Jump_SmallGuy : Interface {
 		rb.velocity = new Vector2( vx , 0 );
 		rb.AddForce( Vector2.up * ( jumpsCount == 1 ? firstJumpPower + jumpAddition: secondJumpPower ) );
 		Invoke( "FinishStartPhase" , canJumpAgainAfter );
+
+
 	}
 }

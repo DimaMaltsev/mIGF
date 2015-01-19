@@ -4,10 +4,18 @@ using System.Collections;
 public class Die_BigGuy : Interface {
 
 	Rigidbody2D rb;
+	private bool dead = false;
+	private ObjectController objCtrl;
 
 	public Die_BigGuy() : base ( "die" ) {
 		this.executable = true;
 		this.initActive = true;
+	}
+
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+		objCtrl = GetComponent<ObjectController> ();
 	}
 
 	public override void Execute ()
@@ -26,6 +34,11 @@ public class Die_BigGuy : Interface {
 	}
 
 	private void TheyWantMeToDie( string reason ){
+		if( dead ) return;
+		dead = true;
+
+		objCtrl.PlaySound ("gwo_poof");
+
 		if( reason == "KillArea" ){
 			if( !IsInvoking( "DestroyGameObject" ) ){
 				Messenger.Broadcast<float>( "FreezeCamera" , 1 );

@@ -8,6 +8,10 @@ public class Walk_SmallGuy : Interface {
 	private float rbEnableTime = 0.7f;
 	private float deathAnimationTime = 0.8f;
 
+	private ObjectController objCtrl;
+
+	private bool dead = false;
+
 	public Walk_SmallGuy() : base ( "sx" , "x" , "die" , "onplatform" ) {
 		this.executable = true;
 		this.initActive = true;
@@ -20,7 +24,8 @@ public class Walk_SmallGuy : Interface {
 
 		bc.sharedMaterial = new PhysicsMaterial2D();
 		bc.sharedMaterial.friction = 0;
-
+		
+		objCtrl = GetComponent<ObjectController> ();
 	}
 
 	public override void Execute ()
@@ -68,6 +73,11 @@ public class Walk_SmallGuy : Interface {
 	}
 
 	private void TheyWantMeToDie( string reason ){
+		if( dead == true ) return;
+		dead = true;
+
+		objCtrl.PlaySound ("ti_poof");
+
 		if( reason == "KillArea" ){
 			if( !IsInvoking( "DestroyGameObject" ) ){
 				Messenger.Broadcast<float>( "FreezeCamera" , 1 );

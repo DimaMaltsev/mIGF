@@ -4,21 +4,41 @@ using System.Collections;
 public class GroundChecker_BigGuy : Interface {
 	private float changeScaleTime = 0.2f;
 
-	public GroundChecker_BigGuy() : base( "grounded" , "sx" , "onedge" , "walled" , "canpush" ){
+	public GroundChecker_BigGuy() : base( "grounded" , "sx" , "onedge" , "walled" , "canpush", "sy" ){
 		this.executable = true;
 		this.initActive = true;
 	}
+
+	private ObjectController objCtrl;
 	
+	private bool grounded = false;
+
+	
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+		objCtrl = GetComponent<ObjectController> ();
+	}
+
 	public override void Execute ()
 	{
 
 		bool ground = CheckGround();
 		bool wall = CheckWall();
-		bool edge = CheckEdge() && (!wall || !ground);
+		bool edge = CheckEdge() && !wall;
 		bool canpush  = CheckPush();
 
+		bool nextground = ground || !edge;
+		
+		Rigidbody2D rb = GetComponent<Rigidbody2D> ();
+		if( nextground && !grounded ){
+			objCtrl.PlaySound( "gwo_fall" );
+		}
+		
+		grounded = nextground;
+
 		properties.SetProperty( "onedge" , edge );
-		properties.SetProperty( "grounded" , ground || !edge);
+		properties.SetProperty( "grounded" , ground || !nextground);
 		properties.SetProperty( "walled" , wall );
 		properties.SetProperty( "canpush" , canpush );
 
@@ -36,11 +56,13 @@ public class GroundChecker_BigGuy : Interface {
 
 	private bool CheckGround(){
 		float localScale = transform.localScale.x;
-		Vector3 p = transform.position - localScale * Vector3.right * 0.5f - Vector3.up;
-		Collider2D c = Physics2D.OverlapPoint( p );
-		bool grounded = false;
+		Vector3 p1 = transform.position - localScale * Vector3.right * 0.5f - Vector3.up;
+		Vector3 p2 = transform.position - Vector3.up;
+
+		Collider2D c1 = Physics2D.OverlapPoint( p1 );
+		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 		
-		return c != null && c.GetComponent<Input_SmallGuy>() == null;
+		return c1 != null && c1.GetComponent<Input_SmallGuy>() == null || c2 != null && c2.GetComponent<Input_SmallGuy>() == null;
 	}
 	
 	private bool CheckEdge(){

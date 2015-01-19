@@ -18,6 +18,7 @@ public class Camera_Position : MonoBehaviour {
 	public bool verticalConstraint = false;
 	public bool fireEveryOneBlockEvent = false;
 
+
 	void Awake(){
 		camera = GetComponent<Camera>();
 		float red = Mathf.Floor(64000 / 255)/1000;
@@ -34,6 +35,7 @@ public class Camera_Position : MonoBehaviour {
 		Messenger.AddListener<Vector2>( "FreezeOnPoint" , FreezeOnPoint );
 		Messenger.AddListener( "DeFreezeOnPoint" , DeFreezeOnPoint );
 	}
+
 
 	void Update () {
 		if( cameraFrozen ) return;

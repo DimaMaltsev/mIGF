@@ -12,9 +12,18 @@ public class Jump_BigGuy : Interface {
 	private Rigidbody2D rb;
 	public bool jumpJustStarted = false;
 
+	private ObjectController objCtrl;
+
 	public Jump_BigGuy() : base( "jump" , "grounded" , "animationJump" ){
 		this.executable = true;
 		this.initActive = true;
+	}
+
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+		objCtrl = GetComponent<ObjectController> ();
+		//objCtrl.PlaySound ("gwo_appears");
 	}
 
 	public override void Execute ()
@@ -52,6 +61,8 @@ public class Jump_BigGuy : Interface {
 
 	private void Jump(){
 		if( rb == null ) return;
+
+		objCtrl.PlaySound ("gwo_jump");
 
 		jumpButtonReleased = false;
 		properties.SetProperty( "animationJump" , false );
