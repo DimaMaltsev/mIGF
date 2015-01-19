@@ -51,7 +51,10 @@ public class GroundCheck_SmallGuy : Interface {
 		Vector3 p = transform.position + localScale * Vector3.right * 0.7f;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
-		return c != null && ( c.GetComponent<Block_TypeDetection>() != null || c.GetComponent<Box_Moves>() != null || c.GetComponent<CrumblingWallController>() != null);
+		return c != null && ( c.GetComponent<Block_TypeDetection>() != null || 
+		                     c.GetComponent<Box_Moves>() != null || 
+		                     c.GetComponent<CrumblingWallController>() != null || 
+		                     c.GetComponent<DoorController>() != null);
 	}
 
 	private bool CountBigGuyUnderMe(Collider2D c){

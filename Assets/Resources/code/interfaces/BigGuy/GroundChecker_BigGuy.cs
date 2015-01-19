@@ -40,7 +40,7 @@ public class GroundChecker_BigGuy : Interface {
 		Collider2D c = Physics2D.OverlapPoint( p );
 		bool grounded = false;
 		
-		return c != null && c.GetComponent<Jump_SmallGuy>() == null;
+		return c != null && c.GetComponent<Input_SmallGuy>() == null;
 	}
 	
 	private bool CheckEdge(){
@@ -48,24 +48,24 @@ public class GroundChecker_BigGuy : Interface {
 		Vector3 p = transform.position + localScale * Vector3.right * 0.5f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 		
-		return c == null;
+		return c == null || c.GetComponent<Input_SmallGuy>() != null;
 	}
 
 	private bool CheckWall(){
 		float localScale = transform.localScale.x;
-		Vector3 p1 = transform.position + localScale * Vector3.right * 1.2f;
-		Vector3 p2 = transform.position + localScale * Vector3.right * 1.2f + Vector3.up;
+		Vector3 p1 = transform.position + localScale * Vector3.right * 0.8f;
+		Vector3 p2 = transform.position + localScale * Vector3.right * 0.8f + Vector3.up;
+
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
-
 		return ( c1 != null && ( c1.GetComponent<Block_TypeDetection>() != null || c1.GetComponent<Box_Moves>() != null || c1.GetComponent<DoorController>() != null) ) || 
 			( c2 != null && ( c2.GetComponent<Block_TypeDetection>() != null || c2.GetComponent<Box_Moves>() != null || c2.GetComponent<DoorController>() != null));
 	}
 
 	private bool CheckPush(){
 		float localScale = transform.localScale.x;
-		Vector3 p1 = transform.position + localScale * Vector3.right * 1.2f;
-		Vector3 p2 = transform.position + localScale * Vector3.right * 1.2f + Vector3.up;
+		Vector3 p1 = transform.position + localScale * Vector3.right * 0.8f - Vector3.up * 0.05f;
+		Vector3 p2 = transform.position + localScale * Vector3.right * 0.8f + Vector3.up * 0.95f;
 		Collider2D c1 = Physics2D.OverlapPoint( p1 );
 		Collider2D c2 = Physics2D.OverlapPoint( p2 );
 		return ( c1 != null && c1.GetComponent<PushAble>() != null ) || 
