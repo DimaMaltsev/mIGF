@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class testDialog : CutSceneTrigger {
-
+	public Vector2 startCameraShift;
 	void Awake(){
 		dialog = new List<string[]>{
 			new string[]{	"Ti"	, "Hi, bitch!"},
@@ -15,5 +15,6 @@ public class testDialog : CutSceneTrigger {
 			new string[]{	"Gwo"	, "... the longest-ruling female leader of Russia."},
 			new string[]{	"Ti"	, "Ok, bye, bitch!"}
 		};
+		base.cameraShift = startCameraShift;
 	}
 }

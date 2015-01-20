@@ -35,7 +35,7 @@ public class CutScenesController : MonoBehaviour {
 		textMesh.color = new Color (1, 1, 1, currentAlpha);
 		
 		
-		Messenger.AddListener<List<string[]>> ("CutSceneTrigger", ShowCutScene);
+		Messenger.AddListener<List<string[]>, Vector2> ("CutSceneTrigger", ShowCutScene);
 	}
 	
 	void Update () {
@@ -94,13 +94,17 @@ public class CutScenesController : MonoBehaviour {
 		Invoke ("ShowNextLetter", letterShowDelay);
 	}
 
-	private void ShowCutScene(List<string[]> dialog){
+	private void ShowCutScene(List<string[]> dialog, Vector2 cameraShift){
+
 		if( dialog.Count == 0 ) return;
 		sceneIsOn = true;
 		currentDialog = dialog;
 		currentAlpha = 1;
 		ShowNextPhrase ();
 		SendStartCutSceneMessage ();
+		if( cameraShift.magnitude != 0 ){
+			Messenger.Broadcast<Vector2>("CutSceneCameraShift", cameraShift);
+		}
 	}
 
 	private void EndCutScene(){

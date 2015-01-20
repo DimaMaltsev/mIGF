@@ -17,7 +17,6 @@ public class JumpMushroomController : MonoBehaviour {
 	}
 
 	public void Jump( Transform jumper ){
-
 		a.SetBool ("jump", true);
 
 		justJumped.Add( jumper );
@@ -32,12 +31,20 @@ public class JumpMushroomController : MonoBehaviour {
 
 
 		if( buddy.GetComponent<Box_Moves>() == null ){
+
+			if( buddy.GetComponent<Animation_BigGuy>()!=null){
+				Platformable pl = buddy.GetComponent<Platformable>();
+				if(pl.onMe && pl.onMe.GetComponent<Jump_SmallGuy>() != null){
+					LaunchBuddy(pl.onMe);
+				}
+			}
+
 			Rigidbody2D rb = buddy.GetComponent<Rigidbody2D> ();
 			rb.velocity = new Vector2( 0 , 0 );
 			rb.AddForce( Vector2.up * charactersJumpValue );
+
 			return;
 		}
-
 		buddy.GetComponent<ObjectController>().propertyFacade.SetProperty( "sy" , boxJumpValue );
 	}
 

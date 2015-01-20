@@ -29,16 +29,18 @@ public class ButtonController : MonoBehaviour {
 	}
 
 	public void OnTriggerEnter2D( Collider2D other ){
-		if( pressed || !ValidatePress( other ) ) return;
+		if( !ValidatePress( other ) ) return;
 		contactors.Add (other);
-		Press();
+
+		if( !pressed )
+			Press();
 	}
 
 	public void OnTriggerExit2D( Collider2D other ){
-		if( !pressed || !ValidatePress( other ) ) return;
+		if( !ValidatePress( other ) ) return;
 		contactors.Remove (other);
 
-		if(contactors.Count == 0 )
+		if( !pressed || contactors.Count == 0 )
 			UnPress();
 	}
 
@@ -55,7 +57,10 @@ public class ButtonController : MonoBehaviour {
 	}
 
 	private bool ValidatePress( Collider2D other ){
-		return true;
+		return 
+			other.GetComponent<Animation_BigGuy>() != null ||
+			other.GetComponent<Jump_SmallGuy>() != null ||
+				other.GetComponent<Box_Moves>() != null;
 	}
 
 	private void InitPolygonCollier(){
