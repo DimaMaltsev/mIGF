@@ -61,6 +61,7 @@
      <Compile Include="Assets\Core\test.cs" />
      <Compile Include="Assets\GameCore\FinalWaiter\FinalWaiter.cs" />
      <Compile Include="Assets\GameCore\GameController\GameController.cs" />
+     <Compile Include="Assets\GameCore\SoundLibrary\SoundLibrary.cs" />
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
      <Compile Include="Assets\GameCore\SpriteLibrary\SpriteLibrary.cs" />
      <Compile Include="Assets\GameCore\Utils\Activator.cs" />

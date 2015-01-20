@@ -7,6 +7,8 @@ public class Box_Moves_Vertical : Interface {
 	private Box_Controller boxController;
 	private bool flying = false;
 
+	private ObjectController objCtrl;
+
 	public Box_Moves_Vertical() : base ( "sx" , "sy" ){
 		this.executable = true;
 		this.initActive = true;
@@ -15,12 +17,14 @@ public class Box_Moves_Vertical : Interface {
 	protected override void SetStartingValues ()
 	{
 		boxController = GetComponent<Box_Controller> ();
+		objCtrl = GetComponent<ObjectController> ();
 	}
 
 	public override void Execute ()
 	{
 		if( CheckFloor() ){
 			if( flying ){
+				objCtrl.PlaySound("rock");
 				boxController.Land();
 			}
 

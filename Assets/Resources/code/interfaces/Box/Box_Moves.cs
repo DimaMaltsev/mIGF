@@ -6,10 +6,18 @@ public class Box_Moves : Interface {
 	private float sx = 2.4f;
 	private bool  platformed = false;
 	private object direction;
+	
+	private ObjectController objCtrl;
 
 	public Box_Moves() : base( "sx" , "right" , "left" ) {
 		this.executable = true;
 		this.initActive = true;
+	}
+
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+		objCtrl = GetComponent<ObjectController> ();
 	}
 
 	public override void Execute (){
@@ -59,6 +67,7 @@ public class Box_Moves : Interface {
 	}
 
 	private void StopMoving(){
+		objCtrl.PlaySound ("rock");
 		float newx = 0;
 		if( properties.GetPropertyNumber( "onplatform" ) != 0 ){
 			Collider2D c = Physics2D.OverlapPoint( transform.position - Vector3.up );

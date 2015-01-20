@@ -3,9 +3,19 @@ using System.Collections;
 
 public class GroundCheck_SmallGuy : Interface {
 	private float changeScaleTime = 0.2f;
-	public GroundCheck_SmallGuy() : base( "grounded" , "sx" , "onedge" , "walled" ){
+	public GroundCheck_SmallGuy() : base( "grounded" , "sx" , "onedge" , "walled", "sy" ){
 		this.executable = true;
 		this.initActive = true;
+	}
+
+	private ObjectController objCtrl;
+
+	private bool grounded = false;
+
+	protected override void SetStartingValues ()
+	{
+		base.SetStartingValues ();
+		objCtrl = GetComponent<ObjectController> ();
 	}
 
 	public override void Execute ()
@@ -14,8 +24,18 @@ public class GroundCheck_SmallGuy : Interface {
 		bool wall = CheckWall();
 		bool edge = CheckEdge() && !wall;
 		bool ground = CheckGround();
+
+		bool nextground = ground || (!edge && !wall);
+		Rigidbody2D rb = GetComponent<Rigidbody2D> ();
+
+		if( nextground && !grounded && rb != null && rb.velocity.y < -15 ){
+			objCtrl.PlaySound( "ti_fall" );
+		}
+
+		grounded = nextground;
+
 		properties.SetProperty( "onedge" , edge && ground );
-		properties.SetProperty( "grounded" , ground || ( !edge && !wall ));
+		properties.SetProperty( "grounded" , nextground);
 		properties.SetProperty( "walled" , wall );
 
 		if(!edge && !ground && properties.GetPropertyNumber("sx") == 0 ){

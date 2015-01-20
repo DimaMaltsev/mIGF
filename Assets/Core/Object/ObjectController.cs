@@ -5,8 +5,14 @@ public class ObjectController : MonoBehaviour {
 	public PropertyFacade 	propertyFacade 	= new PropertyFacade();
 	public InterfaceFacade	interfaceFacade	= new InterfaceFacade();
 
+	private AudioSource[] audioSources;
+	private SoundLibrary soundLibrary;
+
 	void Awake(){
 		interfaceFacade.Init( gameObject );
+		audioSources = GetComponents<AudioSource> ();
+		if( GameObject.FindGameObjectWithTag ("SoundLibrary") )
+			soundLibrary = GameObject.FindGameObjectWithTag ("SoundLibrary").GetComponent<SoundLibrary> ();
 	}
 
 	void Start(){
@@ -17,13 +23,6 @@ public class ObjectController : MonoBehaviour {
 	void Update(){
 		interfaceFacade.ExecuteInterfaces();
 	}
-	/*void Start(){
-		propertyFacade.AddProperty( "x" );
-		propertyFacade.AddProperty( "alive" );
-
-		//propertyFacade.SetProperty( "alive" , 2 );
-		Debug.Log( propertyFacade.GetPropertyBoolean( "alive" ) );
-	}*/
 
 	public void AddVariables( string[] variables ){
 		for( int i = 0 ; i < variables.Length ; i++ ){
@@ -37,5 +36,12 @@ public class ObjectController : MonoBehaviour {
 
 	public InterfaceFacade Inters(){
 		return interfaceFacade;
+	}
+
+	public void PlaySound(string name, int audioSourceIndex = 0){
+		if( soundLibrary == null ) return;
+		AudioClip clip = soundLibrary.GetSound (name);
+		audioSources[ audioSourceIndex ].clip = clip;
+		audioSources[ audioSourceIndex ].Play();
 	}
 }
