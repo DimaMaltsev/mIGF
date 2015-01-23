@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .892857134, y: .142857149}
+  m_Size: {x: .430000007, y: .142857149}
   m_Center: {x: 0, y: 0}
 --- !u!61 &6100002
 BoxCollider2D:
