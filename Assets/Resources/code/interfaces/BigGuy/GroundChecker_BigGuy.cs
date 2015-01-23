@@ -25,7 +25,7 @@ public class GroundChecker_BigGuy : Interface {
 
 		bool ground = CheckGround();
 		bool wall = CheckWall();
-		bool edge = CheckEdge() && !wall;
+		bool edge = CheckEdge() && (!wall || !ground);
 		bool canpush  = CheckPush();
 
 		bool nextground = ground || !edge;
@@ -38,7 +38,7 @@ public class GroundChecker_BigGuy : Interface {
 		grounded = nextground;
 
 		properties.SetProperty( "onedge" , edge );
-		properties.SetProperty( "grounded" , ground || !nextground);
+		properties.SetProperty( "grounded" , nextground);
 		properties.SetProperty( "walled" , wall );
 		properties.SetProperty( "canpush" , canpush );
 
