@@ -6,6 +6,12 @@ public class SoundLibrary : MonoBehaviour {
 
 	public AudioClip[] sounds;
 
+	private List<AudioSource> musicAudioSources = new List<AudioSource>();
+	private List<AudioSource> sfxAudioSources = new List<AudioSource>();
+
+	private float sfxVolume = 1;
+	private float musicVolume = 1;
+
 	private Dictionary<string,int> soundsMap = new Dictionary<string, int> (){
 		{ "boss_theme" , 0 },
 		{ "chapter_1" , 1 },
@@ -28,9 +34,61 @@ public class SoundLibrary : MonoBehaviour {
 		{ "gwo_appears" , 18 }
 	};
 
-	public AudioClip GetSound( string name ){
+	public AudioClip GetSound( string name , AudioSource audioSource, string type ){
+		if( type == "sfx" ){
+			if( !sfxAudioSources.Contains( audioSource ) ){
+				sfxAudioSources.Add(audioSource);
+				audioSource.volume = sfxVolume;
+			}
+		}else if( type == "music" ){
+			if( !musicAudioSources.Contains( audioSource ) ){
+				musicAudioSources.Add(audioSource);
+				audioSource.volume = musicVolume;
+			}
+		}else{
+			return null;
+		}
+
 		if( soundsMap.ContainsKey( name ) )
 			return sounds[ soundsMap[ name ] ];
 		return null;
+	}
+
+	void Update(){
+		for( int i = 0 ; i < sfxAudioSources.Count ; i++ ){
+			if( sfxAudioSources[ i ] == null ){
+				sfxAudioSources.RemoveAt( i );
+				i--;
+			}else{
+				sfxAudioSources[ i ].volume = sfxVolume;
+			}
+		}
+
+		for( int i = 0 ; i < musicAudioSources.Count ; i++ ){
+			if( musicAudioSources[ i ].transform == null ){
+				sfxAudioSources.RemoveAt( i );
+				i--;
+			}else{
+				musicAudioSources[ i ].volume = musicVolume;
+			}
+		}
+	}
+
+	void OnGUI() {
+		GUILayout.BeginHorizontal ();
+		GUI.color = Color.black;
+
+		GUILayout.BeginVertical ();
+		GUILayout.Label("SFX Volume");
+		GUILayout.Label("MUSIC Volume");
+		GUILayout.EndVertical ();
+
+		
+		GUILayout.BeginVertical ();
+		sfxVolume = GUILayout.HorizontalSlider(sfxVolume, 0, 1, GUILayout.Width(100), GUILayout.Height(20));
+		musicVolume = GUILayout.HorizontalSlider(musicVolume, 0, 1, GUILayout.Width(100));
+		GUILayout.EndVertical ();
+
+		GUILayout.EndHorizontal ();
 	}
 }

@@ -7,7 +7,6 @@ public class Spawner : MonoBehaviour {
 
 	private Transform LevelContainer;
 	private AudioSource audioSource;
-	private SoundLibrary soundLibrary;
 
 	protected string spawnSoundName = "";
 
@@ -23,11 +22,10 @@ public class Spawner : MonoBehaviour {
 
 		GameObject soundLibGameObj = GameObject.FindGameObjectWithTag( "SoundLibrary" );
 		if( soundLibGameObj != null ){
-			print (spawnSoundName);
-			soundLibrary = soundLibGameObj.GetComponent<SoundLibrary>();
+			SoundLibrary soundLibrary = soundLibGameObj.GetComponent<SoundLibrary>();
 
 			if (spawnSoundName != "" ){
-				AudioClip sound = soundLibrary.GetSound( spawnSoundName );
+				AudioClip sound = soundLibrary.GetSound( spawnSoundName , audioSource , "sfx" );
 				audioSource.clip = sound;
 			}
 		}

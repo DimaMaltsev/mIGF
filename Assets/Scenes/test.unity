@@ -3405,6 +3405,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad, type: 2}
+      propertyPath: musicName
+      value: boss_theme
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1caf8b81c3a8e485fa03cbc996dda8ad, type: 2}
   m_RootGameObject: {fileID: 1534436355}
@@ -5617,6 +5625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalConstraint: 0
   fireEveryOneBlockEvent: 0
+  musicName: boss_theme
 --- !u!81 &1534436357
 AudioListener:
   m_ObjectHideFlags: 0

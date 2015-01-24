@@ -40,7 +40,7 @@ public class ObjectController : MonoBehaviour {
 
 	public void PlaySound(string name, int audioSourceIndex = 0){
 		if( soundLibrary == null ) return;
-		AudioClip clip = soundLibrary.GetSound (name);
+		AudioClip clip = soundLibrary.GetSound (name, audioSources[audioSourceIndex], "sfx");
 		audioSources[ audioSourceIndex ].clip = clip;
 		audioSources[ audioSourceIndex ].Play();
 	}
