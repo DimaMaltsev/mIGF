@@ -28,27 +28,29 @@ public class SpikeController : MonoBehaviour {
 
 	void Start(){
 		opened = !openedOnStart;
-		SwitchActive();
+		SwitchActive(true);
 	}
 
-	public void SwitchActive(){
+	public void SwitchActive(bool init = false){
 		opened = !opened;
 		if( opened )
-			Open();
+			Open(init);
 		else
-			Close();
+			Close(init);
 	}
 
-	private void Open(){
+	private void Open(bool init){
 		cldr.enabled = true;
 		a.SetBool ("opened", true);
-		PlaySound ("spikes_out");
+		if( !init )
+			PlaySound ("spikes_out");
 	}
 
-	private void Close(){
+	private void Close(bool init){
 		cldr.enabled = false;
 		a.SetBool ("opened", false);
-		PlaySound ("spikes_in");
+		if (!init)
+			PlaySound ("spikes_in");
 	}
 
 	private void ActivateTrigger(){
@@ -56,6 +58,7 @@ public class SpikeController : MonoBehaviour {
 	}
 
 	private void PlaySound(string soundName){
+		if( soundLibrary == null ) return;
 		AudioClip sound = soundLibrary.GetSound( soundName , audioSource , "sfx" );
 		audioSource.clip = sound;
 		audioSource.Play ();
