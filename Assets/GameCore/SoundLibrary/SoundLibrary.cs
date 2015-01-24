@@ -6,6 +6,8 @@ public class SoundLibrary : MonoBehaviour {
 
 	public AudioClip[] sounds;
 
+	public bool muteAllSounds = false;
+
 	private List<AudioSource> musicAudioSources = new List<AudioSource>();
 	private List<AudioSource> sfxAudioSources = new List<AudioSource>();
 
@@ -52,6 +54,13 @@ public class SoundLibrary : MonoBehaviour {
 		if( soundsMap.ContainsKey( name ) )
 			return sounds[ soundsMap[ name ] ];
 		return null;
+	}
+
+	void Awake(){
+		if( muteAllSounds ){
+			sfxVolume = 0;
+			musicVolume = 0;
+		}
 	}
 
 	void Update(){
