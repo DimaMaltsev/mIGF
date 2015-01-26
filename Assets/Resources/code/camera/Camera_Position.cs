@@ -17,7 +17,7 @@ public class Camera_Position : MonoBehaviour {
 
 	public bool verticalConstraint = false;
 	public bool fireEveryOneBlockEvent = false;
-
+	public string musicName = "";
 
 	void Awake(){
 		camera = GetComponent<Camera>();
@@ -34,6 +34,18 @@ public class Camera_Position : MonoBehaviour {
 		Messenger.AddListener( "CutSceneEnd" , OnCutSceneEnd );
 		Messenger.AddListener<Vector2>( "FreezeOnPoint" , FreezeOnPoint );
 		Messenger.AddListener( "DeFreezeOnPoint" , DeFreezeOnPoint );
+		
+		AudioSource audioSource = GetComponent<AudioSource> ();
+		GameObject soundLibGameObj = GameObject.FindGameObjectWithTag( "SoundLibrary" );
+		if( soundLibGameObj != null ){
+			SoundLibrary soundLibrary = soundLibGameObj.GetComponent<SoundLibrary>();
+			
+			if (musicName != "" ){
+				AudioClip sound = soundLibrary.GetSound( musicName , audioSource , "music" );
+				audioSource.clip = sound;
+				audioSource.Play ();
+			}
+		}
 	}
 
 

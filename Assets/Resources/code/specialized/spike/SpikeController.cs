@@ -11,36 +11,56 @@ public class SpikeController : MonoBehaviour {
 	private BoxCollider2D cldr;
 	private Animator a;
 
+	private AudioSource audioSource;
+	private SoundLibrary soundLibrary;
+
 	void Awake(){
 		sr = GetComponent<SpriteRenderer>();
 		cldr = GetComponent<BoxCollider2D>();
 		a = GetComponent<Animator> ();
+
+		audioSource = GetComponent<AudioSource> ();
+		GameObject soundLibGameObj = GameObject.FindGameObjectWithTag( "SoundLibrary" );
+		if( soundLibGameObj != null ){
+			soundLibrary = soundLibGameObj.GetComponent<SoundLibrary>();
+		}
 	}
 
 	void Start(){
 		opened = !openedOnStart;
-		SwitchActive();
+		SwitchActive(true);
 	}
 
-	public void SwitchActive(){
+	public void SwitchActive(bool init = false){
 		opened = !opened;
 		if( opened )
-			Open();
+			Open(init);
 		else
-			Close();
+			Close(init);
 	}
 
-	private void Open(){
+	private void Open(bool init){
 		cldr.enabled = true;
 		a.SetBool ("opened", true);
+		if( !init )
+			PlaySound ("spikes_out");
 	}
 
-	private void Close(){
+	private void Close(bool init){
 		cldr.enabled = false;
 		a.SetBool ("opened", false);
+		if (!init)
+			PlaySound ("spikes_in");
 	}
 
 	private void ActivateTrigger(){
 		SwitchActive();
+	}
+
+	private void PlaySound(string soundName){
+		if( soundLibrary == null ) return;
+		AudioClip sound = soundLibrary.GetSound( soundName , audioSource , "sfx" );
+		audioSource.clip = sound;
+		audioSource.Play ();
 	}
 }

@@ -24,7 +24,7 @@ public class MovingPlatformController : Interface {
 	private bool stoping = false;
 	private bool lastMoving = false;
 
-	public MovingPlatformController() : base ( "sx" , "onplatform" ){
+	public MovingPlatformController() : base ( "sx", "sy" , "onplatform" ){
 		this.executable = true;
 		this.initActive = true;
 
@@ -85,6 +85,7 @@ public class MovingPlatformController : Interface {
 				stoping = false;
 				lastMoving = false;
 				properties.SetProperty( "sx" , 0 );
+				properties.SetProperty( "sy" , 0 );
 			}
 			return;
 		}
@@ -96,6 +97,7 @@ public class MovingPlatformController : Interface {
 		transform.position = new Vector3( np.x , np.y , 0 );
 
 		properties.SetProperty( "sx" , speed.x );
+		properties.SetProperty( "sy" , speed.y );
 	}
 
 	private void NextPoint(){

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class FreeSpaceCheck_BigGuy : Interface {
-
+	bool dead = false;
 	public FreeSpaceCheck_BigGuy() : base(){
 		this.executable = true;
 		this.initActive = true;
@@ -10,6 +10,7 @@ public class FreeSpaceCheck_BigGuy : Interface {
 
 	public override void Execute ()
 	{
+		if( dead ) return;
 		TriggerTypeDetectionForNeighBours ();
 	}
 
@@ -18,38 +19,56 @@ public class FreeSpaceCheck_BigGuy : Interface {
 		Collider2D[] up1 	= Physics2D.OverlapPointAll( p + Vector3.up - Vector3.right * 0.5f	);
 		Collider2D[] up2 	= Physics2D.OverlapPointAll( p + Vector3.up + Vector3.right * 0.5f	);
 
-		Collider2D[] down1 	= Physics2D.OverlapPointAll( p + Vector3.down - Vector3.right * 0.5f	);
-		Collider2D[] down2 	= Physics2D.OverlapPointAll( p + Vector3.down + Vector3.right * 0.5f	);
+		Collider2D[] down1 	= Physics2D.OverlapPointAll( p + Vector3.down - Vector3.right * 0.5f);
+		Collider2D[] down2 	= Physics2D.OverlapPointAll( p + Vector3.down + Vector3.right * 0.5f);
 
-		Collider2D[] right1 	= Physics2D.OverlapPointAll( p + Vector3.right + Vector3.up * 0.5f	);
-		Collider2D[] right2 	= Physics2D.OverlapPointAll( p + Vector3.right - Vector3.up * 0.5f	);
+		Collider2D[] right1 = Physics2D.OverlapPointAll( p + Vector3.right + Vector3.up * 0.5f	);
+		Collider2D[] right2 = Physics2D.OverlapPointAll( p + Vector3.right - Vector3.up * 0.5f	);
 
 		Collider2D[] left1 	= Physics2D.OverlapPointAll( p + Vector3.left + Vector3.up * 0.5f	);
 		Collider2D[] left2 	= Physics2D.OverlapPointAll( p + Vector3.left - Vector3.up * 0.5f	);
 		
-		bool b_up 		= ThereIsSomething( up1 	) || ThereIsSomething( up2	);
-		bool b_right 	= ThereIsSomething( right1 	) || ThereIsSomething( right2 );
-		bool b_left 	= ThereIsSomething( left1 	) || ThereIsSomething( left2 );
-		bool b_down 	= ThereIsSomething( down1 	) || ThereIsSomething( down2 );
+		Transform b_up1 = FreeSpaceHelper.ThereIsSomething (up1, transform);
+		Transform b_up2 = FreeSpaceHelper.ThereIsSomething (up2, transform);
 
-		if( b_up && b_down || b_left && b_right ){
+		Transform b_right1 = FreeSpaceHelper.ThereIsSomething (right1, transform, true);
+		Transform b_right2 = FreeSpaceHelper.ThereIsSomething (right2, transform, true);
+
+		Transform b_left1 = FreeSpaceHelper.ThereIsSomething (left1, transform, true);
+		Transform b_left2 = FreeSpaceHelper.ThereIsSomething (left2, transform, true);
+
+		Transform b_down1 = FreeSpaceHelper.ThereIsSomething (down1, transform);
+		Transform b_down2 = FreeSpaceHelper.ThereIsSomething (down2, transform);
+
+		if( 
+		   Die ( b_up1 , b_down1 ) || 
+		   Die ( b_up1 , b_down2 ) ||
+		   Die ( b_up2 , b_down1 ) ||
+		   Die ( b_up2 , b_down2 ) 
+		   ){
 			GetComponent<Dieable>().Die();
+			dead = true;
+			return;
+		}
+
+		if( 
+		   Die ( b_left1 , b_right1, true ) || 
+		   Die ( b_left1 , b_right2, true ) ||
+		   Die ( b_left2 , b_right1, true ) ||
+		   Die ( b_left2 , b_right2, true ) 
+		   ){
+			GetComponent<Dieable>().Die();
+			dead = true;
+			return;
 		}
 	}
 
-	private bool ThereIsSomething( Collider2D[] others ){
-		if( others != null ){
-			for( int i = 0 ; i < others.Length; i++ ){
-				Collider2D block = others[ i ];
-				if( 
-				   block.GetComponent<Block_TypeDetection>() != null || 
-				   block.GetComponent<Box_Moves>() != null ||
-				   block.GetComponent<DoorController>() != null
-				   )
-					return true;
-			}
+	private bool Die( Transform one, Transform two, bool horizontal = false){
+		if( one == null || two == null ) 
+			return false;
+		if( !horizontal ){
+			return Mathf.Abs(one.position.y - two.position.y) < 2.8f;
 		}
-		
-		return false;
+		return Mathf.Abs(one.position.x - two.position.x) < 3.1f;
 	}
 }

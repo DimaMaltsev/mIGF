@@ -5,15 +5,16 @@ public class SmallGuySpawner : Spawner {
 	
 	public bool menu = false;
 
-	public SmallGuySpawner() : base( "SmallGuy" , "Guys" ){}
+	public SmallGuySpawner() : base( "SmallGuy" , "Guys" ){
+		this.spawnSoundName = "ti_appears";
+	}
 
 	void Start(){
 		Messenger.AddListener( "SmallGuyDead" , OnSmallGuyDead );
-		base.Spawn();
+		Invoke ("RealSpawn", 0.5f);
 	}
 
-	protected override void ConfigureSpawnedObject (GameObject spawnObject)
-	{
+	protected override void ConfigureSpawnedObject (GameObject spawnObject){
 		if( menu ){
 			spawnObject.GetComponent<Input_SmallGuy>().ItIsMenu();
 		}
@@ -21,6 +22,10 @@ public class SmallGuySpawner : Spawner {
 	}
 
 	private void OnSmallGuyDead(){
-		base.Spawn();
+		RealSpawn ();
+	}
+
+	private void RealSpawn(){
+		base.Spawn ();
 	}
 }

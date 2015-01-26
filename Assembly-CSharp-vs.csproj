@@ -65,6 +65,7 @@
      <Compile Include="Assets\GameCore\Spawner\Spawner.cs" />
      <Compile Include="Assets\GameCore\SpriteLibrary\SpriteLibrary.cs" />
      <Compile Include="Assets\GameCore\Utils\Activator.cs" />
+     <Compile Include="Assets\GameCore\Utils\FreeSpaceHelper.cs" />
      <Compile Include="Assets\Hacks\CutScenes\CutSceneTrigger.cs" />
      <Compile Include="Assets\Hacks\CutScenes\CutScenesController.cs" />
      <Compile Include="Assets\Hacks\MainMenu\FloatingPointerBehaviour.cs" />

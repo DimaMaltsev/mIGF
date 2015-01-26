@@ -5,7 +5,9 @@ public class BigGuySpawner : Spawner {
 
 	public bool menu = false;
 
-	public BigGuySpawner() : base( "BigGuy" , "Guys" ){}
+	public BigGuySpawner() : base( "BigGuy" , "Guys" ){
+		this.spawnSoundName = "gwo_appears";
+	}
 
 	void Start(){
 		Messenger.AddListener( "BigGuyDead" , OnBigGuyDead );
