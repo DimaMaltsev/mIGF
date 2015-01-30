@@ -35,7 +35,8 @@ public static class FreeSpaceHelper {
 	
 	private static bool Dangerous(Transform tr, bool horizontal, Transform transform ){
 		Transform parent = tr.parent;
-		
+		if( parent == null || parent.GetComponent<ObjectController>() == null ) return false;
+
 		float sx = parent.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber("sx");
 		float sy = parent.GetComponent<ObjectController>().propertyFacade.GetPropertyNumber("sy");
 		
