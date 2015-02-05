@@ -197,6 +197,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400024}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: Content
   m_TagString: ParalaxLayerContent
@@ -748,6 +749,34 @@ MonoBehaviour:
   MaxRaysCountInArea: 4
   RayAppearProbability: .5
   SecondsTillProbableNextRay: 4
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf52be547d814f13b5a110fea0bcdfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSprites:
+  - {fileID: 21300000, guid: e52e431378d224805aead5c16d6aea97, type: 3}
+  - {fileID: 21300000, guid: 5d90bb6f3e592440ab4f3afa21ecf337, type: 3}
+  - {fileID: 21300000, guid: 214fc7b40fc424e2f98cfdb5987eeef4, type: 3}
+  widthRange: 20
+  heightRange: 20
+  spawnTime: .100000001
+  maxParticleCount: 10
+  lifeTime: 30
+  lifeSpeed: .00999999978
+  xSpeed: .0500000007
+  ySpeed: .100000001
+  xSpread: 0
+  ySpread: .00999999978
+  xRand: .00999999978
+  yRand: 0
+  alphaSpeed: .0500000007
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
