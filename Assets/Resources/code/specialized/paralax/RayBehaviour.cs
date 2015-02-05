@@ -12,7 +12,7 @@ public class RayBehaviour : MonoBehaviour {
 	private float currentAlpha = 0;
 	private float sign = 1;
 	private List<GameObject> rays = new List<GameObject>();
-	private float rayWidth = 0.175f;
+	private float rayWidth = 0.25f;
 
 	void Awake(){
 		AddTwoRays ();

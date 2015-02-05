@@ -18,13 +18,15 @@ public class RaysController : MonoBehaviour {
 		if(IsInvoking("ShouldICreateANewRay")){
 			return;
 		}else{
+
+			Invoke ("ShouldICreateANewRay", SecondsTillProbableNextRay);
+
 			if(!createNewRay){
 				return;
 			}
 
 			createNewRay = false;
 			rays.Add(CreateRay().GetComponent<RayBehaviour>());
-			Invoke ("ShouldICreateANewRay", SecondsTillProbableNextRay);
 		}
 
 	}
@@ -53,6 +55,9 @@ public class RaysController : MonoBehaviour {
 		ray.transform.parent = transform;
 		ray.transform.position = Vector3.zero;
 		ray.transform.localPosition = new Vector3 (GetRayPosition(), 5, 0);
+
+		RayBehaviour rb = ray.GetComponent<RayBehaviour> ();
+		rb.rayLifeTime = Random.Range(0 , rb.rayLifeTime);
 		return ray;
 	}
 }

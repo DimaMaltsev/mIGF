@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c488b5dc6d0a84322bdced07223779dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralaxSpeedAffector: 2
+  paralaxSpeedAffector: .100000001
   yShift: 5
   movingLayers:
   - {fileID: 400014}
