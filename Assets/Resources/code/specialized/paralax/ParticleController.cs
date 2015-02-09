@@ -23,6 +23,10 @@ public class ParticleController : MonoBehaviour {
 
 	private List<Transform> particles = new List<Transform>();
 
+	void Awake(){
+		GetComponent<SpriteRenderer>().enabled = false;
+	}
+
 	void Start(){
 		SpawnParticle ();
 	}
