@@ -21,6 +21,9 @@ public class CutScenesController : MonoBehaviour {
 	private int currentLetterIndex;
 	private bool phraseIsPrinting = false;
 	private bool sceneIsOn = false;
+	
+	private Dictionary<string,RuntimeAnimatorController> animators = new Dictionary<string, RuntimeAnimatorController>();
+	private Animator animator;
 
 	void Awake(){
 		upSprite 	= upLine.GetComponent<SpriteRenderer> ();
@@ -33,8 +36,13 @@ public class CutScenesController : MonoBehaviour {
 		downSprite.color = new Color (1, 1, 1, currentAlpha);
 		avatarSprite.color = new Color (1, 1, 1, currentAlpha);
 		textMesh.color = new Color (1, 1, 1, currentAlpha);
-		
-		
+
+		animators.Add("Gwo" ,  Resources.Load<RuntimeAnimatorController>("graphics/animators/CutSceneAvatarGwo"));
+		animators.Add("Ti" ,  Resources.Load<RuntimeAnimatorController>("graphics/animators/CutSceneAvatarTi"));
+
+
+		animator = avatar.GetComponent<Animator> ();
+
 		Messenger.AddListener<List<string[]>, Vector2> ("CutSceneTrigger", ShowCutScene);
 	}
 	
@@ -70,11 +78,17 @@ public class CutScenesController : MonoBehaviour {
 			EndCutScene();
 			return;
 		}
+
 		
+		string whoIstalking = currentDialog[0][0];
+		string emotion = currentDialog [0].Length > 2 ? currentDialog[0][2] : "";
+
+		SetUpAnimator (whoIstalking, emotion);
+
 		textMesh.text = "";
 
 		currentLetterIndex = 0;
-		textMesh.text = currentDialog [0] [0] + " : ";
+		textMesh.text = whoIstalking + " : ";
 		ShowNextLetter ();
 	}
 
@@ -119,5 +133,22 @@ public class CutScenesController : MonoBehaviour {
 
 	private void SendEndCutSceneMessage(){
 		Messenger.Broadcast ("CutSceneEnd");
+	}
+
+	private void SetUpAnimator(string whoIsTalking, string emotion){
+		animator.runtimeAnimatorController = animators [whoIsTalking];
+		
+		UpdateAvatarEmotion (emotion);
+	}
+
+	private void UpdateAvatarEmotion(string emotion = ""){
+		string[] emotions = new string[]{"angry", "happy", "sad", "neutral"};
+		for(int i = 0 ; i < emotions.Length; i++ ){
+			if(emotions[i] == emotion){
+				animator.SetBool(emotion, true);
+			}else{
+				animator.SetBool(emotions[i], false);
+			}
+		}
 	}
 }

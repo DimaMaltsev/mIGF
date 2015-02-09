@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public class testDialog : CutSceneTrigger {
 	public Vector2 startCameraShift;
 	void Awake(){
-		dialog = new List<string[]>{
-			new string[]{	"Ti"	, "Hi, bitch!"},
-			new string[]{	"Gwo"	, "ssup?"},
+		dialog = new List<string[]>{ // possible emotions {"sad", "happy", "angry", "neutral"}
+			new string[]{	"Gwo"	, "Hi, bitch!"},
+			new string[]{	"Gwo"	, "ssup?" , "angry"},
 			new string[]{	"Gwo"	, "Wanna buy some weed?"},
 			new string[]{	"Ti"	, "Ur u selling?"},
 			new string[]{	"Gwo"	, "No"},
