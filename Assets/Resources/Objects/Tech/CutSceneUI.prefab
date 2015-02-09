@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5152c34b18fa44118b8bca5f0c2e03db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiSpriteOrderShift: 10
+  uiSpriteOrderShift: 0
   uiHolder: {fileID: 400008}
 --- !u!114 &11400002
 MonoBehaviour:
