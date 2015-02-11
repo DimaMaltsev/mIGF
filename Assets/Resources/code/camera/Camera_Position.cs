@@ -123,7 +123,7 @@ public class Camera_Position : MonoBehaviour {
 
 	private void FreezeOnPoint(Vector2 point){
 		if( cutSceneOn ) return;
-
+		freezePoint = point;
 		freezeOnPoint = true;
 	}
 	private void DeFreezeOnPoint(){

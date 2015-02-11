@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class CameraFreezer : MonoBehaviour {
 	public Vector2 cameraFreezePoint;
 	public float unfreezeWaitTime = 1;
+	public bool positionSameAsFreezer;
 
 	private List<Transform> intruders = new List<Transform>();
 
@@ -15,7 +16,11 @@ public class CameraFreezer : MonoBehaviour {
 			CancelInvoke ("SendUnFreeze");
 
 		intruders.Add(c.transform);
-		Messenger.Broadcast<Vector2> ("FreezeOnPoint", cameraFreezePoint);
+		Vector2 position = cameraFreezePoint;
+		if( positionSameAsFreezer ){
+			position = new Vector2(transform.position.x, transform.position.y);
+		}
+		Messenger.Broadcast<Vector2> ("FreezeOnPoint", position);
 	}
 
 	private void OnTriggerExit2D(Collider2D c){
