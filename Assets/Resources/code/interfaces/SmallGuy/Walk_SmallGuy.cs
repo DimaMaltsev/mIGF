@@ -52,8 +52,16 @@ public class Walk_SmallGuy : Interface {
 
 		Vector3 p = transform.position - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
-		if( c != null && c.tag == "BigGuy" && c.GetComponent<ObjectController>().propertyFacade.GetPropertyBoolean( "walled" ) == false )
+		bool walled = properties.GetPropertyBoolean( "walled" );
+
+
+		if( c != null && c.tag == "BigGuy" && c.GetComponent<ObjectController> ().propertyFacade.GetPropertyBoolean ("walled") == false)
 			sx = 0;
+
+		bool stopOnWall = Mathf.Sign (psx) == Mathf.Sign (transform.localScale.x);
+
+		if(walled && stopOnWall)
+			psx = 0;
 
 		rb.velocity = new Vector2 (0, sy);
 

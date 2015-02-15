@@ -30,6 +30,11 @@ public class Physics_BigGuy : Interface {
 		float sy = rb.velocity.y;
 
 		rb.velocity = new Vector2 (0, sy);
+		bool walled = properties.GetPropertyBoolean( "walled" );
+
+		if(walled && Mathf.Sign(psx) == Mathf.Sign(transform.localScale.x))
+			psx = 0;
+
 		transform.position += new Vector3 (sx + psx, 0, 0) * Time.deltaTime;
 
 		if( properties.GetPropertyBoolean( "down" ) ){
