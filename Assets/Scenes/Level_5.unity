@@ -56533,6 +56533,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1588359947}
+  - 114: {fileID: 1588359948}
   m_Layer: 0
   m_Name: Content
   m_TagString: ParalaxLayerContent
@@ -56553,6 +56554,22 @@ Transform:
   - {fileID: 443253123}
   m_Father: {fileID: 1198338496}
   m_RootOrder: 0
+--- !u!114 &1588359948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 01a0869a6a05b408fbdc323cf094cea1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1128793993}
+  m_GameObject: {fileID: 1588359946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed928de1b988c423991eaa4fcf44fc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayMinEdgeSpawnDistance: 0
+  MaxRaysCountInArea: 4
+  RayAppearProbability: .5
+  SecondsTillProbableNextRay: 4
 --- !u!1 &1593448582
 GameObject:
   m_ObjectHideFlags: 0
