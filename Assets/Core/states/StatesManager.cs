@@ -5,7 +5,10 @@ using System.Collections.Generic;
 public class StatesManager : MonoBehaviour {
 
 	public string initState = "main";
-	
+
+	public string currentState = "";
+	private string nextState = "";
+
 	private void CleanUpLastLevel(){
 		Messenger.Cleanup();
 		GameObject container = GameObject.FindGameObjectWithTag( "LevelContainer" );
@@ -14,7 +17,6 @@ public class StatesManager : MonoBehaviour {
 	}
 	
 	private void LoadState( string state ){
-		
 		CleanUpLastLevel();
 		Application.LoadLevelAdditive( state );
 		SubscribeOnEvents();
@@ -22,7 +24,7 @@ public class StatesManager : MonoBehaviour {
 	
 	private void SubscribeOnEvents(){
 		Messenger.AddListener( "CoreLoaded" , OnCoreLoaded );
-		Messenger.AddListener<string>( "LoadState" , OnLoadState );
+		Messenger.AddListener<string[]>( "LoadState" , OnLoadState );
 	}
 	private void UnSubscribeOnEvents(){}
 	
@@ -32,8 +34,14 @@ public class StatesManager : MonoBehaviour {
 		LoadState( initState );
 	}
 	
-	private void OnLoadState( string state ){
-		LoadState( state );
+	private void OnLoadState( string[] state ){
+		if (state.Length == 0) {
+			LoadState("main");
+			return;
+		}
+		currentState = state[0];
+		nextState = state[1];
+		LoadState( currentState );
 	}
 	
 	// -------------- ROUTINE ----------------
