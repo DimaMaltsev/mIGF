@@ -54,6 +54,9 @@ public class GroundCheck_SmallGuy : Interface {
 		Vector3 p = transform.position - localScale * Vector3.right * 0.4f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
 
+		
+		if (c != null && c.isTrigger) 
+			return false;
 
 		return c != null && CountBigGuyUnderMe(c);
 	}
@@ -62,7 +65,8 @@ public class GroundCheck_SmallGuy : Interface {
 		float localScale = transform.localScale.x;
 		Vector3 p = transform.position + localScale * Vector3.right * 0.4f - Vector3.up;
 		Collider2D c = Physics2D.OverlapPoint( p );
-		
+		if (c != null && c.isTrigger) 
+			return true;
 		return c == null || !CountBigGuyUnderMe(c);
 	}
 
