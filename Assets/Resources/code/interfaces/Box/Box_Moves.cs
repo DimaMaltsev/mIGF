@@ -24,14 +24,23 @@ public class Box_Moves : Interface {
 		float sx = properties.GetPropertyNumber( "sx" );
 		float pl = properties.GetPropertyNumber( "onplatform" );
 
+		Vector2 point = new Vector2 (transform.position.x, transform.position.y);
+		if( pl != 0 ){
+			if( ThereIsBlock( Vector2.right/2 * Mathf.Sign (pl) ) )
+				pl = 0;
+		}
+
 		if( pl == 0 && platformed && !IsInvoking( "StopMoving" ) ){
 			StopMoving();
 			platformed = false;
 		}
 
 		if( pl != 0 && !platformed && !IsInvoking( "StopMoving" ) ){
+			print ("here");
 			StopMoving();
 		}
+
+
 
 		if( pl != 0 )
 			platformed = true;

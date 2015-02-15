@@ -63,7 +63,7 @@ public class Box_Moves_Vertical : Interface {
 
 		if( properties.GetPropertyNumber( "sx" ) == 0 ){
 			if( c.GetComponent<DoorController>() == null ){
-				transform.position = c.transform.position + Vector3.up * 0.95f;
+				transform.position = new Vector3(transform.position.x, c.transform.position.y, 0) + Vector3.up * 0.95f;
 			}else
 				transform.position = new Vector3( Mathf.Round( transform.position.x ) , Mathf.Round( transform.position.y ) , 0 );
 		}else{
