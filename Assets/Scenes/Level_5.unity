@@ -2091,7 +2091,7 @@ Transform:
   m_PrefabInternal: {fileID: 1128793993}
   m_GameObject: {fileID: 63115746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0131492615, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1556175306}
@@ -2977,10 +2977,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1660717349}
   - {fileID: 1462063875}
   - {fileID: 859694425}
   - {fileID: 427794543}
+  - {fileID: 1660717349}
   m_Father: {fileID: 1175367980}
   m_RootOrder: 0
 --- !u!1 &92015153
@@ -14810,7 +14810,7 @@ Transform:
   - {fileID: 602708279}
   - {fileID: 48712355}
   m_Father: {fileID: 91238533}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &433324868
 Prefab:
   m_ObjectHideFlags: 0
@@ -30447,7 +30447,7 @@ Transform:
   - {fileID: 731251771}
   - {fileID: 495933260}
   m_Father: {fileID: 91238533}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &860247183
 GameObject:
   m_ObjectHideFlags: 0
@@ -43333,7 +43333,7 @@ Transform:
   m_PrefabInternal: {fileID: 1128793993}
   m_GameObject: {fileID: 1198338495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0131492615, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1588359947}
@@ -52778,7 +52778,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 91238533}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!212 &1462063876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58676,7 +58676,7 @@ GameObject:
   - 4: {fileID: 1660717349}
   - 212: {fileID: 1660717350}
   m_Layer: 0
-  m_Name: sky
+  m_Name: sky back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58689,11 +58689,11 @@ Transform:
   m_PrefabInternal: {fileID: 1128793993}
   m_GameObject: {fileID: 1660717348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0664710999, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 91238533}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!212 &1660717350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58714,8 +58714,8 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: -101
-  m_Sprite: {fileID: 21300000, guid: 5a4b6a78d569d4e1d9d1c6384b24a173, type: 3}
+  m_SortingOrder: -102
+  m_Sprite: {fileID: 21300000, guid: 3fa8155ba8bc24e6f9ded87e687854c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1661181057
 Prefab:

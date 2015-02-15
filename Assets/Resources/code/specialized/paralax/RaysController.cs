@@ -54,7 +54,7 @@ public class RaysController : MonoBehaviour {
 		GameObject ray = (GameObject)Instantiate (Resources.Load ("Objects/Environment/ray"));
 		ray.transform.parent = transform;
 		ray.transform.position = Vector3.zero;
-		ray.transform.localPosition = new Vector3 (GetRayPosition(), 5, 0);
+		ray.transform.localPosition = new Vector3 (GetRayPosition(), 5.95f, 0);
 
 		RayBehaviour rb = ray.GetComponent<RayBehaviour> ();
 		rb.rayLifeTime = Random.Range(0 , rb.rayLifeTime);

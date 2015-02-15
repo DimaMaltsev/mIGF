@@ -177,6 +177,18 @@ MonoBehaviour:
   - Tutor4Ti
   - Tutor5Ti
   - Tutor6Ti
+  - Tutor1Gwo
+  - Tutor2Gwo
+  - Tutor3Gwo
+  - Tutor4Gwo
+  - Tutor5Gwo
+  - Level_2
+  - Level_1
+  - Level_3
+  - Level_6
+  - Level_4
+  - Level_7
+  - Level_5
 --- !u!1 &707125601
 GameObject:
   m_ObjectHideFlags: 0

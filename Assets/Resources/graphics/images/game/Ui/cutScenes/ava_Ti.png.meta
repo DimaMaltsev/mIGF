@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ea32378e2a4dc4f68a978021ca4e8769
+guid: a9e925fa9a10a4ca78135cbc5fcfd570
 TextureImporter:
   fileIDToRecycleName:
     21300000: ava_Ti_0
@@ -32,7 +32,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 0
     aniso: 1
@@ -58,98 +58,98 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_1
       rect:
         serializedVersion: 2
-        x: 74
+        x: 148
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_2
       rect:
         serializedVersion: 2
-        x: 148
+        x: 296
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_3
       rect:
         serializedVersion: 2
-        x: 222
+        x: 444
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_4
       rect:
         serializedVersion: 2
-        x: 296
+        x: 592
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_5
       rect:
         serializedVersion: 2
-        x: 370
+        x: 740
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_6
       rect:
         serializedVersion: 2
-        x: 444
+        x: 888
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_7
       rect:
         serializedVersion: 2
-        x: 518
+        x: 1036
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_8
       rect:
         serializedVersion: 2
-        x: 592
+        x: 1184
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Ti_9
       rect:
         serializedVersion: 2
-        x: 666
+        x: 1332
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

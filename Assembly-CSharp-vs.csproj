@@ -71,8 +71,10 @@
      <Compile Include="Assets\Hacks\MainMenu\FloatingPointerBehaviour.cs" />
      <Compile Include="Assets\Hacks\MainMenu\HasGrass.cs" />
      <Compile Include="Assets\Hacks\MainMenu\MainMenuBlocksHack.cs" />
+     <Compile Include="Assets\Hacks\MainMenu\StartBehaviour.cs" />
      <Compile Include="Assets\Resources\code\camera\CameraFreezer.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
+     <Compile Include="Assets\Resources\code\camera\Camera_mockupMap.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMenu.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Collider_BigGuy.cs" />
@@ -109,6 +111,7 @@
      <Compile Include="Assets\Resources\code\specialized\crumblingWall\CrumblingWallController.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\testDialog.cs" />
      <Compile Include="Assets\Resources\code\specialized\door\DoorController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\grass\GrassController.cs" />
      <Compile Include="Assets\Resources\code\specialized\hiddenArea\HiddenAreaController.cs" />
      <Compile Include="Assets\Resources\code\specialized\jumpMushroom\JumpMushroomController.cs" />
      <Compile Include="Assets\Resources\code\specialized\killerArea\KillAreaEnter.cs" />

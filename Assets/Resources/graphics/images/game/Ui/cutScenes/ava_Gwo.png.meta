@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7573a7fc4c0e045e2b06a7bb4ae8d16a
+guid: 200b0897b60394d5cb0c8f3e2db10017
 TextureImporter:
   fileIDToRecycleName:
     21300000: ava_Gwo_0
@@ -12,6 +12,10 @@ TextureImporter:
     21300014: ava_Gwo_7
     21300016: ava_Gwo_8
     21300018: ava_Gwo_9
+    21300020: ava_Gwo_10
+    21300022: ava_Gwo_11
+    21300024: ava_Gwo_12
+    21300026: ava_Gwo_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +36,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 0
     aniso: 1
@@ -58,98 +62,98 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_1
       rect:
         serializedVersion: 2
-        x: 74
+        x: 148
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_2
       rect:
         serializedVersion: 2
-        x: 148
+        x: 296
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_3
       rect:
         serializedVersion: 2
-        x: 222
+        x: 444
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_4
       rect:
         serializedVersion: 2
-        x: 296
+        x: 592
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_5
       rect:
         serializedVersion: 2
-        x: 370
+        x: 740
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_6
       rect:
         serializedVersion: 2
-        x: 444
+        x: 888
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_7
       rect:
         serializedVersion: 2
-        x: 518
+        x: 1036
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_8
       rect:
         serializedVersion: 2
-        x: 592
+        x: 1184
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ava_Gwo_9
       rect:
         serializedVersion: 2
-        x: 666
+        x: 1332
         y: 0
-        width: 74
-        height: 74
+        width: 148
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
