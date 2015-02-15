@@ -31,7 +31,8 @@ public class Camera_mockupMap : MonoBehaviour {
 			}
 		}
 
-		loadState = levels [index+1];
+		loadState = levels [index];
+
 		if( index + 2 < levels.Length )
 			nextState = levels[index + 2];
 		else

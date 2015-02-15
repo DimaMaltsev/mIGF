@@ -71,6 +71,7 @@
      <Compile Include="Assets\Hacks\MainMenu\FloatingPointerBehaviour.cs" />
      <Compile Include="Assets\Hacks\MainMenu\HasGrass.cs" />
      <Compile Include="Assets\Hacks\MainMenu\MainMenuBlocksHack.cs" />
+     <Compile Include="Assets\Hacks\MainMenu\StartBehaviour.cs" />
      <Compile Include="Assets\Resources\code\camera\CameraFreezer.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMap.cs" />
