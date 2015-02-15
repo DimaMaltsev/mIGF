@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if(objectsReachedEndCount != waitingForObjectsCount) return;
+		if(objectsReachedEndCount != waitingForObjectsCount && !Input.GetButton("Esc") ) return;
 
 		GUIStyle centeredStyle2 = GUI.skin.GetStyle("Button");
 		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 - 25, 100, 50), "NEXT LEVEL", centeredStyle2)){			
