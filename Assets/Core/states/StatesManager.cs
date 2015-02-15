@@ -39,6 +39,12 @@ public class StatesManager : MonoBehaviour {
 			LoadState("main");
 			return;
 		}
+
+		if (state.Length == 1) {
+			LoadState("map");
+			return;
+		}
+
 		currentState = state[0];
 		nextState = state[1];
 		LoadState( currentState );

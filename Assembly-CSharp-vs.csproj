@@ -73,6 +73,7 @@
      <Compile Include="Assets\Hacks\MainMenu\MainMenuBlocksHack.cs" />
      <Compile Include="Assets\Resources\code\camera\CameraFreezer.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_Position.cs" />
+     <Compile Include="Assets\Resources\code\camera\Camera_mockupMap.cs" />
      <Compile Include="Assets\Resources\code\camera\Camera_mockupMenu.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Animation_BigGuy.cs" />
      <Compile Include="Assets\Resources\code\interfaces\BigGuy\Collider_BigGuy.cs" />

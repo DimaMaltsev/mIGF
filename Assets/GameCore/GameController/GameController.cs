@@ -20,8 +20,11 @@ public class GameController : MonoBehaviour {
 		if(objectsReachedEndCount != waitingForObjectsCount) return;
 
 		GUIStyle centeredStyle2 = GUI.skin.GetStyle("Button");
-		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2, 100, 50), "NEXT LEVEL", centeredStyle2)){			
+		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 - 25, 100, 50), "NEXT LEVEL", centeredStyle2)){			
 			Messenger.Broadcast<string[]>( "LoadState" , new string[]{} );
+		}
+		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 + 25, 100, 50), "MAP", centeredStyle2)){			
+			Messenger.Broadcast<string[]>( "LoadState" , new string[]{"map"} );
 		}
 	}
 
