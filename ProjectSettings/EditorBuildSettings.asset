@@ -60,6 +60,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutor5Ti.unity
   - enabled: 1
+    path: Assets/Scenes/Tutor1Ti&Gwo.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor2Ti&Gwo.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor3Ti&Gwo.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutor4Ti&Gwo.unity
+  - enabled: 1
     path: Assets/Scenes/Tutor6Ti.unity
   - enabled: 1
     path: Assets/Scenes/map.unity
