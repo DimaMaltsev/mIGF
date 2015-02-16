@@ -10,7 +10,6 @@ public class BigGuySpawner : Spawner {
 	}
 
 	void Start(){
-		Messenger.AddListener( "BigGuyDead" , OnBigGuyDead );
 		base.Spawn();
 	}
 
@@ -20,9 +19,5 @@ public class BigGuySpawner : Spawner {
 			spawnObject.GetComponent<Input_BigGuy>().ItIsMenu();
 		}
 		Messenger.Broadcast<Transform>( "BigGuySpawned" , spawnObject.transform );
-	}
-
-	private void OnBigGuyDead(){
-		base.Spawn();
 	}
 }

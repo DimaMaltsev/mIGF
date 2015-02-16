@@ -40,8 +40,13 @@ public class StatesManager : MonoBehaviour {
 			return;
 		}
 
-		if (state.Length == 1) {
+		if (state.Length == 1 && state[0] == "map" ) {
 			LoadState("map");
+			return;
+		}
+
+		if (state.Length == 1 && state[0] == "restart" ) {
+			LoadState(currentState);
 			return;
 		}
 

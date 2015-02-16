@@ -10,7 +10,6 @@ public class SmallGuySpawner : Spawner {
 	}
 
 	void Start(){
-		Messenger.AddListener( "SmallGuyDead" , OnSmallGuyDead );
 		Invoke ("RealSpawn", 0.5f);
 	}
 
@@ -19,10 +18,6 @@ public class SmallGuySpawner : Spawner {
 			spawnObject.GetComponent<Input_SmallGuy>().ItIsMenu();
 		}
 		Messenger.Broadcast<Transform>( "SmallGuySpawned" , spawnObject.transform );
-	}
-
-	private void OnSmallGuyDead(){
-		RealSpawn ();
 	}
 
 	private void RealSpawn(){

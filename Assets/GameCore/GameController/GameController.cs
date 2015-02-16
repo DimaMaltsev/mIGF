@@ -10,6 +10,8 @@ public class GameController : MonoBehaviour {
 	void Start(){
 		Messenger.AddListener( "GuyReachedEndPoint" , OnGuyReachedEndPoint	);
 		Messenger.AddListener( "GuyLeavedEndPoint" 	, OnGuyLeavedEndPoint 	);
+		Messenger.AddListener( "SmallGuyDead" , OnSmallGuyDead );
+		Messenger.AddListener( "BigGuyDead" , OnBigGuyDead );
 
 		if( GameObject.FindGameObjectWithTag( "SmallGuySpawner" ) 	!= null ) waitingForObjectsCount++;
 		if( GameObject.FindGameObjectWithTag( "BigGuySpawner" ) 	!= null ) waitingForObjectsCount++;
@@ -17,13 +19,18 @@ public class GameController : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if(objectsReachedEndCount != waitingForObjectsCount && !Input.GetButton("Esc") ) return;
+		if(!levelEnded && objectsReachedEndCount != waitingForObjectsCount && !Input.GetButton("Esc") ) return;
 
 		GUIStyle centeredStyle2 = GUI.skin.GetStyle("Button");
-		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 - 25, 100, 50), "NEXT LEVEL", centeredStyle2)){			
+		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 - 50, 100, 50), "NEXT LEVEL", centeredStyle2)){			
 			Messenger.Broadcast<string[]>( "LoadState" , new string[]{} );
 		}
-		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 + 25, 100, 50), "MAP", centeredStyle2)){			
+		
+		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 , 100, 50), "RESTART", centeredStyle2)){			
+			Messenger.Broadcast<string[]>( "LoadState" , new string[]{"restart"} );
+		}
+
+		if(GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 + 50, 100, 50), "MAP", centeredStyle2)){			
 			Messenger.Broadcast<string[]>( "LoadState" , new string[]{"map"} );
 		}
 	}
@@ -35,5 +42,13 @@ public class GameController : MonoBehaviour {
 
 	private void FinishGame(){
 		if( objectsReachedEndCount != waitingForObjectsCount ) return;
+	}
+
+	private void OnSmallGuyDead(){
+		levelEnded = true;
+	}
+
+	private void OnBigGuyDead(){
+		levelEnded = true;
 	}
 }
