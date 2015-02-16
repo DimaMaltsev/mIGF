@@ -12,7 +12,7 @@ public class SoundLibrary : MonoBehaviour {
 	private List<AudioSource> sfxAudioSources = new List<AudioSource>();
 
 	private float sfxVolume = 1;
-	private float musicVolume = 1;
+	private float musicVolume = 0.3f;
 
 	private Dictionary<string,int> soundsMap = new Dictionary<string, int> (){
 		{ "boss_theme" , 0 },
