@@ -109,6 +109,13 @@
      <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\button\ButtonController.cs" />
      <Compile Include="Assets\Resources\code\specialized\crumblingWall\CrumblingWallController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level1.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level2.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level3.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level4.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level5.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level6.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Level7.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut1Gwo.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut1Ti.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut1TiAndGwo.cs" />
