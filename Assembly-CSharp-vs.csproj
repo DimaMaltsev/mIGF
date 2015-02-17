@@ -109,10 +109,17 @@
      <Compile Include="Assets\Resources\code\specialized\bushes\BushController.cs" />
      <Compile Include="Assets\Resources\code\specialized\button\ButtonController.cs" />
      <Compile Include="Assets\Resources\code\specialized\crumblingWall\CrumblingWallController.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut1Gwo.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut1Ti.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut2Gwo.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut2Ti.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut3Gwo.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut3Ti.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut4Gwo.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut4Gwo1.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut4Ti.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut5Gwo.cs" />
+     <Compile Include="Assets\Resources\code\specialized\dialogs\Tut5Gwo1.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut5Ti.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\Tut6Ti.cs" />
      <Compile Include="Assets\Resources\code\specialized\dialogs\testDialog.cs" />
