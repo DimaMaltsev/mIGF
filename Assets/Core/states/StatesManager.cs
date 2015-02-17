@@ -6,6 +6,8 @@ public class StatesManager : MonoBehaviour {
 
 	public string initState = "main";
 
+
+	public string levelStateChangePurpose = "";
 	public string currentState = "";
 	private string nextState = "";
 
@@ -35,6 +37,8 @@ public class StatesManager : MonoBehaviour {
 	}
 	
 	private void OnLoadState( string[] state ){
+		levelStateChangePurpose = "";
+
 		if (state.Length == 0) {
 			LoadState("main");
 			return;
@@ -47,6 +51,7 @@ public class StatesManager : MonoBehaviour {
 
 		if (state.Length == 1 && state[0] == "restart" ) {
 			LoadState(currentState);
+			levelStateChangePurpose = "restart";
 			return;
 		}
 

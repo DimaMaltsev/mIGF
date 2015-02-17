@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initState: main
+  levelStateChangePurpose: 
   currentState: 
 --- !u!1 &1694624755
 GameObject:
