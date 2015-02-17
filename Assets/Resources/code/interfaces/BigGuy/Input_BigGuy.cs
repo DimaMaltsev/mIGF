@@ -46,12 +46,10 @@ public class Input_BigGuy : Interface {
 		if( Input.GetButton( "Right" ) ) direction ++;
 		if( Input.GetButton( "Left" ) ) direction --;
 		
-		if( Input.GetButtonDown( "Up" ) ) 	properties.SetProperty( "jump" , true );
-		if( Input.GetButtonUp( "Up" ) ) 	properties.SetProperty( "jump" , false );
+		if( Input.GetButtonDown( "Up" ) || Input.GetButtonDown( "Jump" ) ) 	properties.SetProperty( "jump" , true );
+		if( Input.GetButtonUp( "Up" ) || Input.GetButtonUp( "Jump" )) 	properties.SetProperty( "jump" , false );
 
 		properties.SetProperty( "down" , Input.GetButton( "Down" ) );
-
-		if( Input.GetButton( "Jump" ) )	GetComponent<Dieable>().Die();
 
 		bool walled = properties.GetPropertyBoolean( "walled" ) &&
 			transform.localScale.x == direction;
